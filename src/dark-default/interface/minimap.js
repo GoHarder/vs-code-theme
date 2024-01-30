@@ -8,26 +8,26 @@ import { tokens } from '../colors/interface.js';
 const minimap = {
   // Highlight color for matches from search within files.
   // {default: #d18616}
-  findMatchHighlight: undefined, // TODO: minimap.findMatchHighlight
+  findMatchHighlight: tokens.good,
 
   // Highlight color for the editor selection. {default: #264f78}
-  selectionHighlight: undefined, // TODO: minimap.selectionHighlight
+  selectionHighlight: undefined, // Done
 
   // {default: #3794ff}
-  infoHighlight: undefined, // TODO: minimap.infoHighlight
+  infoHighlight: undefined, // Done
 
   // Highlight color for errors within the editor. {default: #ff1212b3}
   errorHighlight: tokens.errorFixed,
 
   // Highlight color for warnings within the editor. {default: #cca700}
-  warningHighlight: undefined, // TODO: minimap.warningHighlight
+  warningHighlight: undefined, // Done
 
   // Minimap background color. {default: null}
   background: tokens.surfaceContainerLow,
 
   // Minimap marker color for repeating editor selections.
   // {default: #676767}
-  selectionOccurrenceHighlight: undefined, // TODO: minimap.selectionOccurrenceHighlight
+  selectionOccurrenceHighlight: tokens.onSurfaceVariant,
 
   // Opacity of foreground elements rendered in the minimap. For example,
   // "#000000c0" will render the elements with 75% opacity.
@@ -48,13 +48,13 @@ const minimapSlider = {
 
 const minimapGutter = {
   // Minimap gutter color for added content. {default: #487e02}
-  addedBackground: undefined, // TODO: minimapGutter.addedBackground
+  addedBackground: undefined, // Done
 
   // Minimap gutter color for modified content. {default: #1b81a8}
-  modifiedBackground: undefined, // TODO: minimapGutter.modifiedBackground
+  modifiedBackground: undefined, // Done
 
   // Minimap gutter color for deleted content. {default: #f14c4c}
-  deletedBackground: undefined, // TODO: minimapGutter.deletedBackground
+  deletedBackground: undefined, // Done
 };
 
 export default {
