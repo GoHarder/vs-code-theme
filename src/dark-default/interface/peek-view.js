@@ -17,7 +17,7 @@ const peekViewEditor = {
   background: tokens.surfaceContainerLow,
 
   // Match highlight color in the peek view editor. {default: #ff8f0099}
-  matchHighlightBackground: chroma(tokens.onSurface).alpha(0.15).hex(),
+  matchHighlightBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // Match highlight border color in the peek view editor. {default: null}
   matchHighlightBorder: chroma(tokens.onSurface).alpha(0.6).hex(),
