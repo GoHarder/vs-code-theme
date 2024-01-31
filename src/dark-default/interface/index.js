@@ -35,10 +35,10 @@ import keyboardShortcutTable from './keyboard-shortcut-table.js';
 import integratedTerminal from './integrated-terminal.js'; // NOTE: Done
 import debug from './debug.js';
 import testing from './testing.js';
-import welcomePage from './welcome-page.js';
+import welcomePage from './welcome-page.js'; // NOTE: Done
 import sourceControl from './source-control.js';
 import git from './git.js'; // NOTE: Done
-import settingsEditor from './settings-editor.js';
+import settingsEditor from './settings-editor.js'; // NOTE: Done
 import breadcrumbs from './breadcrumbs.js'; // NOTE: Done
 import snippets from './snippets.js';
 import symbolIcons from './symbol-icons.js';

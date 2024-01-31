@@ -29,10 +29,10 @@ const textLink = {
 
 const textPreformat = {
   // Foreground color for preformatted text segments. {default: #d7ba7d}
-  foreground: undefined, // TODO: textPreformat.foreground
+  foreground: tokens.warning,
 
   // {default: #ffffff1a}
-  background: undefined, // TODO: textPreformat.background
+  background: tokens.surfaceContainerLowest,
 };
 
 const textSeparator = {
