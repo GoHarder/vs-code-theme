@@ -9,7 +9,7 @@ import { tokens } from '../colors/interface.js';
 
 const notificationCenter = {
   // Notification Center border color. {default: null}
-  border: undefined, // TODO: notificationCenter.border
+  border: undefined, // Done
 };
 
 const notificationCenterHeader = {
@@ -22,7 +22,7 @@ const notificationCenterHeader = {
 
 const notificationToast = {
   // Notification toast border color. {default: null}
-  border: undefined, // TODO: notificationToast.border
+  border: undefined, // Done
 };
 
 const notifications = {
@@ -39,7 +39,7 @@ const notifications = {
 
 const notificationLink = {
   // Notification links foreground color. {default: #3794ff}
-  foreground: undefined, // TODO: notificationLink.foreground
+  foreground: tokens.primary, // Done
 };
 
 const notificationsErrorIcon = {

@@ -12,6 +12,7 @@
 // ------------------------------------------------------------------------
 // NOTE: Example image available.
 
+import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const keybindingLabel = {
@@ -24,10 +25,10 @@ const keybindingLabel = {
   foreground: tokens.onPrimaryContainer,
 
   // Keybinding label border color. {default: #33333399}
-  border: undefined,
+  border: chroma(tokens.onPrimaryContainer).alpha(0.2).hex(),
 
   // Keybinding label border bottom color. {default: #44444499}
-  bottomBorder: undefined,
+  bottomBorder: chroma(tokens.onPrimaryContainer).alpha(0.3).hex(),
 };
 
 export default {
