@@ -21,8 +21,8 @@
     "type": "git",
     "url": "https://github.com/GoHarder/vs-code-theme"
   },
-  "displayName": "GoHarder Theme",
   "publisher": "GoHarder",
+  "displayName": "GoHarder Theme",
   "icon": "icon.jpg",
   "galleryBanner": {
     "theme": "dark"
