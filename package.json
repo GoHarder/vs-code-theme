@@ -41,7 +41,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "Dark Default",
+        "label": "GoHarder Dark Default",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
       }
