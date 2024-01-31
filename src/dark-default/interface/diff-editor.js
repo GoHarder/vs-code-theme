@@ -6,7 +6,6 @@
 
 import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
-import baseColors from './base-colors.js';
 
 const diffEditor = {
   // Border color between the two text editors. {default: null}
@@ -54,7 +53,7 @@ const diffEditor = {
 
   // The background color of unchanged code in the diff editor.
   // {default: #74747429}
-  unchangedCodeBackground: baseColors.surfaceContainerLow,
+  unchangedCodeBackground: tokens.surfaceContainerLow,
 
   // {default: #ffa500}
   moveActive: { border: undefined }, // TODO: diffEditor.moveActive.border
