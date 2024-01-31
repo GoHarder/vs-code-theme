@@ -4,6 +4,7 @@
 // diff ranges.
 // ---------------------------------------------------------------------
 
+import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const merge = {
@@ -67,28 +68,28 @@ const editorOverviewRuler = {
 const mergeEditor = {
   change: {
     // The background color for changes. {default: #9bb95533}
-    background: undefined, // TODO: mergeEditor.change.background
+    background: chroma(tokens.warningContainer).alpha(0.2).hex(),
 
     // The background color for word changes. {default: #9ccc2c33}
-    word: { background: undefined }, // TODO: mergeEditor.change.word
+    word: { background: chroma(tokens.warningContainer).alpha(0.2).hex() },
   },
 
   conflict: {
     // The border color of unhandled unfocused conflicts.
     // {default: #ffa6007a}
-    unhandledUnfocused: { border: undefined },
+    unhandledUnfocused: { border: chroma(tokens.warning).alpha(0.7).hex() },
 
     // The border color of unhandled focused conflicts. {default: #ffa600}
-    unhandledFocused: { border: undefined },
+    unhandledFocused: { border: tokens.warning },
 
     // The border color of handled unfocused conflicts.
     // {default: #86868649}
-    handledUnfocused: { border: undefined },
+    handledUnfocused: { border: chroma(tokens.onSurfaceVariant).alpha(0.7).hex() },
 
     // The border color of handled focused conflicts. {default: #c1c1c1cc}
-    handledFocused: { border: undefined },
+    handledFocused: { border: tokens.onSurfaceVariant },
 
-    // The foreground color for changes in input 1. {default: #adaca8ee}
+    // {default: #adaca8ee}
     handled: {
       minimapOverViewRuler: undefined,
     },
