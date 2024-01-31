@@ -19,11 +19,11 @@ const statusBar = {
 
   // Status Bar background color when a program is being debugged.
   // {default: #cc6633}
-  debuggingBackground: tokens.onPrimaryContainer,
+  debuggingBackground: tokens.primaryContainer,
 
   // Status Bar foreground color when a program is being debugged.
   // {default: #ffffff}
-  debuggingForeground: tokens.primaryContainer,
+  debuggingForeground: tokens.onPrimaryContainer,
 
   // Status Bar border color separating the Status Bar and editor
   // when a program is being debugged. {default: null}
