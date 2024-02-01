@@ -26,27 +26,27 @@ import statusBar from './status-bar.js';
 import titleBar from './title-bar.js';
 import menuBar from './menu-bar.js';
 import commandCenter from './command-center.js';
-import notification from './notification.js'; // NOTE: Checked
+import notification from './notification.js';
 import banner from './banner.js';
-import extension from './extension.js'; // NOTE: Done
+import extension from './extension.js';
 import quickPicker from './quick-picker.js';
-import keybindingLabel from './keybinding-label.js'; // NOTE: Done
-import keyboardShortcutTable from './keyboard-shortcut-table.js'; // NOTE: Done
-import integratedTerminal from './integrated-terminal.js'; // NOTE: Done
+import keybindingLabel from './keybinding-label.js';
+import keyboardShortcutTable from './keyboard-shortcut-table.js';
+import integratedTerminal from './integrated-terminal.js';
 import debug from './debug.js';
 import testing from './testing.js';
-import welcomePage from './welcome-page.js'; // NOTE: Done
-import sourceControl from './source-control.js'; // NOTE: Done
-import git from './git.js'; // NOTE: Done
-import settingsEditor from './settings-editor.js'; // NOTE: Done
-import breadcrumbs from './breadcrumbs.js'; // NOTE: Done
+import welcomePage from './welcome-page.js';
+import sourceControl from './source-control.js';
+import git from './git.js';
+import settingsEditor from './settings-editor.js';
+import breadcrumbs from './breadcrumbs.js';
 import snippets from './snippets.js';
-import symbolIcons from './symbol-icons.js';
+import symbolIcons from './symbol-icons.js'; // NOTE: Checked
 import debugIcons from './debug-icons.js';
 import notebook from './notebook.js';
 import chart from './chart.js';
 import ports from './ports.js';
-import commentsView from './comments-view.js';
+import commentsView from './comments-view.js'; // NOTE: Done
 
 const rawSections = [
   baseColors,
