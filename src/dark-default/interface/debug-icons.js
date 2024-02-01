@@ -51,7 +51,7 @@ const debugIcon = {
 const debugConsole = {
   // Foreground color for info messages in debug REPL console.
   // {default: #3794ff}
-  infoForeground: undefined, // TODO: debugConsole.infoForeground
+  infoForeground: tokens.onSurface,
 
   // Foreground color for warning messages in debug REPL console.
   // {default: #cca700}
@@ -59,11 +59,11 @@ const debugConsole = {
 
   // Foreground color for error messages in debug REPL console.
   // {default: #f48771}
-  errorForeground: tokens.error,
+  errorForeground: tokens.errorFixed,
 
   // Foreground color for source filenames in debug REPL console.
   // {default: #cccccc}
-  sourceForeground: undefined, // TODO: debugConsole.sourceForeground
+  sourceForeground: tokens.info,
 };
 
 const debugConsoleInputIcon = {
