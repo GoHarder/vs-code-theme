@@ -15,3 +15,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed theme label
 - Fixed status bar debug state contrast
 - Added more settings
+ 
+## [0.0.2]
+
+- Updated icon. 
+- Added debug icon settings
+- Added debug settings
+- Added snippet settings
+- Added symbol icon settings
+- Added merge conflict settings
