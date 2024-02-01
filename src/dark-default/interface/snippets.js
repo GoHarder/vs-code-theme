@@ -8,18 +8,18 @@ import { tokens } from '../colors/interface.js';
 
 const editor = {
   // Highlight background color of a snippet tabstop. {default: #7c7c7c4d}
-  snippetTabstopHighlightBackground: undefined,
+  snippetTabstopHighlightBackground: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
 
   // Highlight border color of a snippet tabstop. {default: #525252}
-  snippetTabstopHighlightBorder: undefined,
+  snippetTabstopHighlightBorder: tokens.onSurfaceVariant,
 
   // Highlight background color of the final tabstop of a snippet.
   // {default: null}
-  snippetFinalTabstopHighlightBackground: undefined,
+  snippetFinalTabstopHighlightBackground: undefined, // Done
 
   // Highlight border color of the final tabstop of a snippet.
   // {default: null}
-  snippetFinalTabstopHighlightBorder: undefined,
+  snippetFinalTabstopHighlightBorder: undefined, // Done
 };
 
 export default {
