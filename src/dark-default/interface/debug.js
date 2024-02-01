@@ -36,11 +36,11 @@ const debugView = {
 
   // Foreground color for a label in the CALL STACK view showing the current
   // session's or thread's state. {default: #cccccc}
-  stateLabelForeground: undefined, // TODO: debugView.stateLabelForeground
+  stateLabelForeground: tokens.warning,
 
   // Background color for a label in the CALL STACK view showing the current
   // session's or thread's state. {default: #88888844}
-  stateLabelBackground: undefined, // TODO: debugView.stateLabelBackground
+  stateLabelBackground: tokens.surfaceContainer,
 
   // Color used to highlight value changes in the debug views (such as in
   // the Variables view). {default: #569cd6}
