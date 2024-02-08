@@ -16,7 +16,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed status bar debug state contrast
 - Added more settings
  
-## [0.0.2]
+## [0.0.3]
 
 - Updated icon. 
 - Added debug icon settings
@@ -24,3 +24,14 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added snippet settings
 - Added symbol icon settings
 - Added merge conflict settings
+
+## [0.0.4]
+
+- Updated packages
+- Added high contrast reference
+- Added notebook settings
+- Matched drop borders in all sections
+- Added dark plus theme files
+- Added hover highlight to terminal links
+- Set status bar hover to match all backgrounds
+- Fixed badge background
