@@ -1,0 +1,49 @@
+import chroma from 'chroma-js';
+import { tokens } from '../colors/interface.js';
+
+const gitDecoration = {
+  // NOTE: Used for file labels and the SCM viewlet.
+
+  // Color for added Git resources. {default: #81b88b}
+  addedResourceForeground: tokens.good,
+
+  // Color for renamed or copied Git resources. {default: #73c991}
+  renamedResourceForeground: tokens.good,
+
+  // Color for untracked Git resources. {default: #73c991}
+  untrackedResourceForeground: tokens.good,
+
+  // Color for conflicting Git resources. {default: #e4676b}
+  conflictingResourceForeground: tokens.errorFixed,
+
+  // Color for deleted Git resources. {default: #c74e39}
+  deletedResourceForeground: tokens.errorFixed,
+
+  // Color for staged deletions git decorations. {default: #c74e39}
+  stageDeletedResourceForeground: chroma(tokens.errorFixed).alpha(0.7).hex(),
+
+  // Color for modified Git resources. {default: #e2c08d}
+  modifiedResourceForeground: tokens.warning,
+
+  // Color for staged modifications git decorations. {default: #e2c08d}
+  stageModifiedResourceForeground: chroma(tokens.warning).alpha(0.7).hex(),
+
+  // Color for ignored Git resources. {default: #8c8c8c}
+  ignoredResourceForeground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+
+  // Color for submodule resources. {default: #8db9e2}
+  submoduleResourceForeground: tokens.info,
+};
+
+export default {
+  'gitDecoration.addedResourceForeground': gitDecoration.addedResourceForeground,
+  'gitDecoration.modifiedResourceForeground': gitDecoration.modifiedResourceForeground,
+  'gitDecoration.deletedResourceForeground': gitDecoration.deletedResourceForeground,
+  'gitDecoration.renamedResourceForeground': gitDecoration.renamedResourceForeground,
+  'gitDecoration.stageModifiedResourceForeground': gitDecoration.stageModifiedResourceForeground,
+  'gitDecoration.stageDeletedResourceForeground': gitDecoration.stageDeletedResourceForeground,
+  'gitDecoration.untrackedResourceForeground': gitDecoration.untrackedResourceForeground,
+  'gitDecoration.ignoredResourceForeground': gitDecoration.ignoredResourceForeground,
+  'gitDecoration.conflictingResourceForeground': gitDecoration.conflictingResourceForeground,
+  'gitDecoration.submoduleResourceForeground': gitDecoration.submoduleResourceForeground,
+};
