@@ -58,7 +58,7 @@ const statusBarItem = {
   // Status bar item background color when hovering an item that
   // contains two hovers. The status bar is shown in the bottom of
   // the window. {default: #ffffff33}
-  compactHoverBackground: tokens.secondaryContainer,
+  compactHoverBackground: chroma(tokens.onSurface).alpha(0.2).hex(),
 
   // Status bar item border color when focused on keyboard navigation. The
   // status bar is shown in the bottom of the window. {default: #ffffff}
