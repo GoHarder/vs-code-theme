@@ -5,7 +5,7 @@ const badge = {
   foreground: tokens.tertiary,
 
   // Badge background color. {default: #4d4d4d}
-  background: '#00000000',
+  background: tokens.surfaceContainer,
 };
 
 export default {
