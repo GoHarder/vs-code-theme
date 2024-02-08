@@ -41,12 +41,12 @@ import git from './git.js';
 import settingsEditor from './settings-editor.js';
 import breadcrumbs from './breadcrumbs.js';
 import snippets from './snippets.js';
-import symbolIcons from './symbol-icons.js'; // NOTE: Checked
+import symbolIcons from './symbol-icons.js';
 import debugIcons from './debug-icons.js';
 import notebook from './notebook.js';
 import chart from './chart.js';
 import ports from './ports.js';
-import commentsView from './comments-view.js'; // NOTE: Done
+import commentsView from './comments-view.js';
 
 const rawSections = [
   baseColors,
