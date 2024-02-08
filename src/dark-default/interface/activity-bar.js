@@ -14,7 +14,7 @@ const activityBar = {
   // Drag and drop feedback color for the activity bar items. The activity
   // bar is showing on the far left or right and allows to switch between
   // views of the side bar. {default: #ffffff}
-  dropBorder: undefined, // Done
+  dropBorder: tokens.onSurfaceVariant,
 
   // Activity Bar foreground color (for example used for the icons).
   // {default: #ffffff}
