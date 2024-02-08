@@ -108,7 +108,7 @@ const terminal = {
 
   // Color of the highlight when hovering a link in the terminal.
   // {default: #264f7820}
-  hoverHighlightBackground: undefined, // TODO: terminal.hoverHighlightBackground
+  hoverHighlightBackground: chroma(tokens.onSurface).alpha(0.1).hex(),
 
   // The background color when dragging on top of terminals. The color
   // should have transparency so that the terminal contents can still shine
