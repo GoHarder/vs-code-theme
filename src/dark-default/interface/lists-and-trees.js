@@ -121,7 +121,7 @@ const listFilterWidget = {
   noMatchesOutline: undefined, // TODO: listFilterWidget.noMatchesOutline
 
   // Shadow color of the type filter widget in lists and tree.
-  shadow: undefined, // TODO: listFilterWidget.shadow
+  shadow: undefined, // Done
 };
 
 const tree = {
