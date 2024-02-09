@@ -3,13 +3,13 @@ import { tokens } from '../colors/interface.js';
 
 const debugIcon = {
   // Icon color for breakpoints. {default: #e51400}
-  breakpointForeground: undefined, // TODO: debugIcon.breakpointForeground
+  breakpointForeground: tokens.errorFixed,
 
   // Icon color for disabled breakpoints. {default: #848484}
-  breakpointDisabledForeground: undefined, // TODO: debugIcon.breakpointDisabledForeground
+  breakpointDisabledForeground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
 
   // Icon color for unverified breakpoints. {default: #848484}
-  breakpointUnverifiedForeground: undefined, // TODO: debugIcon.breakpointUnverifiedForeground
+  breakpointUnverifiedForeground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
 
   // Icon color for the current breakpoint stack frame. {default: #ffcc00}
   breakpointCurrentStackframeForeground: tokens.warning,
