@@ -35,3 +35,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added hover highlight to terminal links
 - Set status bar hover to match all backgrounds
 - Fixed badge background
+
+## [0.0.5]
+
+- Set quick picker focus background
+- Set list shadows
+- Added port colors
+- Added break point debug icon settings
+- Adjusted snippet tabs and editor highlighting
