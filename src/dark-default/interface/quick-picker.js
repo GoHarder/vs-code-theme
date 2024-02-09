@@ -20,7 +20,7 @@ const quickInput = {
   foreground: tokens.onSurface,
 
   // {default: null}
-  list: { focusBackground: undefined }, // TODO: quickInput.list.focusBackground
+  list: { focusBackground: undefined }, // Done
 };
 
 const quickInputList = {
