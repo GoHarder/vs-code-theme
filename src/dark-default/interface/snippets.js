@@ -11,7 +11,7 @@ const editor = {
   snippetTabstopHighlightBackground: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
 
   // Highlight border color of a snippet tabstop. {default: #525252}
-  snippetTabstopHighlightBorder: tokens.onSurfaceVariant,
+  snippetTabstopHighlightBorder: chroma(tokens.onSurfaceVariant).alpha(0.6).hex(),
 
   // Highlight background color of the final tabstop of a snippet.
   // {default: null}

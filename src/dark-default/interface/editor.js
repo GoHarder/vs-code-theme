@@ -42,7 +42,7 @@ const editor = {
 
   // Border color for regions with the same content as the selection.
   // {default: null}
-  selectionHighlightBorder: tokens.info,
+  selectionHighlightBorder: tokens.infoContainer,
 
   // --------------------------------------------------------------------
   // Word highlight colors are visible when the cursor is inside a symbol
@@ -90,7 +90,7 @@ const editor = {
   findMatchBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // Border color of the current search match. {default: null}
-  findMatchBorder: chroma(tokens.onSurface).alpha(0.7).hex(),
+  findMatchBorder: chroma(tokens.onSurface).alpha(0.6).hex(),
 
   // Color of the other search matches. The color must not be opaque so as
   // not to hide underlying decorations. {default: #ea5c0055}
