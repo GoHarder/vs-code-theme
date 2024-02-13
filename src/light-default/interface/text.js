@@ -6,37 +6,37 @@
 import { tokens } from '../colors/interface.js';
 
 const textBlockQuote = {
-  // Background color for block quotes in text. {default: #222222}
-  background: tokens.surfaceContainerLow,
+  // Background color for block quotes in text. {default: }
+  background: tokens.surfaceContainerLow, // TODO: textBlockQuote.background
 
-  // Border color for block quotes in text. {default: #007acc80}
-  border: tokens.outlineVariant,
+  // Border color for block quotes in text. {default: }
+  border: tokens.outlineVariant, // TODO: textBlockQuote.border
 };
 
 const textCodeBlock = {
-  // Background color for code blocks in text. {default: #0a0a0a66}
-  background: tokens.surfaceContainerLow,
+  // Background color for code blocks in text. {default: }
+  background: tokens.surfaceContainerLow, // TODO: textCodeBlock.background
 };
 
 const textLink = {
   // Foreground color for links in text when clicked on and on mouse hover.
-  // {default: #3794ff}
-  activeForeground: tokens.primaryHover,
+  // {default: }
+  activeForeground: tokens.primaryHover, // TODO: textLink.activeForeground
 
-  // Foreground color for links in text. {default: #3794ff}
-  foreground: tokens.primary,
+  // Foreground color for links in text. {default: }
+  foreground: tokens.primary, // TODO: textLink.foreground
 };
 
 const textPreformat = {
-  // Foreground color for preformatted text segments. {default: #d7ba7d}
-  foreground: tokens.warning,
+  // Foreground color for preformatted text segments. {default: }
+  foreground: tokens.warning, // TODO: textPreformat.foreground
 
-  // {default: #ffffff1a}
-  background: tokens.surfaceContainerLowest,
+  // {default: }
+  background: tokens.surfaceContainerLowest, // TODO: textPreformat.background
 };
 
 const textSeparator = {
-  // Color for text separators. {default: #ffffff2e}
+  // Color for text separators. {default: }
   foreground: undefined, // TODO: textSeparator.foreground
 };
 

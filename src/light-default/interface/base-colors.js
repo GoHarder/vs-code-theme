@@ -21,7 +21,7 @@ const errorForeground = tokens.errorFixed;
 const widget = {
   // Border color of widgets such as Find/Replace inside the editor.
   // {default: null}
-  border: undefined, // Done
+  border: undefined,
 
   // Shadow color of widgets such as Find/Replace inside the editor.
   // {default: #0000005c}
@@ -42,7 +42,7 @@ const icon = {
 
 const sash = {
   // The hover border color for draggable sashes. {default: #007fd4}
-  hoverBorder: undefined, // Done
+  hoverBorder: undefined,
 };
 
 export default {

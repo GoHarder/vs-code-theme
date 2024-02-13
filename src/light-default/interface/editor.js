@@ -29,7 +29,7 @@ const editor = {
   selectionBackground: tokens.infoContainer,
 
   // Color of the selected text for high contrast. {default: null}
-  selectionForeground: undefined, // Done
+  selectionForeground: tokens.onSurfaceVariant,
 
   // Color of the selection in an inactive editor. The color must not be
   // opaque so as not to hide underlying decorations. {default: #264f7880}
