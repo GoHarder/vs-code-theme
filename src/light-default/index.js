@@ -6,7 +6,7 @@ import tokenColors from './syntax/index.js';
 
 const getFilePath = (file) => fileURLToPath(new URL(`../../themes/${file}`, import.meta.url));
 
-const path = getFilePath('dark-plus.json');
+const path = getFilePath('light-default.json');
 
 try {
   const data = {
