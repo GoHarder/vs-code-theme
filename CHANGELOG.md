@@ -43,3 +43,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added port colors
 - Added break point debug icon settings
 - Adjusted snippet tabs and editor highlighting
+
+## [0.0.6]
+
+- Added light theme 
+- Created color schema
+- Fixed light reference

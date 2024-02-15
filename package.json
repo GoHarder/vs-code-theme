@@ -4,7 +4,7 @@
   "description": "GoHarder theme for visual studio code.",
   "scripts": {
     "dev-dark": "cd src/dark-default; nodemon index",
-    "dev-dark-plus": "cd src/dark-plus; nodemon index",
+    "dev-light": "cd src/light-default; nodemon index",
     "package": "npx vsce package",
     "publish": "npx vsce publish",
     "login": "npx vsce login GoHarder",
@@ -42,14 +42,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "GoHarder Dark Default",
+        "label": "GoHarder Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/dark-default.json"
       },
       {
-        "label": "GoHarder Dark+",
-        "uiTheme": "hc-black",
-        "path": "./themes/dark-plus.json"
+        "label": "GoHarder Light",
+        "uiTheme": "vs",
+        "path": "./themes/light-default.json"
       }
     ]
   }
