@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Color pallet schema",
+  "type": "object",
+  "required": ["interface", "terminal"],
+  "properties": {
+    "interface": {
+      "type": "object",
+      "required": ["primary", "secondary", "tertiary", "error", "neutral", "neutralVariant"],
+      "properties": {
+        "primary": {
+          "$ref": "#/$defs/pallets/normal"
+        },
+        "secondary": {
+          "$ref": "#/$defs/pallets/normal"
+        },
+        "tertiary": {
+          "$ref": "#/$defs/pallets/normal"
+        },
+        "error": {
+          "$ref": "#/$defs/pallets/normal"
+        },
+        "neutral": {
+          "$ref": "#/$defs/pallets/full"
+        },
+        "neutralVariant": {
+          "$ref": "#/$defs/pallets/normal"
+        }
+      }
+    },
+    "terminal": {
+      "type": "object",
+      "required": [
+        "black",
+        "brightBlack",
+        "red",
+        "brightRed",
+        "green",
+        "brightGreen",
+        "yellow",
+        "brightYellow",
+        "blue",
+        "brightBlue",
+        "magenta",
+        "brightMagenta",
+        "cyan",
+        "brightCyan",
+        "white",
+        "brightWhite"
+      ],
+      "properties": {
+        "black": { "$ref": "#/$defs/pallets/terminal" },
+        "brightBlack": { "$ref": "#/$defs/pallets/terminal" },
+        "red": { "$ref": "#/$defs/pallets/terminal" },
+        "brightRed": { "$ref": "#/$defs/pallets/terminal" },
+        "green": { "$ref": "#/$defs/pallets/terminal" },
+        "brightGreen": { "$ref": "#/$defs/pallets/terminal" },
+        "yellow": { "$ref": "#/$defs/pallets/terminal" },
+        "brightYellow": { "$ref": "#/$defs/pallets/terminal" },
+        "blue": { "$ref": "#/$defs/pallets/terminal" },
+        "brightBlue": { "$ref": "#/$defs/pallets/terminal" },
+        "magenta": { "$ref": "#/$defs/pallets/terminal" },
+        "brightMagenta": { "$ref": "#/$defs/pallets/terminal" },
+        "cyan": { "$ref": "#/$defs/pallets/terminal" },
+        "brightCyan": { "$ref": "#/$defs/pallets/terminal" },
+        "white": { "$ref": "#/$defs/pallets/terminal" },
+        "brightWhite": { "$ref": "#/$defs/pallets/terminal" }
+      }
+    }
+  },
+  "$defs": {
+    "hexColor": {
+      "type": "string",
+      "pattern": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "pallets": {
+      "full": {
+        "type": "object",
+        "required": [
+          "_0",
+          "_4",
+          "_6",
+          "_10",
+          "_12",
+          "_17",
+          "_20",
+          "_22",
+          "_24",
+          "_30",
+          "_40",
+          "_50",
+          "_60",
+          "_70",
+          "_80",
+          "_87",
+          "_90",
+          "_92",
+          "_94",
+          "_95",
+          "_96",
+          "_98",
+          "_99",
+          "_100"
+        ],
+        "properties": {
+          "_0": { "$ref": "#/$defs/hexColor" },
+          "_4": { "$ref": "#/$defs/hexColor" },
+          "_6": { "$ref": "#/$defs/hexColor" },
+          "_10": { "$ref": "#/$defs/hexColor" },
+          "_12": { "$ref": "#/$defs/hexColor" },
+          "_17": { "$ref": "#/$defs/hexColor" },
+          "_20": { "$ref": "#/$defs/hexColor" },
+          "_22": { "$ref": "#/$defs/hexColor" },
+          "_24": { "$ref": "#/$defs/hexColor" },
+          "_30": { "$ref": "#/$defs/hexColor" },
+          "_40": { "$ref": "#/$defs/hexColor" },
+          "_50": { "$ref": "#/$defs/hexColor" },
+          "_60": { "$ref": "#/$defs/hexColor" },
+          "_70": { "$ref": "#/$defs/hexColor" },
+          "_80": { "$ref": "#/$defs/hexColor" },
+          "_87": { "$ref": "#/$defs/hexColor" },
+          "_90": { "$ref": "#/$defs/hexColor" },
+          "_92": { "$ref": "#/$defs/hexColor" },
+          "_94": { "$ref": "#/$defs/hexColor" },
+          "_95": { "$ref": "#/$defs/hexColor" },
+          "_96": { "$ref": "#/$defs/hexColor" },
+          "_98": { "$ref": "#/$defs/hexColor" },
+          "_99": { "$ref": "#/$defs/hexColor" },
+          "_100": { "$ref": "#/$defs/hexColor" }
+        }
+      },
+      "normal": {
+        "type": "object",
+        "required": ["_0", "_5", "_10", "_15", "_20", "_25", "_30", "_35", "_40", "_50", "_60", "_70", "_80", "_90", "_95", "_98", "_99", "_100"],
+        "properties": {
+          "_0": { "$ref": "#/$defs/hexColor" },
+          "_5": { "$ref": "#/$defs/hexColor" },
+          "_10": { "$ref": "#/$defs/hexColor" },
+          "_15": { "$ref": "#/$defs/hexColor" },
+          "_20": { "$ref": "#/$defs/hexColor" },
+          "_25": { "$ref": "#/$defs/hexColor" },
+          "_30": { "$ref": "#/$defs/hexColor" },
+          "_35": { "$ref": "#/$defs/hexColor" },
+          "_40": { "$ref": "#/$defs/hexColor" },
+          "_50": { "$ref": "#/$defs/hexColor" },
+          "_60": { "$ref": "#/$defs/hexColor" },
+          "_70": { "$ref": "#/$defs/hexColor" },
+          "_80": { "$ref": "#/$defs/hexColor" },
+          "_90": { "$ref": "#/$defs/hexColor" },
+          "_95": { "$ref": "#/$defs/hexColor" },
+          "_98": { "$ref": "#/$defs/hexColor" },
+          "_99": { "$ref": "#/$defs/hexColor" },
+          "_100": { "$ref": "#/$defs/hexColor" }
+        }
+      },
+      "terminal": {
+        "type": "object",
+        "required": ["base", "_0", "_5", "_10", "_15", "_20", "_25", "_30", "_35", "_40", "_50", "_60", "_70", "_80", "_90", "_95", "_98", "_99", "_100"],
+        "properties": {
+          "base": { "$ref": "#/$defs/hexColor" },
+          "_0": { "$ref": "#/$defs/hexColor" },
+          "_5": { "$ref": "#/$defs/hexColor" },
+          "_10": { "$ref": "#/$defs/hexColor" },
+          "_15": { "$ref": "#/$defs/hexColor" },
+          "_20": { "$ref": "#/$defs/hexColor" },
+          "_25": { "$ref": "#/$defs/hexColor" },
+          "_30": { "$ref": "#/$defs/hexColor" },
+          "_35": { "$ref": "#/$defs/hexColor" },
+          "_40": { "$ref": "#/$defs/hexColor" },
+          "_50": { "$ref": "#/$defs/hexColor" },
+          "_60": { "$ref": "#/$defs/hexColor" },
+          "_70": { "$ref": "#/$defs/hexColor" },
+          "_80": { "$ref": "#/$defs/hexColor" },
+          "_90": { "$ref": "#/$defs/hexColor" },
+          "_95": { "$ref": "#/$defs/hexColor" },
+          "_98": { "$ref": "#/$defs/hexColor" },
+          "_99": { "$ref": "#/$defs/hexColor" },
+          "_100": { "$ref": "#/$defs/hexColor" }
+        }
+      }
+    }
+  }
+}
