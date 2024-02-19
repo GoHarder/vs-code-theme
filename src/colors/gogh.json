@@ -465,7 +465,7 @@
       "_99": "#f9fdfe",
       "_100": "#ffffff"
     },
-    "ansiOrange": {
+    "orange": {
       "base": "#d97a1f",
       "_0": "#000000",
       "_5": "#1f0c00",
@@ -486,7 +486,7 @@
       "_99": "#fffbff",
       "_100": "#ffffff"
     },
-    "ansiBrightOrange": {
+    "brightOrange": {
       "base": "#ec8826",
       "_0": "#000000",
       "_5": "#1f0c00",
