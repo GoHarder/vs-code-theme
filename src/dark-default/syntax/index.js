@@ -1,10 +1,6 @@
+import { syntax, tokens } from '../colors/interface.js';
+
 export default [
-  {
-    scope: ['meta.embedded', 'source.groovy.embedded', 'string meta.image.inline.markdown'],
-    settings: {
-      foreground: '#D4D4D4',
-    },
-  },
   {
     scope: 'emphasis',
     settings: {
@@ -18,15 +14,39 @@ export default [
     },
   },
   {
+    scope: 'markup.underline',
+    settings: {
+      fontStyle: 'underline',
+    },
+  },
+  {
+    scope: 'markup.strikethrough',
+    settings: {
+      fontStyle: 'strikethrough',
+    },
+  },
+  {
+    scope: 'markup.italic',
+    settings: {
+      fontStyle: 'italic',
+    },
+  },
+  {
+    scope: ['meta.embedded', 'source.groovy.embedded', 'string meta.image.inline.markdown'],
+    settings: {
+      foreground: syntax.keyword_operator,
+    },
+  },
+  {
     scope: 'header',
     settings: {
-      foreground: '#000080',
+      foreground: syntax.header,
     },
   },
   {
     scope: 'comment',
     settings: {
-      foreground: '#6A9955',
+      foreground: syntax.comment,
     },
   },
   {
@@ -56,7 +76,7 @@ export default [
   {
     scope: 'entity.name.tag.css',
     settings: {
-      foreground: '#D7BA7D',
+      foreground: syntax.css_tag,
     },
   },
   {
@@ -77,19 +97,13 @@ export default [
       'entity.other.attribute-name.scss',
     ],
     settings: {
-      foreground: '#D7BA7D',
+      foreground: syntax.css_tag,
     },
   },
   {
     scope: 'invalid',
     settings: {
-      foreground: '#F44747',
-    },
-  },
-  {
-    scope: 'markup.underline',
-    settings: {
-      fontStyle: 'underline',
+      foreground: tokens.errorFixed,
     },
   },
   {
@@ -107,18 +121,6 @@ export default [
     },
   },
   {
-    scope: 'markup.italic',
-    settings: {
-      fontStyle: 'italic',
-    },
-  },
-  {
-    scope: 'markup.strikethrough',
-    settings: {
-      fontStyle: 'strikethrough',
-    },
-  },
-  {
     scope: 'markup.inserted',
     settings: {
       foreground: '#B5CEA8',
@@ -127,7 +129,7 @@ export default [
   {
     scope: 'markup.deleted',
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
@@ -139,7 +141,7 @@ export default [
   {
     scope: 'punctuation.definition.quote.begin.markdown',
     settings: {
-      foreground: '#6A9955',
+      foreground: syntax.comment,
     },
   },
   {
@@ -151,13 +153,13 @@ export default [
   {
     scope: 'markup.inline.raw',
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
     scope: 'punctuation.definition.tag',
     settings: {
-      foreground: '#808080',
+      foreground: syntax.tag,
     },
   },
   {
@@ -169,7 +171,7 @@ export default [
   {
     scope: 'meta.preprocessor.string',
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
@@ -211,25 +213,25 @@ export default [
   {
     scope: ['string', 'meta.embedded.assembly'],
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
     scope: 'string.tag',
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
     scope: 'string.value',
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
     scope: 'string.regexp',
     settings: {
-      foreground: '#D16969',
+      foreground: syntax.regex,
     },
   },
   {
@@ -241,7 +243,7 @@ export default [
   {
     scope: ['meta.template.expression'],
     settings: {
-      foreground: '#D4D4D4',
+      foreground: syntax.keyword_operator,
     },
   },
   {
@@ -265,7 +267,7 @@ export default [
   {
     scope: 'keyword.operator',
     settings: {
-      foreground: '#D4D4D4',
+      foreground: syntax.keyword_operator,
     },
   },
   {
@@ -312,7 +314,7 @@ export default [
   {
     scope: ['storage.modifier.import.java', 'variable.language.wildcard.java', 'storage.modifier.package.java'],
     settings: {
-      foreground: '#D4D4D4',
+      foreground: syntax.keyword_operator,
     },
   },
   {
@@ -324,7 +326,7 @@ export default [
   {
     scope: ['entity.name.function', 'support.function', 'support.constant.handlebars', 'source.powershell variable.other.member', 'entity.name.operator.custom-literal'],
     settings: {
-      foreground: '#DCDCAA',
+      foreground: syntax.function,
     },
   },
   {
@@ -407,7 +409,7 @@ export default [
       'support.constant.color',
     ],
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
@@ -421,7 +423,7 @@ export default [
       'support.other.parenthesis.regexp',
     ],
     settings: {
-      foreground: '#CE9178',
+      foreground: syntax.string,
     },
   },
   {
@@ -432,19 +434,19 @@ export default [
       'constant.character.set.regexp',
     ],
     settings: {
-      foreground: '#D16969',
+      foreground: syntax.regex,
     },
   },
   {
     scope: ['keyword.operator.or.regexp', 'keyword.control.anchor.regexp'],
     settings: {
-      foreground: '#DCDCAA',
+      foreground: syntax.function,
     },
   },
   {
     scope: 'keyword.operator.quantifier.regexp',
     settings: {
-      foreground: '#D7BA7D',
+      foreground: syntax.css_tag,
     },
   },
   {
@@ -456,7 +458,7 @@ export default [
   {
     scope: 'constant.character.escape',
     settings: {
-      foreground: '#D7BA7D',
+      foreground: syntax.css_tag,
     },
   },
   {
@@ -468,19 +470,19 @@ export default [
   {
     scope: 'token.info-token',
     settings: {
-      foreground: '#6796E6',
+      foreground: tokens.info,
     },
   },
   {
     scope: 'token.warn-token',
     settings: {
-      foreground: '#CD9731',
+      foreground: tokens.warning,
     },
   },
   {
     scope: 'token.error-token',
     settings: {
-      foreground: '#F44747',
+      foreground: tokens.errorFixed,
     },
   },
   {

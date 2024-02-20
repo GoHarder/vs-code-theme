@@ -23,6 +23,7 @@ const ansi = {
   brightWhite: file.terminal.brightWhite,
   orange: file.terminal.orange,
   brightOrange: file.terminal.brightOrange,
+  tan: file.terminal.tan,
 };
 
 export const terminal = {
@@ -124,71 +125,8 @@ export const terminal = {
   onBrightWhiteContainer: ansi.brightWhite._90,
 };
 
-const language_constant = {
-  source: '#569CD6',
-  top: '#56b3f7',
-  field: [
-    '#005398', //
-    '#005785',
-    '#005fad',
-    '#006397',
-    '#007dbd',
-    '#2378cf',
-    '#2479d0',
-    '#3398db',
-    '#3498db',
-    '#4793eb',
-    '#56b3f7',
-    '#70aeff',
-    '#92ccff',
-    '#a4c8ff',
-  ],
-};
-
-const other_constant = {
-  source: '#4FC1FF',
-  top: '#56b3f7',
-  field: [
-    '#004b73', //
-    '#005398',
-    '#005785',
-    '#005fad',
-    '#006397',
-    '#007dbd',
-    '#2378cf',
-    '#2479d0',
-    '#3398db',
-    '#3498db',
-    '#4793eb',
-    '#56b3f7',
-    '#70aeff',
-    '#92ccff',
-  ],
-};
-
-const attribute_name = {
-  source: '#9CDCFE',
-  top: '#a4c8ff',
-  field: [
-    '#4793eb', //
-    '#56b3f7',
-    '#70aeff',
-    '#92ccff',
-    '#a4c8ff',
-    '#cce5ff',
-    '#d4e3ff',
-    '#e7f2ff',
-    '#ebf1ff',
-    '#f7f9ff',
-    '#f9f9ff',
-    '#fcfcff',
-    '#fdfcff',
-    '#ffffff',
-  ],
-};
-
 const css_tag = {
-  source: '#D7BA7D',
+  source: '#d7ba7d',
   top: '#d9a200',
   field: [
     '#af8d00', //
@@ -208,8 +146,8 @@ const css_tag = {
   ],
 };
 
-const fun = {
-  source: '#DCDCAA',
+const function_syntax = {
+  source: '#dcdcaa',
   top: '#d9a200',
   field: [
     '#cea700', //
@@ -229,106 +167,29 @@ const fun = {
   ],
 };
 
-const syntaxClass = {
-  source: '#4EC9B0',
-  top: '#469da8',
-  field: [
-    '#005b65', //
-    '#00658c',
-    '#006973',
-    '#067faf',
-    '#25828e',
-    '#399aca',
-    '#469da8',
-    '#5ab5e6',
-    '#60baec',
-    '#63b8c3',
-    '#7cd0dc',
-    '#7fd3df',
-    '#80d0ff',
-    '#9cf0fc',
-  ],
-};
-
-const number = {
-  source: '#B5CEA8',
-  top: '#c3ffcd',
-  field: [
-    '#18a659', //
-    '#1fc46a',
-    '#27ae60',
-    '#2ecc71',
-    '#41c271',
-    '#4ae183',
-    '#61de8a',
-    '#6bfe9c',
-    '#7efba4',
-    '#c3ffcd',
-    '#c3ffce',
-    '#eaffea',
-    '#f5fff3',
-    '#ffffff',
-  ],
-};
-
-const string = {
-  source: '#CE9178',
-  top: '#d7791d',
-  field: [
-    '#b56100', //
-    '#b66000',
-    '#d7791d',
-    '#d87813',
-    '#d97a1f',
-    '#ec8826',
-    '#f89230',
-    '#f89237',
-    '#ffb77d',
-    '#ffb780',
-    '#ffdcc3',
-    '#ffdcc4',
-    '#ffede3',
-    '#fff8f5',
-  ],
-};
-
 export const syntax = {
-  // #C8C8C8 #c9cccd
-  label: '#c9cccd',
+  // #6a9955 #8d9193
+  comment: ansi.brightWhite._60,
+
   // #808080 #8392a4
   tag: ansi.black._60,
-  // #D4D4D4 #d4e4f8
-  operator: ansi.black._90,
-  // #6A9955 #8e9192
-  comment: ansi.white._60,
+
+  // #d4d4d4
+  keyword_operator: '#ff0000',
+
+  // #d16969 #d0493a
+  regex: ansi.red._50,
+  // #ce9178 #c2c8bf
+  string: ansi.tan._80,
+
   // #000080 #001127
   header: ansi.blue._5,
-  // #569CD6 #4793eb
-  language_constant: ansi.blue._60,
-  // #4FC1FF #56b3f7
-  other_constant: ansi.blue._70,
-  // #9CDCFE #a4c8ff
-  attribute_name: ansi.blue._80,
-  // #D7BA7D
+
+  // #d7ba7d
   css_tag: '#d9a200',
-  // #DCDCAA
-  function: '#ffdf9f',
 
-  // #CE9178
-  string: '#cea700',
-
-  // #D16969 #d0493a
-  regex: ansi.red._50,
-  // #C586C0 #b875db
-  keyword_control: ansi.magenta._60,
-  // #B267E6 #9c5cbf
-  debug_token: ansi.magenta._50,
-
-  // #B5CEA8
-  numeric_constant: '#7efba4',
-
-  // #4EC9B0
-  class: '#4EC9B0',
+  // #dcdcaa
+  function: '#fff0ca',
 };
 
 const primary = file.interface.primary;
