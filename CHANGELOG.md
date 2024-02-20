@@ -49,3 +49,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added light theme 
 - Created color schema
 - Fixed light reference
+
+## [0.0.7]
+
+- Added dark syntax highlighting
