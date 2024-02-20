@@ -1,3 +1,4 @@
+import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const extensionButton = {
@@ -37,16 +38,16 @@ const extensionBadge = {
 
 const extensionIcon = {
   // The icon color for extension ratings. {default: #ff8e00}
-  starForeground: tokens.warning,
+  starForeground: chroma(tokens.warning).alpha(0.9).hex(),
 
   // The icon color for extension verified publisher. {default: #3794ff}
-  verifiedForeground: tokens.warning,
+  verifiedForeground: chroma(tokens.warning).alpha(0.9).hex(),
 
   // The icon color for pre-release extension. {default: #1d9271}
-  preReleaseForeground: tokens.secondaryContainer,
+  preReleaseForeground: chroma(tokens.secondaryContainer).alpha(0.9).hex(),
 
   // The icon color for extension sponsor. {default: #d758b3}
-  sponsorForeground: tokens.errorFixed,
+  sponsorForeground: chroma(tokens.errorFixed).alpha(0.9).hex(),
 };
 
 export default {

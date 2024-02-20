@@ -3,12 +3,13 @@
 // The Minimap shows a minified version of the current file.
 // ---------------------------------------------------------
 
+import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const minimap = {
   // Highlight color for matches from search within files.
   // {default: #d18616}
-  findMatchHighlight: tokens.good,
+  findMatchHighlight: chroma(tokens.good).alpha(0.9).hex(),
 
   // Highlight color for the editor selection. {default: #264f78}
   selectionHighlight: undefined, // Done
@@ -27,7 +28,7 @@ const minimap = {
 
   // Minimap marker color for repeating editor selections.
   // {default: #676767}
-  selectionOccurrenceHighlight: tokens.onSurfaceVariant,
+  selectionOccurrenceHighlight: chroma(tokens.onSurfaceVariant).alpha(0.9).hex(),
 
   // Opacity of foreground elements rendered in the minimap. For example,
   // "#000000c0" will render the elements with 75% opacity.
