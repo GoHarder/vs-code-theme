@@ -2,10 +2,10 @@ import { tokens } from '../colors/interface.js';
 
 const badge = {
   // Badge foreground color. {default: #ffffff}
-  foreground: tokens.tertiary,
+  foreground: tokens.onTertiaryContainer,
 
   // Badge background color. {default: #4d4d4d}
-  background: '#00000000',
+  background: tokens.tertiaryContainer,
 };
 
 export default {
