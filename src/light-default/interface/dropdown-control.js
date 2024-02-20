@@ -8,16 +8,16 @@
 import { tokens } from '../colors/interface.js';
 
 const dropdown = {
-  // Dropdown background. {default: #3c3c3c}
+  // Dropdown background. {default: #ffffff}
   background: '#00000000',
 
   // Dropdown list background. {default: null}
   listBackground: tokens.surfaceContainer,
 
-  // Dropdown border. {default: #3c3c3c}
+  // Dropdown border. {default: #cecece}
   border: tokens.outline,
 
-  // Dropdown foreground. {default: #f0f0f0}
+  // Dropdown foreground. {default: #616161}
   foreground: tokens.onSurfaceVariant,
 };
 

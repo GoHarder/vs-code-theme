@@ -3,16 +3,16 @@ import { tokens } from '../colors/interface.js';
 
 const scrollbar = {
   // Scrollbar slider shadow to indicate that the view is scrolled.
-  // {default: #000000}
+  // {default: #dddddd}
   shadow: chroma(tokens.shadow).alpha(0.36).hex(),
 };
 
 const scrollbarSlider = {
   // Scrollbar slider background color when clicked on.
-  // {default: #bfbfbf66}
+  // {default: #00000099}
   activeBackground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
 
-  // Scrollbar slider background color. {default: #79797966}
+  // Scrollbar slider background color. {default: #64646466}
   background: chroma(tokens.onSurfaceVariant).alpha(0.18).hex(),
 
   // Scrollbar slider background color when hovering. {default: #646464b3}

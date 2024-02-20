@@ -10,19 +10,19 @@ const button = {
   // Button foreground color. {default: #ffffff}
   foreground: tokens.onPrimary,
 
-  // Button background color. {default: #0e639c}
+  // Button background color. {default: #007acc}
   background: tokens.primary,
 
-  // Button background color when hovering. {default: #1177bb}
+  // Button background color when hovering. {default: #0062a3}
   hoverBackground: tokens.primaryHover,
 
   // Secondary button foreground color. {default: #ffffff}
   secondaryForeground: tokens.onSecondaryContainer,
 
-  // Secondary button background color. {default: #3a3d41}
+  // Secondary button background color. {default: #5f6a79}
   secondaryBackground: tokens.secondaryContainer,
 
-  // Secondary button background color when hovering. {default: #45494e}
+  // Secondary button background color when hovering. {default: #4c5561}
   secondaryHoverBackground: tokens.secondaryContainerHover,
 
   // Button border color. {default: null}
@@ -33,21 +33,21 @@ const button = {
 };
 
 const checkbox = {
-  // Background color of checkbox widget. {default: #3c3c3c}
+  // Background color of checkbox widget. {default: #ffffff}
   background: '#00000000',
 
-  // Foreground color of checkbox widget. {default: #f0f0f0}
+  // Foreground color of checkbox widget. {default: #616161}
   foreground: tokens.primary,
 
-  // Border color of checkbox widget. {default: #3c3c3c}
+  // Border color of checkbox widget. {default: #cecece}
   border: tokens.onSurfaceVariant,
 
   // Background color of checkbox widget when the element it's in is
-  // selected. {default: #252526}
+  // selected. {default: #f3f3f3}
   selectBackground: undefined, // TODO: checkbox.selectBackground
 
   // Border color of checkbox widget when the element it's in is selected.
-  // {default: #c5c5c5}
+  // {default: #424242}
   selectBorder: undefined, // TODO: checkbox.selectBorder
 };
 

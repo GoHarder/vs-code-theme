@@ -9,7 +9,7 @@ import { tokens } from '../colors/interface.js';
 
 const toolbar = {
   // Toolbar background when hovering over actions using the mouse.
-  // {default: #5a5d5e50}
+  // {default: #b8b8b850}
   hoverBackground: chroma(tokens.onSurfaceVariant).alpha(0.1).hex(),
 
   // Toolbar outline when hovering over actions using the mouse.
@@ -17,7 +17,7 @@ const toolbar = {
   hoverOutline: undefined, // Done
 
   // Toolbar background when holding the mouse over actions.
-  // {default: #5a5d5e50}
+  // {default: #a6a6a650}
   activeBackground: tokens.secondaryContainer,
 };
 

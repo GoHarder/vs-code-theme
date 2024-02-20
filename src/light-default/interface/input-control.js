@@ -8,69 +8,69 @@ import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const input = {
-  // Input box background. {default: #3c3c3c}
+  // Input box background. {default: #ffffff}
   background: '#00000000',
 
   // Input box border. {default: null}
   border: tokens.outline,
 
-  // Input box foreground. {default: #cccccc}
+  // Input box foreground. {default: #616161}
   foreground: tokens.onSurface,
 
-  // Input box foreground color for placeholder text. {default: #cccccc80}
+  // Input box foreground color for placeholder text. {default: #61616180}
   placeholderForeground: tokens.onSurfaceVariant,
 };
 
 const inputOption = {
   // Background color of activated options in input fields.
-  // {default:#007fd466}
+  // {default: #0090f133}
   activeBackground: tokens.secondaryContainer,
 
-  // Border color of activated options in input fields. {default:#007acc}
+  // Border color of activated options in input fields. {default: #007acc}
   activeBorder: tokens.secondaryContainer,
 
   // Foreground color of activated options in input fields.
-  // {default:#ffffff}
+  // {default: #000000}
   activeForeground: tokens.onSecondaryContainer,
 
   // Background color of activated options in input fields.
-  // {default:#5a5d5e80}
+  // {default: #b8b8b850}
   hoverBackground: chroma(tokens.onSurfaceVariant).alpha(0.1).hex(),
 };
 
 const inputValidation = {
   // Input validation background color for error severity.
-  // {default: #5a1d1d}
-  errorBackground: tokens.errorContainer,
+  // {default: #f2dede}
+  errorBackground: tokens.error,
 
   // Input validation foreground color for error severity. {default: null}
-  errorForeground: tokens.onSurface,
+  errorForeground: tokens.onError,
 
   // Input validation border color for error severity. {default: #be1100}
-  errorBorder: tokens.errorContainer,
+  errorBorder: tokens.error,
 
   // Input validation background color for information severity.
-  // {default: #063b49}
-  infoBackground: tokens.infoContainer,
+  // {default: #d6ecf2}
+  infoBackground: tokens.info,
 
   // Input validation foreground color for information severity.
   // {default: null}
-  infoForeground: tokens.onInfoContainer,
+  infoForeground: tokens.onInfo,
 
   // Input validation border color for information severity.
   // {default: #007acc}
-  infoBorder: tokens.infoContainer,
+  infoBorder: tokens.info,
 
   // Input validation background color for information warning.
-  // {default: #352a05}
-  warningBackground: tokens.warning,
+  // {default: #f6f5d2}
+  warningBackground: tokens.warningFixed,
 
   // Input validation foreground color for warning severity. {default: null}
   warningForeground: tokens.onWarning,
 
   // Input validation border color for warning severity.
   // {default: #b89500}
-  warningBorder: tokens.warning,
+  warningBorder: tokens.warningFixed,
 };
 
 export default {

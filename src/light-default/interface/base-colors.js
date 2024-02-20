@@ -1,21 +1,22 @@
 import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
-// Overall border color for focused elements. {default: #007fd4}
+// Overall border color for focused elements. {default: #0090f1}
 const focusBorder = tokens.secondary;
 
-// Overall foreground color. {default: #cccccc}
+// Overall foreground color. {default: #616161}
+
 const foreground = tokens.onSurface;
 
-// Overall foreground for disabled elements. {default: #cccccc80}
+// Overall foreground for disabled elements. {default: #61616180}
 const disabledForeground = chroma(tokens.onSurface).alpha(0.5).hex();
 
 // Foreground color for description text providing additional information,
-// for example for a label. {default: #ccccccb3}
+// for example for a label. {default: #717171}
 const descriptionForeground = chroma(tokens.onSurface).alpha(0.7).hex();
 
 // Overall foreground color for error messages (this color is only used if
-// not overridden by a component). {default: #f48771}
+// not overridden by a component). {default: #ff1212b3}
 const errorForeground = tokens.errorFixed;
 
 const widget = {
@@ -24,7 +25,7 @@ const widget = {
   border: undefined,
 
   // Shadow color of widgets such as Find/Replace inside the editor.
-  // {default: #0000005c}
+  // {default: #00000029}
   shadow: chroma(tokens.shadow).alpha(0.36).hex(),
 };
 
@@ -36,12 +37,12 @@ const selection = {
 };
 
 const icon = {
-  // The default color for icons in the workbench. {default: #c5c5c5}
+  // The default color for icons in the workbench. {default: #424242}
   foreground: tokens.onSurface,
 };
 
 const sash = {
-  // The hover border color for draggable sashes. {default: #007fd4}
+  // The hover border color for draggable sashes. {default: #0090f1}
   hoverBorder: undefined,
 };
 
