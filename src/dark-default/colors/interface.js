@@ -136,11 +136,8 @@ export const syntax = {
   label: ansi.brightWhite._80,
   // #d16969 #d0493a
   regex: ansi.red._50,
-  // #ce9178 #c2c8bf
-  // string: ansi.tan._80,
-
-  string: '#d9c4a1',
-
+  // #ce9178 #d9c4a1
+  string: ansi.tan._80,
   // #d7ba7d #f9bd1e
   css_tag: ansi.yellow._80,
   // #dcdcaa #ffdf9f
@@ -167,7 +164,7 @@ export const syntax = {
 
 const primary = file.interface.primary;
 const secondary = file.interface.secondary;
-const tertiary = ansi.yellow;
+const tertiary = file.interface.tertiary;
 const error = file.interface.error;
 const neutral = file.interface.neutral;
 const neutralVariant = file.interface.neutralVariant;
@@ -270,4 +267,11 @@ export const tokens = {
   onInfoContainer: info._90,
 };
 
-console.log(Date.now());
+/** @type {Intl.DateTimeFormatOptions} */
+const dateSettings = {
+  timeStyle: 'medium',
+};
+
+const internal = new Intl.DateTimeFormat('en-us', dateSettings);
+
+console.log(internal.format(Date.now()));

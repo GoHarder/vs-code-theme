@@ -901,3 +901,12 @@ export const tokens = {
   infoContainer: info._90,
   onInfoContainer: info._10,
 };
+
+/** @type {Intl.DateTimeFormatOptions} */
+const dateSettings = {
+  timeStyle: 'medium',
+};
+
+const internal = new Intl.DateTimeFormat('en-us', dateSettings);
+
+console.log(internal.format(Date.now()));
