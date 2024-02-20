@@ -36,17 +36,16 @@ import integratedTerminal from './integrated-terminal.js';
 import debug from './debug.js';
 import testing from './testing.js';
 import welcomePage from './welcome-page.js';
-import sourceControl from './source-control.js';
 import git from './git.js';
 import settingsEditor from './settings-editor.js';
 import breadcrumbs from './breadcrumbs.js';
 import snippets from './snippets.js';
-import symbolIcons from './symbol-icons.js'; // NOTE: Checked
+import symbolIcons from './symbol-icons.js';
 import debugIcons from './debug-icons.js';
 import notebook from './notebook.js';
 import chart from './chart.js';
 import ports from './ports.js';
-import commentsView from './comments-view.js'; // NOTE: Done
+import commentsView from './comments-view.js';
 
 const rawSections = [
   baseColors,
@@ -87,7 +86,6 @@ const rawSections = [
   debug,
   testing,
   welcomePage,
-  sourceControl,
   git,
   settingsEditor,
   breadcrumbs,

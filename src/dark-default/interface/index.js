@@ -36,7 +36,6 @@ import integratedTerminal from './integrated-terminal.js';
 import debug from './debug.js';
 import testing from './testing.js';
 import welcomePage from './welcome-page.js';
-import sourceControl from './source-control.js';
 import git from './git.js';
 import settingsEditor from './settings-editor.js';
 import breadcrumbs from './breadcrumbs.js';
@@ -87,7 +86,6 @@ const rawSections = [
   debug,
   testing,
   welcomePage,
-  sourceControl,
   git,
   settingsEditor,
   breadcrumbs,
