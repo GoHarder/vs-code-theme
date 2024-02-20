@@ -52,25 +52,25 @@ export default [
   {
     scope: 'constant.language',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: ['constant.numeric', 'variable.other.enummember', 'keyword.operator.plus.exponent', 'keyword.operator.minus.exponent'],
     settings: {
-      foreground: '#B5CEA8',
+      foreground: syntax.constant_numeric,
     },
   },
   {
     scope: 'constant.regexp',
     settings: {
-      foreground: '#646695',
+      foreground: syntax.variable_other,
     },
   },
   {
     scope: 'entity.name.tag',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -82,7 +82,7 @@ export default [
   {
     scope: 'entity.other.attribute-name',
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
@@ -110,20 +110,20 @@ export default [
     scope: 'markup.bold',
     settings: {
       fontStyle: 'bold',
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'markup.heading',
     settings: {
       fontStyle: 'bold',
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'markup.inserted',
     settings: {
-      foreground: '#B5CEA8',
+      foreground: syntax.constant_numeric,
     },
   },
   {
@@ -135,7 +135,7 @@ export default [
   {
     scope: 'markup.changed',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -147,7 +147,7 @@ export default [
   {
     scope: 'punctuation.definition.list.begin.markdown',
     settings: {
-      foreground: '#6796E6',
+      foreground: syntax.variable_other,
     },
   },
   {
@@ -165,7 +165,7 @@ export default [
   {
     scope: ['meta.preprocessor', 'entity.name.function.preprocessor'],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -177,37 +177,37 @@ export default [
   {
     scope: 'meta.preprocessor.numeric',
     settings: {
-      foreground: '#B5CEA8',
+      foreground: syntax.constant_numeric,
     },
   },
   {
     scope: 'meta.structure.dictionary.key.python',
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
     scope: 'meta.diff.header',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'storage',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'storage.type',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: ['storage.modifier', 'keyword.operator.noexcept'],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -237,7 +237,7 @@ export default [
   {
     scope: ['punctuation.definition.template-expression.begin', 'punctuation.definition.template-expression.end', 'punctuation.section.embedded'],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -249,19 +249,19 @@ export default [
   {
     scope: ['support.type.vendored.property-name', 'support.type.property-name', 'variable.css', 'variable.scss', 'variable.other.less', 'source.coffee.embedded'],
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
     scope: 'keyword',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'keyword.control',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -284,31 +284,31 @@ export default [
       'keyword.operator.wordlike',
     ],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'keyword.other.unit',
     settings: {
-      foreground: '#B5CEA8',
+      foreground: syntax.function,
     },
   },
   {
     scope: ['punctuation.section.embedded.begin.php', 'punctuation.section.embedded.end.php'],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
     scope: 'support.function.git-rebase',
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
     scope: 'constant.sha.git-rebase',
     settings: {
-      foreground: '#B5CEA8',
+      foreground: syntax.constant_numeric,
     },
   },
   {
@@ -320,7 +320,7 @@ export default [
   {
     scope: 'variable.language',
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -365,37 +365,37 @@ export default [
       'storage.type.primitive.groovy',
     ],
     settings: {
-      foreground: '#4EC9B0',
+      foreground: syntax.class,
     },
   },
   {
     scope: ['meta.type.cast.expr', 'meta.type.new.expr', 'support.constant.math', 'support.constant.dom', 'support.constant.json', 'entity.other.inherited-class'],
     settings: {
-      foreground: '#4EC9B0',
+      foreground: syntax.class,
     },
   },
   {
     scope: ['keyword.control', 'source.cpp keyword.operator.new', 'keyword.operator.delete', 'keyword.other.using', 'keyword.other.operator', 'entity.name.operator'],
     settings: {
-      foreground: '#C586C0',
+      foreground: syntax.keyword,
     },
   },
   {
     scope: ['variable', 'meta.definition.variable.name', 'support.variable', 'entity.name.variable', 'constant.other.placeholder'],
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
     scope: ['variable.other.constant', 'variable.other.enummember'],
     settings: {
-      foreground: '#4FC1FF',
+      foreground: syntax.variable_other,
     },
   },
   {
     scope: ['meta.object-literal.key'],
     settings: {
-      foreground: '#9CDCFE',
+      foreground: syntax.variable,
     },
   },
   {
@@ -452,7 +452,7 @@ export default [
   {
     scope: ['constant.character', 'constant.other.option'],
     settings: {
-      foreground: '#569CD6',
+      foreground: syntax.constant_language,
     },
   },
   {
@@ -464,7 +464,7 @@ export default [
   {
     scope: 'entity.name.label',
     settings: {
-      foreground: '#C8C8C8',
+      foreground: syntax.label,
     },
   },
   {
@@ -488,7 +488,7 @@ export default [
   {
     scope: 'token.debug-token',
     settings: {
-      foreground: '#B267E6',
+      foreground: syntax.debug_token,
     },
   },
 ];

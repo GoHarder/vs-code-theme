@@ -24,6 +24,8 @@ const ansi = {
   orange: file.terminal.orange,
   brightOrange: file.terminal.brightOrange,
   tan: file.terminal.tan,
+  teal: file.terminal.teal,
+  brightTeal: file.terminal.brightTeal,
 };
 
 export const terminal = {
@@ -125,71 +127,42 @@ export const terminal = {
   onBrightWhiteContainer: ansi.brightWhite._90,
 };
 
-const css_tag = {
-  source: '#d7ba7d',
-  top: '#d9a200',
-  field: [
-    '#af8d00', //
-    '#b88900',
-    '#cea700',
-    '#d9a200',
-    '#edb20a',
-    '#eec209',
-    '#f1c40f',
-    '#f9bd1e',
-    '#ffdf9f',
-    '#ffe084',
-    '#ffefd5',
-    '#fff0ca',
-    '#fff8f0',
-    '#fff8f2',
-  ],
-};
-
-const function_syntax = {
-  source: '#dcdcaa',
-  top: '#d9a200',
-  field: [
-    '#cea700', //
-    '#d9a200',
-    '#edb20a',
-    '#eec209',
-    '#f1c40f',
-    '#f9bd1e',
-    '#ffdf9f',
-    '#ffe084',
-    '#ffefd5',
-    '#fff0ca',
-    '#fff8f0',
-    '#fff8f2',
-    '#fffbff',
-    '#ffffff',
-  ],
-};
-
 export const syntax = {
-  // #6a9955 #8d9193
-  comment: ansi.brightWhite._60,
-
   // #808080 #8392a4
   tag: ansi.black._60,
-
-  // #d4d4d4
-  keyword_operator: '#ff0000',
-
+  // #d4d4d4 #d4e4f8
+  keyword_operator: ansi.black._90,
+  //#c8c8c8 #c3c7c8
+  label: ansi.brightWhite._80,
   // #d16969 #d0493a
   regex: ansi.red._50,
   // #ce9178 #c2c8bf
-  string: ansi.tan._80,
+  // string: ansi.tan._80,
 
+  string: '#d9c4a1',
+
+  // #d7ba7d #f9bd1e
+  css_tag: ansi.yellow._80,
+  // #dcdcaa #ffdf9f
+  function: ansi.yellow._90,
+  // #6a9955 #8d9193
+  comment: ansi.brightWhite._60,
+  // #b5cea8 #c3ffcd
+  constant_numeric: ansi.brightGreen._95,
+  // #4ec9b0 #4dbcb2
+  class: ansi.brightTeal._70,
   // #000080 #001127
   header: ansi.blue._5,
-
-  // #d7ba7d
-  css_tag: '#d9a200',
-
-  // #dcdcaa
-  function: '#fff0ca',
+  // #569cd6 #4793eb
+  constant_language: ansi.blue._60,
+  // #4fc1ff #56b3f7
+  variable_other: ansi.blue._70,
+  // #9cdcfe
+  variable: ansi.blue._80,
+  // #c586c0 #d490f8
+  keyword: ansi.magenta._70,
+  // #b267e6 #b875db
+  debug_token: ansi.magenta._60,
 };
 
 const primary = file.interface.primary;

@@ -10,6 +10,7 @@ const path = getFilePath('dark-default.json');
 
 try {
   const data = {
+    $schema: 'vscode://schemas/color-theme',
     colors,
     tokenColors,
   };
