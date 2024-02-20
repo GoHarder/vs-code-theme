@@ -8,7 +8,7 @@
 import { tokens } from '../colors/interface.js';
 
 const activityBar = {
-  // Activity Bar background color. {default: #333333}
+  // Activity Bar background color. {default: #2c2c2c}
   background: tokens.surfaceContainerHigh,
 
   // Drag and drop feedback color for the activity bar items. The activity
@@ -38,12 +38,26 @@ const activityBar = {
   activeFocusBorder: tokens.secondaryContainer,
 };
 
+const activityBarTop = {
+  // {default: #424242}
+  activeBorder: tokens.primary,
+
+  // {default: #424242}
+  dropBorder: tokens.onSurfaceVariant,
+
+  // {default: #424242}
+  foreground: tokens.primary,
+
+  // {default: #424242bf}
+  inactiveForeground: tokens.onSurfaceVariant,
+};
+
 const activityBarBadge = {
   // Activity notification badge background color. {default: #007acc}
-  background: tokens.surfaceContainerHigh,
+  background: tokens.tertiaryContainer,
 
   // Activity notification badge foreground color. {default: #ffffff}
-  foreground: tokens.tertiary,
+  foreground: tokens.onTertiaryContainer,
 };
 
 export default {
@@ -57,4 +71,8 @@ export default {
   'activityBar.activeBorder': activityBar.activeBorder,
   'activityBar.activeBackground': activityBar.activeBackground,
   'activityBar.activeFocusBorder': activityBar.activeFocusBorder,
+  'activityBarTop.activeBorder': activityBarTop.activeBorder,
+  'activityBarTop.dropBorder': activityBarTop.dropBorder,
+  'activityBarTop.foreground': activityBarTop.foreground,
+  'activityBarTop.inactiveForeground': activityBarTop.inactiveForeground,
 };

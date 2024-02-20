@@ -38,12 +38,26 @@ const activityBar = {
   activeFocusBorder: tokens.secondaryContainer,
 };
 
+const activityBarTop = {
+  // {default: }
+  activeBorder: tokens.primary, // TODO: activityBarTop.activeBorder
+
+  // {default: }
+  dropBorder: tokens.onSurfaceVariant, // TODO: activityBarTop.dropBorder
+
+  // {default: }
+  foreground: tokens.primary, // TODO: activityBarTop.foreground
+
+  // {default: }
+  inactiveForeground: tokens.onSurfaceVariant, // TODO: activityBarTop.inactiveForeground
+};
+
 const activityBarBadge = {
   // Activity notification badge background color. {default: #007acc}
-  background: tokens.surfaceContainerHigh,
+  background: tokens.tertiaryContainer,
 
   // Activity notification badge foreground color. {default: #ffffff}
-  foreground: tokens.tertiary,
+  foreground: tokens.onTertiaryContainer,
 };
 
 export default {
