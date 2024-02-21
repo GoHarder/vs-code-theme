@@ -1,10 +1,11 @@
 {
   "name": "goharder-vscode-theme",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "GoHarder theme for visual studio code.",
   "scripts": {
     "dev-dark": "cd src/dark-default; nodemon index",
     "dev-light": "cd src/light-default; nodemon index",
+    "git-log": "git log origin/main..HEAD > git-log.txt",
     "package": "npx vsce package",
     "publish": "npx vsce publish",
     "login": "npx vsce login GoHarder",

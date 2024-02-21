@@ -53,3 +53,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.7]
 
 - Added dark syntax highlighting
+
+## [0.0.8]
+- Adjusted light interface
+- Removed bad import
+- Adjusted color palette
+- Added schema validation
+- Set to load off of config file
+- Added required transparency
+- Added syntax to dark debug toolbar
+- Removed deprecated settings
+- Added readable build times
+- Adjusted badge colors
+- Fixed menu bar import
+- Added settings for top activity bars
+- Updated references
