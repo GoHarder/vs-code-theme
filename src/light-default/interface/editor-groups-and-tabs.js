@@ -10,10 +10,10 @@ import { tokens } from '../colors/interface.js';
 
 const editorGroup = {
   // Color to separate multiple editor groups from each other.
-  // {default: #444444}
+  // {default: #e7e7e7}
   border: tokens.outlineVariant,
 
-  // Background color when dragging editors around. {default: #53595d80}
+  // Background color when dragging editors around. {default: #2677cb2e}
   dropBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // Background color of an empty editor group. {default: null}
@@ -24,12 +24,12 @@ const editorGroup = {
 
   // Foreground color of text shown over editors when dragging files. This
   // text informs the user that they can hold shift to drop into the editor.
-  // {default: #cccccc}
+  // {default: #616161}
   dropIntoPromptForeground: undefined, // Done
 
   // Background color of text shown over editors when dragging files. This
   // text informs the user that they can hold shift to drop into the editor.
-  // {default: #252526}
+  // {default: #f3f3f3}
   dropIntoPromptBackground: tokens.surface,
 
   // Border color of text shown over editors when dragging files. This text
@@ -40,11 +40,11 @@ const editorGroup = {
 
 const editorGroupHeader = {
   // Background color of the editor group title header when Tabs are
-  // disabled {default: #1e1e1e}
+  // disabled {default: #ffffff}
   // NOTE: set "workbench.editor.showTabs": false.
   noTabsBackground: tokens.surface,
 
-  // Background color of the Tabs container. {default: #252526}
+  // Background color of the Tabs container. {default: #f3f3f3}
   tabsBackground: tokens.surfaceContainerLow,
 
   // Border color below the editor tabs control when tabs are enabled.
@@ -57,10 +57,10 @@ const editorGroupHeader = {
 };
 
 const tab = {
-  // Active Tab background color in an active group. {default: #1e1e1e}
+  // Active Tab background color in an active group. {default: #ffffff}
   activeBackground: undefined, // Done
 
-  // Active Tab foreground color in an active group. {default: #ffffff}
+  // Active Tab foreground color in an active group. {default: #333333}
   activeForeground: tokens.onSurface,
 
   // Bottom border for the active tab. {default: null}
@@ -70,25 +70,25 @@ const tab = {
   activeBorderTop: tokens.primary,
 
   // Border on the top of modified (dirty) active tabs in an active group.
-  // {default: #3399cc}
+  // {default: #33aaee}
   activeModifiedBorder: tokens.secondary,
 
-  // Inactive Tab background color. {default: #2d2d2d}
+  // Inactive Tab background color. {default: #ececec}
   inactiveBackground: tokens.surfaceContainerLow,
 
-  // Inactive Tab foreground color in an active group. {default: #ffffff80}
+  // Inactive Tab foreground color in an active group. {default: #333333b3}
   inactiveForeground: chroma(tokens.onSurface).alpha(0.7).hex(),
 
   // Border on the top of modified (dirty) inactive tabs in an active
-  // group. {default: #3399cc80}
+  // group. {default: #33aaee80}
   inactiveModifiedBorder: undefined, // Done
 
   // Active Tab background color in an inactive editor group.
-  // {default: #1e1e1e}
+  // {default: #ffffff}
   unfocusedActiveBackground: undefined, // Done
 
   // Active tab foreground color in an inactive editor group.
-  // {default: #ffffff80}
+  // {default: #333333b3}
   unfocusedActiveForeground: tokens.onSurfaceVariant,
 
   // Bottom border for the active tab in an inactive editor group.
@@ -100,26 +100,26 @@ const tab = {
   unfocusedActiveBorderTop: undefined, // Done
 
   // Border on the top of modified (dirty) active tabs in an unfocused
-  // group. {default: #3399cc80}
+  // group. {default: #33aaeeb3}
   unfocusedActiveModifiedBorder: undefined, // Done
 
   // Inactive Tab background color in an unfocused group.
-  // {default: #2d2d2d}
+  // {default: #ececec}
   unfocusedInactiveBackground: undefined, // Done
 
   // Inactive tab foreground color in an inactive editor group.
-  // {default: #ffffff40}
+  // {default: #33333359}
   unfocusedInactiveForeground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
 
   // Border on the top of modified (dirty) inactive tabs in an unfocused
-  // group. {default: #3399cc40}
+  // group. {default: #33aaee40}
   unfocusedInactiveModifiedBorder: undefined,
 
-  // Border to separate Tabs from each other. {default: #252526}
+  // Border to separate Tabs from each other. {default: #f3f3f3}
   border: tokens.surfaceVariant,
 
   // Border on the right of the last pinned editor to separate from unpinned
-  // editors. {default: #585858}
+  // editors. {default: #a9a9a9}
   lastPinnedBorder: tokens.outline,
 
   // Border to highlight tabs when hovering. {default: null}
@@ -146,17 +146,17 @@ const tab = {
 
 const editorPane = {
   // Background color of the editor pane visible on the left and right side
-  // of the centered editor layout. {default: #1e1e1e}
+  // of the centered editor layout. {default: #ffffff}
   background: tokens.surfaceContainerLow,
 };
 
 const sideBySideEditor = {
   // Color to separate two editors from each other when shown side by
-  // side in an editor group from top to bottom. {default: #444444}
+  // side in an editor group from top to bottom. {default: #e7e7e7}
   horizontalBorder: tokens.outlineVariant,
 
   // Color to separate two editors from each other when shown side by
-  // side in an editor group from left to right. {default: #444444}
+  // side in an editor group from left to right. {default: #e7e7e7}
   verticalBorder: tokens.outlineVariant,
 };
 

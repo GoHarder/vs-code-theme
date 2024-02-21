@@ -10,23 +10,23 @@ const minimap = {
   // {default: #d18616}
   findMatchHighlight: tokens.good,
 
-  // Highlight color for the editor selection. {default: #264f78}
+  // Highlight color for the editor selection. {default: #add6ff}
   selectionHighlight: undefined, // Done
 
-  // {default: #3794ff}
+  // {default: #1a85ff}
   infoHighlight: undefined, // Done
 
   // Highlight color for errors within the editor. {default: #ff1212b3}
-  errorHighlight: tokens.errorFixed,
+  errorHighlight: tokens.error,
 
-  // Highlight color for warnings within the editor. {default: #cca700}
-  warningHighlight: undefined, // Done
+  // Highlight color for warnings within the editor. {default: #bf8803}
+  warningHighlight: undefined, // TODO: minimap.warningHighlight
 
   // Minimap background color. {default: null}
   background: tokens.surfaceContainerLow,
 
   // Minimap marker color for repeating editor selections.
-  // {default: #676767}
+  // {default: #c9c9c9}
   selectionOccurrenceHighlight: tokens.onSurfaceVariant,
 
   // Opacity of foreground elements rendered in the minimap. For example,
@@ -36,24 +36,24 @@ const minimap = {
 };
 
 const minimapSlider = {
-  // Minimap slider background color. {default: #79797933}
+  // Minimap slider background color. {default: #64646433}
   background: undefined, // Done
 
   // Minimap slider background color when hovering. {default: #64646459}
   hoverBackground: undefined, // Done
 
-  // Minimap slider background color when clicked on. {default: #bfbfbf33}
+  // Minimap slider background color when clicked on. {default: #0000004d}
   activeBackground: undefined, // Done
 };
 
 const minimapGutter = {
-  // Minimap gutter color for added content. {default: #487e02}
+  // Minimap gutter color for added content. {default: #48985d}
   addedBackground: undefined, // Done
 
-  // Minimap gutter color for modified content. {default: #1b81a8}
+  // Minimap gutter color for modified content. {default: #2090d3}
   modifiedBackground: undefined, // Done
 
-  // Minimap gutter color for deleted content. {default: #f14c4c}
+  // Minimap gutter color for deleted content. {default: #e51400}
   deletedBackground: undefined, // Done
 };
 

@@ -1,18 +1,18 @@
 import { tokens } from '../colors/interface.js';
 
 const titleBar = {
-  // Title Bar background when the window is active. {default: #3c3c3c}
+  // Title Bar background when the window is active. {default: #dddddd}
   activeBackground: tokens.surfaceContainerHigh,
 
-  // Title Bar foreground when the window is active. {default: #cccccc}
+  // Title Bar foreground when the window is active. {default: #333333}
   activeForeground: tokens.onSurface,
 
   // Title Bar background when the window is inactive.
-  // {default: #3c3c3c99}
+  // {default: #dddddd99}
   inactiveBackground: tokens.surfaceContainerHigh,
 
   // Title Bar foreground when the window is inactive.
-  // {default: #cccccc99}
+  // {default: #33333399}
   inactiveForeground: tokens.onSurfaceVariant,
 
   // Title bar border color. {default: null}

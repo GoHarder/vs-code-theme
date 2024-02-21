@@ -7,7 +7,7 @@ import chroma from 'chroma-js';
 import { tokens } from '../colors/interface.js';
 
 const sideBar = {
-  // Side Bar background color. {default: #252526}
+  // Side Bar background color. {default: #f3f3f3}
   background: tokens.surfaceContainer,
 
   // Side Bar foreground color. The Side Bar is the container for views
@@ -19,7 +19,7 @@ const sideBar = {
 
   // Drag and drop feedback color for the side bar sections. The color
   // should have transparency so that the side bar sections can still
-  // shine through. {default: #53595d80}
+  // shine through. {default: #2677cb2e}
   dropBackground: chroma(tokens.onSurface).alpha(0.1).hex(),
 };
 

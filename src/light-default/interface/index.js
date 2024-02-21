@@ -63,7 +63,7 @@ const rawSections = [
   profiles,
   sideBar,
   minimap,
-  editorGroupsAndTabs,
+  editorGroupsAndTabs, // NOTE: Bookmark
   editor,
   diffEditor,
   chat,
@@ -73,9 +73,9 @@ const rawSections = [
   mergeConflicts,
   panel,
   statusBar,
-  titleBar,
-  menuBar,
-  commandCenter,
+  titleBar, // DONE
+  menuBar, // DONE
+  commandCenter, // DONE
   notification,
   banner,
   extension,
