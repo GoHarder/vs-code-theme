@@ -39,17 +39,17 @@ const activityBar = {
 };
 
 const activityBarTop = {
-  // {default: }
-  activeBorder: tokens.primary, // TODO: activityBarTop.activeBorder
+  // {default: #e7e7e7}
+  activeBorder: tokens.primary,
 
-  // {default: }
-  dropBorder: tokens.onSurfaceVariant, // TODO: activityBarTop.dropBorder
+  // {default: #e7e7e7}
+  dropBorder: tokens.onSurfaceVariant,
 
-  // {default: }
-  foreground: tokens.primary, // TODO: activityBarTop.foreground
+  // {default: #e7e7e7}
+  foreground: tokens.primary,
 
-  // {default: }
-  inactiveForeground: tokens.onSurfaceVariant, // TODO: activityBarTop.inactiveForeground
+  // {default: #e7e7e799}
+  inactiveForeground: tokens.onSurfaceVariant,
 };
 
 const activityBarBadge = {
@@ -71,4 +71,8 @@ export default {
   'activityBar.activeBorder': activityBar.activeBorder,
   'activityBar.activeBackground': activityBar.activeBackground,
   'activityBar.activeFocusBorder': activityBar.activeFocusBorder,
+  'activityBarTop.activeBorder': activityBarTop.activeBorder,
+  'activityBarTop.dropBorder': activityBarTop.dropBorder,
+  'activityBarTop.foreground': activityBarTop.foreground,
+  'activityBarTop.inactiveForeground': activityBarTop.inactiveForeground,
 };
