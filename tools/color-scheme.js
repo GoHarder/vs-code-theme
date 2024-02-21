@@ -7,6 +7,7 @@ const file = await readJsonFile('./tools/src/gogh.json');
 const primary = file.interface.primary;
 const secondary = file.interface.secondary;
 const tertiary = file.interface.tertiary;
+const neutral = file.interface.neutral;
 
 const numberSort = (a, b) => a - b;
 
@@ -56,14 +57,15 @@ const getHueAndChroma = (hex) => {
  */
 
 /**
- * @param {InterfaceColor} pri
+ * @param {string} pri
  * @param {InterfaceColor} sec
  * @param {InterfaceColor} ter
+ * @param {string} [neu]
  */
-const createPalette = (pri, sec, ter) => {
-  const primary = getHueAndChroma(pri.color);
+const createPalette = (pri, sec, ter, neu) => {
+  const primary = getHueAndChroma(pri);
   let secondary = { hue: primary.hue, chroma: primary.chroma / 3 };
-  let tertiary = { hue: primary.hue - 60, chroma: primary.chroma / 3 };
+  let tertiary = { hue: primary.hue + 60, chroma: primary.chroma / 2 };
 
   if (sec) {
     if (sec.color) secondary = getHueAndChroma(sec.color);
@@ -91,8 +93,14 @@ const createPalette = (pri, sec, ter) => {
   const paletteS = TonalPalette.fromHueAndChroma(secondary.hue, secondary.chroma);
   const paletteT = TonalPalette.fromHueAndChroma(tertiary.hue, tertiary.chroma);
   const paletteE = TonalPalette.fromHueAndChroma(25, 84);
-  const paletteN = TonalPalette.fromHueAndChroma(primary.hue, Math.min(primary.chroma / 12, 4));
-  const paletteNV = TonalPalette.fromHueAndChroma(primary.hue, Math.min(primary.chroma / 6, 8));
+  let paletteN = TonalPalette.fromHueAndChroma(primary.hue, Math.min(primary.chroma / 12, 4));
+  let paletteNV = TonalPalette.fromHueAndChroma(primary.hue, Math.min(primary.chroma / 6, 8));
+
+  if (neu) {
+    const neutral = getHueAndChroma(neu);
+    paletteN = TonalPalette.fromHueAndChroma(neutral.hue, Math.min(neutral.chroma / 12, 4));
+    paletteNV = TonalPalette.fromHueAndChroma(neutral.hue, Math.min(neutral.chroma / 6, 8));
+  }
 
   const paletteGroups = [
     ['primary', paletteP, standardTones],
@@ -107,8 +115,6 @@ const createPalette = (pri, sec, ter) => {
     const [prefix, palette, tones] = group;
 
     const toneClump = getTones(prefix, palette, tones);
-
-    // console.log(toneClump);
 
     obj = { ...obj, ...toneClump };
 
@@ -126,7 +132,7 @@ const getOrange = (red, yellow, name) => {
 };
 
 const createSyntax = (pri, colors) => {
-  const priInt = argbFromHex(pri.color);
+  const priInt = argbFromHex(pri);
 
   const red = colors.find((color) => color.name === 'red');
   const yellow = colors.find((color) => color.name === 'yellow');
@@ -140,7 +146,7 @@ const createSyntax = (pri, colors) => {
 
   return colors.reduce((obj, color) => {
     let value = argbFromHex(color.value);
-    if (color.blend) value = Blend.harmonize(value, pri);
+    if (color.blend) value = Blend.harmonize(value, priInt);
 
     const hct = Hct.fromInt(value);
     const hue = hct.hue;
@@ -152,8 +158,6 @@ const createSyntax = (pri, colors) => {
 
     chunk = { base: color.value, ...chunk[color.name] };
 
-    console.log(chunk);
-
     obj[color.name] = chunk;
 
     return obj;
@@ -162,7 +166,7 @@ const createSyntax = (pri, colors) => {
 
 const palette = {
   $schema: './schema.json',
-  interface: createPalette(primary, secondary, tertiary),
+  interface: createPalette(primary, secondary, tertiary, neutral),
   terminal: createSyntax(primary, file.syntax),
 };
 
