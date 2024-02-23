@@ -68,3 +68,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed menu bar import
 - Added settings for top activity bars
 - Updated references
+
+## [0.0.9]
+- Debugged more light settings
+- Added comments
+- Added neutral option for color scheme generator
+- Updated schemas and references
+- Added todo settings
