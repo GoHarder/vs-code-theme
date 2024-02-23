@@ -54,10 +54,10 @@ const activityBarTop = {
 
 const activityBarBadge = {
   // Activity notification badge background color. {default: #007acc}
-  background: tokens.tertiaryContainer,
+  background: tokens.tertiary,
 
   // Activity notification badge foreground color. {default: #ffffff}
-  foreground: tokens.onTertiaryContainer,
+  foreground: tokens.onTertiary,
 };
 
 export default {

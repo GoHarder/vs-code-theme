@@ -75,3 +75,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added neutral option for color scheme generator
 - Updated schemas and references
 - Added todo settings
+
+## [0.0.10]
+- Debugged more light settings.
+- Added comments.
+- Added neutral option for color scheme generator.
+- Updated schemas and references.
+- Added todo settings.
