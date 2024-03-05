@@ -82,3 +82,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added neutral option for color scheme generator.
 - Updated schemas and references.
 - Added todo settings.
+
+## [0.1.0]
+- Updated tooling.
+- Added ghost text settings.
+- Cooled syntax tokens.

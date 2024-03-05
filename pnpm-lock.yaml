@@ -20,6 +20,9 @@ devDependencies:
   inquirer:
     specifier: ^9.2.14
     version: 9.2.14
+  tm-themes:
+    specifier: ^1.1.3
+    version: 1.1.3
   typescript:
     specifier: ^5.3.3
     version: 5.3.3
@@ -437,6 +440,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       has-flag: 4.0.0
+    dev: true
+
+  /tm-themes@1.1.3:
+    resolution: {integrity: sha512-cDumGGs9ZxTOcMYiWE1e0kPo1uHR/sO3jgzTan5KKGcHut5zB1FBXf0JgfQq55IVf2KgFeyAlp5sKJy22UPWUA==}
     dev: true
 
   /tmp@0.0.33:
