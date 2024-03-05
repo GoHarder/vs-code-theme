@@ -1,8 +1,8 @@
-import { argbFromHex, hexFromArgb, TonalPalette, Hct, Blend } from '@material/material-color-utilities';
+import { CorePalette, argbFromHex, hexFromArgb, TonalPalette, Hct, Blend } from '@material/material-color-utilities';
 import { readJsonFile, saveJsonFile } from '../lib/file-system.js';
 import chroma from 'chroma-js';
 
-const file = await readJsonFile('./tools/src/gogh.json');
+const file = await readJsonFile('./tools/src/nord.json');
 
 const primary = file.interface.primary;
 const secondary = file.interface.secondary;
@@ -40,11 +40,18 @@ const getTones = (prefix, palette, tones) => {
 /**
  * @param {string} hex
  */
-const getHueAndChroma = (hex) => {
+const getHueAndChroma = (hex, pri = false) => {
   const colorInt = argbFromHex(hex);
   const hct = Hct.fromInt(colorInt);
-  const hue = hct.hue;
-  const chroma = hct.chroma;
+  let hue = hct.hue;
+  let chroma = hct.chroma;
+
+  if (pri) {
+    const adj = new CorePalette(colorInt, false);
+
+    hue = adj.a1.hue;
+    chroma = adj.a1.chroma;
+  }
 
   return { hue, chroma };
 };
@@ -63,7 +70,7 @@ const getHueAndChroma = (hex) => {
  * @param {string} [neu]
  */
 const createPalette = (pri, sec, ter, neu) => {
-  const primary = getHueAndChroma(pri);
+  const primary = getHueAndChroma(pri, true);
   let secondary = { hue: primary.hue, chroma: primary.chroma / 3 };
   let tertiary = { hue: primary.hue + 60, chroma: primary.chroma / 2 };
 
@@ -170,4 +177,4 @@ const palette = {
   terminal: createSyntax(primary, file.syntax),
 };
 
-saveJsonFile('../src/colors/gogh.json', palette);
+saveJsonFile('../src/colors/nord.json', palette);
