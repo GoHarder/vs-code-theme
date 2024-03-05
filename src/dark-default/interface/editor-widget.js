@@ -83,14 +83,14 @@ const editorHoverWidget = {
 const editorGhostText = {
   // Border color of the ghost text shown by inline completion providers
   // and the suggest preview. {default: null}
-  border: undefined, // TODO: editorGhostText.border
+  border: tokens.surfaceContainerLow,
 
   // Background color of the ghost text in the editor. {default: null}
-  background: undefined, // TODO: editorGhostText.background
+  background: tokens.surfaceContainerLow,
 
   // Foreground color of the ghost text shown by inline completion
   // providers and the suggest preview. {default: #ffffff56}
-  foreground: undefined, // TODO: editorGhostText.foreground
+  foreground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
 };
 
 const editorStickyScroll = {
