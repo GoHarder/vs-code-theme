@@ -1,0 +1,28 @@
+{
+  "$schema": "./schema.json",
+  "interface": {
+    "primary": "#46566a",
+    "tertiary": {
+      "color": "#ebcb8b"
+    },
+    "neutral": "#2e3440"
+  },
+  "syntax": [
+    { "value": "#2e3440", "blend": false, "name": "black" },
+    { "value": "#3b4252", "blend": false, "name": "brightBlack" },
+    { "value": "#81a1c1", "blend": false, "name": "blue" },
+    { "value": "#81a1c1", "blend": false, "name": "brightBlue" },
+    { "value": "#8fbcbb", "blend": false, "name": "cyan" },
+    { "value": "#8fbcbb", "blend": false, "name": "brightCyan" },
+    { "value": "#a3be8c", "blend": false, "name": "green" },
+    { "value": "#a3be8c", "blend": false, "name": "brightGreen" },
+    { "value": "#b48ead", "blend": false, "name": "magenta" },
+    { "value": "#b48ead", "blend": false, "name": "brightMagenta" },
+    { "value": "#bf616a", "blend": false, "name": "red" },
+    { "value": "#bf616a", "blend": false, "name": "brightRed" },
+    { "value": "#e5e9f0", "blend": false, "name": "white" },
+    { "value": "#eceff4", "blend": false, "name": "brightWhite" },
+    { "value": "#ebcb8b", "blend": false, "name": "yellow" },
+    { "value": "#ebcb8b", "blend": false, "name": "brightYellow" }
+  ]
+}
