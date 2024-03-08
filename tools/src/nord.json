@@ -1,28 +1,54 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/color-source.json",
   "interface": {
-    "primary": "#46566a",
+    "primary": {
+      "value": "#4c566a",
+      "adjustColor": false
+    },
     "tertiary": {
       "color": "#ebcb8b"
     },
-    "neutral": "#2e3440"
+    "neutral": {
+      "value": "#2e3440",
+      "adjustColor": false
+    }
   },
   "syntax": [
-    { "value": "#2e3440", "blend": false, "name": "black" },
-    { "value": "#3b4252", "blend": false, "name": "brightBlack" },
-    { "value": "#81a1c1", "blend": false, "name": "blue" },
-    { "value": "#81a1c1", "blend": false, "name": "brightBlue" },
-    { "value": "#8fbcbb", "blend": false, "name": "cyan" },
-    { "value": "#8fbcbb", "blend": false, "name": "brightCyan" },
-    { "value": "#a3be8c", "blend": false, "name": "green" },
-    { "value": "#a3be8c", "blend": false, "name": "brightGreen" },
-    { "value": "#b48ead", "blend": false, "name": "magenta" },
-    { "value": "#b48ead", "blend": false, "name": "brightMagenta" },
-    { "value": "#bf616a", "blend": false, "name": "red" },
-    { "value": "#bf616a", "blend": false, "name": "brightRed" },
-    { "value": "#e5e9f0", "blend": false, "name": "white" },
-    { "value": "#eceff4", "blend": false, "name": "brightWhite" },
-    { "value": "#ebcb8b", "blend": false, "name": "yellow" },
-    { "value": "#ebcb8b", "blend": false, "name": "brightYellow" }
-  ]
+    { "name": "black0", "value": "#2e3440", "blend": false },
+    { "name": "black1", "value": "#3b4252", "blend": false },
+    { "name": "black2", "value": "#434c5e", "blend": false },
+    { "name": "black3", "value": "#4c566a", "blend": false },
+    { "name": "white0", "value": "#d8dee9", "blend": false },
+    { "name": "white1", "value": "#e5e9f0", "blend": false },
+    { "name": "white2", "value": "#eceff4", "blend": false },
+    { "name": "blue0", "value": "#5e81ac", "blend": false },
+    { "name": "blue1", "value": "#81a1c1", "blend": false },
+    { "name": "cyan0", "value": "#88c0d0", "blend": false },
+    { "name": "cyan1", "value": "#8fbcbb", "blend": false },
+    { "name": "red", "value": "#bf616a", "blend": false },
+    { "name": "orange", "value": "#d08770", "blend": false },
+    { "name": "yellow", "value": "#ebcb8b", "blend": false },
+    { "name": "green", "value": "#a3be8c", "blend": false },
+    { "name": "magenta", "value": "#b48ead", "blend": false }
+  ],
+  "ansi": {
+    "black": "black0",
+    "red": "red",
+    "green": "green",
+    "yellow": "yellow",
+    "blue": "blue1",
+    "magenta": "magenta",
+    "cyan": "cyan0",
+    "white": "white1",
+    "orange": "orange",
+    "brightBlack": "black3",
+    "brightRed": "red",
+    "brightGreen": "green",
+    "brightYellow": "yellow",
+    "brightBlue": "blue1",
+    "brightMagenta": "magenta",
+    "brightCyan": "cyan0",
+    "brightWhite": "white2",
+    "brightOrange": "orange"
+  }
 }

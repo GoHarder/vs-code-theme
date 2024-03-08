@@ -3,6 +3,7 @@
 lib
 node_modules
 reference
+schemas
 src
 tools
 .gitignore

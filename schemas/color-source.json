@@ -1,0 +1,279 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "Color source schema",
+  "type": "object",
+  "required": ["$schema", "interface", "syntax", "ansi"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "The schema version of the theme."
+    },
+    "interface": {
+      "type": "object",
+      "description": "The color settings for the interface.",
+      "required": ["primary"],
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "$ref": "#/$defs/interface-options-1" },
+        "secondary": { "$ref": "#/$defs/interface-options-2" },
+        "tertiary": { "$ref": "#/$defs/interface-options-2" },
+        "neutral": { "$ref": "#/$defs/interface-options-1" }
+      }
+    },
+    "syntax": {
+      "type": "array",
+      "description": "The color settings for the syntax highlighting.",
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": ["name", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the color."
+          },
+          "value": {
+            "type": "string",
+            "description": "The color hex.",
+            "format": "color-hex"
+          },
+          "blend": {
+            "type": "boolean",
+            "description": "Whether to blend the color with the primary color."
+          }
+        }
+      },
+      "ansi": {
+        "type": "object",
+        "description": "The color settings for the ANSI terminal.",
+        "required": [
+          "black",
+          "red",
+          "green",
+          "yellow",
+          "blue",
+          "magenta",
+          "cyan",
+          "white",
+          "brightBlack",
+          "brightRed",
+          "brightGreen",
+          "brightYellow",
+          "brightBlue",
+          "brightMagenta",
+          "brightCyan",
+          "brightWhite"
+        ],
+        "properties": {
+          "black": {
+            "type": "string",
+            "description": "The black ANSI terminal color."
+          },
+          "red": {
+            "type": "string",
+            "description": "The red ANSI terminal color."
+          },
+          "green": {
+            "type": "string",
+            "description": "The green ANSI terminal color."
+          },
+          "yellow": {
+            "type": "string",
+            "description": "The yellow ANSI terminal color."
+          },
+          "blue": {
+            "type": "string",
+            "description": "The blue ANSI terminal color."
+          },
+          "magenta": {
+            "type": "string",
+            "description": "The magenta ANSI terminal color."
+          },
+          "cyan": {
+            "type": "string",
+            "description": "The cyan ANSI terminal color."
+          },
+          "white": {
+            "type": "string",
+            "description": "The white ANSI terminal color."
+          },
+          "orange": {
+            "type": "string",
+            "description": "The orange ANSI terminal color."
+          },
+          "brightBlack": {
+            "type": "string",
+            "description": "The bright black ANSI terminal color."
+          },
+          "brightRed": {
+            "type": "string",
+            "description": "The bright red ANSI terminal color."
+          },
+          "brightGreen": {
+            "type": "string",
+            "description": "The bright green ANSI terminal color."
+          },
+          "brightYellow": {
+            "type": "string",
+            "description": "The bright yellow ANSI terminal color."
+          },
+          "brightBlue": {
+            "type": "string",
+            "description": "The bright blue ANSI terminal color."
+          },
+          "brightMagenta": {
+            "type": "string",
+            "description": "The bright magenta ANSI terminal color."
+          },
+          "brightCyan": {
+            "type": "string",
+            "description": "The bright cyan ANSI terminal color."
+          },
+          "brightWhite": {
+            "type": "string",
+            "description": "The bright white ANSI terminal color."
+          },
+          "brightOrange": {
+            "type": "string",
+            "description": "The bright orange ANSI terminal color."
+          }
+        }
+      }
+    },
+    "ansi": {
+      "type": "object",
+      "description": "The color settings for the ANSI terminal.",
+      "required": [
+        "black",
+        "red",
+        "green",
+        "yellow",
+        "blue",
+        "magenta",
+        "cyan",
+        "white",
+        "brightBlack",
+        "brightRed",
+        "brightGreen",
+        "brightYellow",
+        "brightBlue",
+        "brightMagenta",
+        "brightCyan",
+        "brightWhite"
+      ],
+      "properties": {
+        "black": {
+          "type": "string",
+          "description": "The black ANSI terminal color."
+        },
+        "red": {
+          "type": "string",
+          "description": "The red ANSI terminal color."
+        },
+        "green": {
+          "type": "string",
+          "description": "The green ANSI terminal color."
+        },
+        "yellow": {
+          "type": "string",
+          "description": "The yellow ANSI terminal color."
+        },
+        "blue": {
+          "type": "string",
+          "description": "The blue ANSI terminal color."
+        },
+        "magenta": {
+          "type": "string",
+          "description": "The magenta ANSI terminal color."
+        },
+        "cyan": {
+          "type": "string",
+          "description": "The cyan ANSI terminal color."
+        },
+        "white": {
+          "type": "string",
+          "description": "The white ANSI terminal color."
+        },
+        "orange": {
+          "type": "string",
+          "description": "The orange ANSI terminal color."
+        },
+        "brightBlack": {
+          "type": "string",
+          "description": "The bright black ANSI terminal color."
+        },
+        "brightRed": {
+          "type": "string",
+          "description": "The bright red ANSI terminal color."
+        },
+        "brightGreen": {
+          "type": "string",
+          "description": "The bright green ANSI terminal color."
+        },
+        "brightYellow": {
+          "type": "string",
+          "description": "The bright yellow ANSI terminal color."
+        },
+        "brightBlue": {
+          "type": "string",
+          "description": "The bright blue ANSI terminal color."
+        },
+        "brightMagenta": {
+          "type": "string",
+          "description": "The bright magenta ANSI terminal color."
+        },
+        "brightCyan": {
+          "type": "string",
+          "description": "The bright cyan ANSI terminal color."
+        },
+        "brightWhite": {
+          "type": "string",
+          "description": "The bright white ANSI terminal color."
+        },
+        "brightOrange": {
+          "type": "string",
+          "description": "The bright orange ANSI terminal color."
+        }
+      }
+    }
+  },
+  "$defs": {
+    "interface-options-1": {
+      "type": "object",
+      "required": ["value", "adjustColor"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": "string",
+          "description": "The color hex.",
+          "format": "color-hex"
+        },
+        "adjustColor": {
+          "type": "boolean",
+          "description": "Adjust the color for visual contrast."
+        }
+      }
+    },
+    "interface-options-2": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "color": {
+          "type": "string",
+          "description": "The color override of the automatically generated color.",
+          "format": "color-hex"
+        },
+        "hueShift": {
+          "type": "number",
+          "description": "The hue shift from the primary color."
+        },
+        "chromaSplit": {
+          "type": "number",
+          "description": "The number to divide the primary color's chroma."
+        }
+      }
+    }
+  }
+}

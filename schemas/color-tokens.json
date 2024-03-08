@@ -2,11 +2,16 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "Color pallet schema",
   "type": "object",
-  "required": ["interface", "terminal"],
+  "required": ["$schema", "interface", "syntax", "ansi"],
+  "additionalProperties": false,
   "properties": {
+    "$schema": {
+      "type": "string"
+    },
     "interface": {
       "type": "object",
       "required": ["primary", "secondary", "tertiary", "error", "neutral", "neutralVariant"],
+      "additionalProperties": false,
       "properties": {
         "primary": {
           "$ref": "#/$defs/pallets/normal"
@@ -28,7 +33,23 @@
         }
       }
     },
-    "terminal": {
+    "syntax": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "tones": {
+            "$ref": "#/$defs/pallets/normal"
+          }
+        }
+      }
+    },
+    "ansi": {
       "type": "object",
       "required": [
         "black",
@@ -46,8 +67,11 @@
         "cyan",
         "brightCyan",
         "white",
-        "brightWhite"
+        "brightWhite",
+        "orange",
+        "brightOrange"
       ],
+      "additionalProperties": false,
       "properties": {
         "black": { "$ref": "#/$defs/pallets/terminal" },
         "brightBlack": { "$ref": "#/$defs/pallets/terminal" },
@@ -64,7 +88,9 @@
         "cyan": { "$ref": "#/$defs/pallets/terminal" },
         "brightCyan": { "$ref": "#/$defs/pallets/terminal" },
         "white": { "$ref": "#/$defs/pallets/terminal" },
-        "brightWhite": { "$ref": "#/$defs/pallets/terminal" }
+        "brightWhite": { "$ref": "#/$defs/pallets/terminal" },
+        "orange": { "$ref": "#/$defs/pallets/terminal" },
+        "brightOrange": { "$ref": "#/$defs/pallets/terminal" }
       }
     }
   },
@@ -102,6 +128,7 @@
           "_99",
           "_100"
         ],
+        "additionalProperties": false,
         "properties": {
           "_0": { "$ref": "#/$defs/hexColor" },
           "_4": { "$ref": "#/$defs/hexColor" },
@@ -132,7 +159,9 @@
       "normal": {
         "type": "object",
         "required": ["_0", "_5", "_10", "_15", "_20", "_25", "_30", "_35", "_40", "_50", "_60", "_70", "_80", "_90", "_95", "_98", "_99", "_100"],
+        "additionalProperties": false,
         "properties": {
+          "base": { "$ref": "#/$defs/hexColor" },
           "_0": { "$ref": "#/$defs/hexColor" },
           "_5": { "$ref": "#/$defs/hexColor" },
           "_10": { "$ref": "#/$defs/hexColor" },
