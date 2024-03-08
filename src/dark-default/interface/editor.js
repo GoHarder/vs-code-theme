@@ -295,7 +295,7 @@ const editorCodeLens = {
   // NOTE: Example image available.
 
   // Foreground color of an editor CodeLens. {default: #999999}
-  foreground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+  foreground: chroma(tokens.primary).alpha(0.7).hex(),
 };
 
 const editorLightBulb = {
@@ -352,7 +352,7 @@ const editorBracketPairGuide = {
 
   // Background color of active bracket pair guides (1).
   // {default: #00000000}
-  activeBackground1: chroma(tokens.onSurfaceVariant).alpha(0.6).hex(),
+  activeBackground1: chroma(tokens.onSurfaceVariant).alpha(0.3).hex(),
 
   // Background color of active bracket pair guides (2).
   // {default: #00000000}
@@ -376,7 +376,7 @@ const editorBracketPairGuide = {
 
   // Background color of inactive bracket pair guides (1).
   // {default: #00000000}
-  background1: chroma(tokens.onSurfaceVariant).alpha(0.2).hex(),
+  background1: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
 
   // Background color of inactive bracket pair guides (2).
   // {default: #00000000}

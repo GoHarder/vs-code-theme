@@ -25,7 +25,7 @@ const sideBar = {
 
 const sideBarTitle = {
   // Side Bar title foreground color. {default: null}
-  foreground: tokens.onSecondaryContainer,
+  foreground: tokens.onSurface,
 };
 
 const sideBarSectionHeader = {
