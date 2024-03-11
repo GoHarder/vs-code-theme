@@ -77,13 +77,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added todo settings
 
 ## [0.0.10]
-- Debugged more light settings.
-- Added comments.
-- Added neutral option for color scheme generator.
-- Updated schemas and references.
-- Added todo settings.
+- Debugged more light settings
+- Added comments
+- Added neutral option for color scheme generator
+- Updated schemas and references
+- Added todo settings
 
 ## [0.1.0]
-- Updated tooling.
-- Added ghost text settings.
-- Cooled syntax tokens.
+- Updated tooling
+- Added ghost text settings
+- Cooled syntax tokens
+
+## [0.1.3]
+- Adjust annoying editor settings
+- Refactored color scheme tool and updated schemas
