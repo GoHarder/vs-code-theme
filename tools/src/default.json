@@ -2,8 +2,8 @@
   "$schema": "../../schemas/color-source.json",
   "interface": {
     "primary": {
-      "value": "#434c5e",
-      "adjustColor": true
+      "value": "#789cc1",
+      "adjustColor": false
     },
     "tertiary": {
       "color": "#f0cc83"

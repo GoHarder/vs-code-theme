@@ -1,6 +1,8 @@
 import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
+import { ansi } from './colors/interface.js';
+
 import colors from './interface/index.js';
 import tokenColors from './syntax/index.js';
 
@@ -21,3 +23,12 @@ try {
 } catch (err) {
   console.error(err);
 }
+
+/** @type {Intl.DateTimeFormatOptions} */
+const dateSettings = {
+  timeStyle: 'medium',
+};
+
+const internal = new Intl.DateTimeFormat('en-us', dateSettings);
+
+console.log(internal.format(Date.now()));
