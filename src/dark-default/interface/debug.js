@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { tokens, syntax } from '../colors/interface.js';
+import { tokens } from '../colors/interface.js';
 
 const debugToolBar = {
   // Debug toolbar background color. {default: #333333}

@@ -189,7 +189,7 @@ const editorCursor = {
   background: undefined, // Done
 
   // Color of the editor cursor. {default: #aeafad}
-  foreground: tokens.warning,
+  foreground: tokens.tertiary,
 };
 
 const search = {

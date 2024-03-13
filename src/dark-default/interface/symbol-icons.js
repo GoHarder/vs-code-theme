@@ -5,107 +5,107 @@
 // -------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { terminal, tokens } from '../colors/interface.js';
+import { tokens } from '../colors/interface.js';
 
 const symbolIcon = {
   // The foreground color for array symbols. {default: #cccccc}
-  arrayForeground: tokens.onSurfaceVariant,
+  arrayForeground: undefined, // TODO: symbolIcon.arrayForeground
 
   // The foreground color for boolean symbols. {default: #cccccc}
-  booleanForeground: tokens.onSurfaceVariant,
+  booleanForeground: undefined, // TODO: symbolIcon.booleanForeground
 
   // The foreground color for class symbols. {default: #ee9d28}
-  classForeground: terminal.yellow,
+  classForeground: undefined, // TODO: symbolIcon.classForeground
 
   // The foreground color for color symbols. {default: #cccccc}
-  colorForeground: tokens.onSurfaceVariant,
+  colorForeground: undefined, // TODO: symbolIcon.colorForeground
 
   // The foreground color for constant symbols. {default: #cccccc}
-  constantForeground: tokens.onSurfaceVariant,
+  constantForeground: undefined, // TODO: symbolIcon.constantForeground
 
   // The foreground color for constructor symbols. {default: #b180d7}
-  constructorForeground: terminal.magenta,
+  constructorForeground: undefined, // TODO: symbolIcon.constructorForeground
 
   // The foreground color for enumerator symbols. {default: #ee9d28}
-  enumeratorForeground: terminal.yellow,
+  enumeratorForeground: undefined, // TODO: symbolIcon.enumeratorForeground
 
   // The foreground color for enumerator member symbols. {default: #75beff}
-  enumeratorMemberForeground: terminal.blue,
+  enumeratorMemberForeground: undefined, // TODO: symbolIcon.enumeratorMemberForeground
 
   // The foreground color for event symbols. {default: #ee9d28}
-  eventForeground: terminal.yellow,
+  eventForeground: undefined, // TODO: symbolIcon.eventForeground
 
   // The foreground color for field symbols. {default: #75beff}
-  fieldForeground: terminal.blue,
+  fieldForeground: undefined, // TODO: symbolIcon.fieldForeground
 
   // The foreground color for file symbols. {default: #cccccc}
-  fileForeground: tokens.onSurfaceVariant,
+  fileForeground: undefined, // TODO: symbolIcon.fileForeground
 
   // The foreground color for folder symbols. {default: #cccccc}
-  folderForeground: tokens.onSurfaceVariant,
+  folderForeground: undefined, // TODO: symbolIcon.folderForeground
 
   // The foreground color for function symbols. {default: #b180d7}
-  functionForeground: terminal.magenta,
+  functionForeground: undefined, // TODO: symbolIcon.functionForeground
 
   // The foreground color for interface symbols. {default: #75beff}
-  interfaceForeground: terminal.blue,
+  interfaceForeground: undefined, // TODO: symbolIcon.interfaceForeground
 
   // The foreground color for key symbols. {default: #cccccc}
-  keyForeground: tokens.onSurfaceVariant,
+  keyForeground: undefined, // TODO: symbolIcon.keyForeground
 
   // The foreground color for keyword symbols. {default: #cccccc}
-  keywordForeground: tokens.onSurfaceVariant,
+  keywordForeground: undefined, // TODO: symbolIcon.keywordForeground
 
   // The foreground color for method symbols. {default: #b180d7}
-  methodForeground: terminal.magenta,
+  methodForeground: undefined, // TODO: symbolIcon.methodForeground
 
   // The foreground color for module symbols. {default: #cccccc}
-  moduleForeground: tokens.onSurfaceVariant,
+  moduleForeground: undefined, // TODO: symbolIcon.moduleForeground
 
   // The foreground color for namespace symbols. {default: #cccccc}
-  namespaceForeground: tokens.onSurfaceVariant,
+  namespaceForeground: undefined, // TODO: symbolIcon.namespaceForeground
 
   // The foreground color for null symbols. {default: #cccccc}
-  nullForeground: tokens.onSurfaceVariant,
+  nullForeground: undefined, // TODO: symbolIcon.nullForeground
 
   // The foreground color for number symbols. {default: #cccccc}
-  numberForeground: tokens.onSurfaceVariant,
+  numberForeground: undefined, // TODO: symbolIcon.numberForeground
 
   // The foreground color for object symbols. {default: #cccccc}
-  objectForeground: tokens.onSurfaceVariant,
+  objectForeground: undefined, // TODO: symbolIcon.objectForeground
 
   // The foreground color for operator symbols. {default: #cccccc}
-  operatorForeground: tokens.onSurfaceVariant,
+  operatorForeground: undefined, // TODO: symbolIcon.operatorForeground
 
   // The foreground color for package symbols. {default: #cccccc}
-  packageForeground: tokens.onSurfaceVariant,
+  packageForeground: undefined, // TODO: symbolIcon.packageForeground
 
   // The foreground color for property symbols. {default: #cccccc}
-  propertyForeground: tokens.onSurfaceVariant,
+  propertyForeground: undefined, // TODO: symbolIcon.propertyForeground
 
   // The foreground color for reference symbols. {default: #cccccc}
-  referenceForeground: tokens.onSurfaceVariant,
+  referenceForeground: undefined, // TODO: symbolIcon.referenceForeground
 
   // The foreground color for snippet symbols. {default: #cccccc}
-  snippetForeground: tokens.onSurfaceVariant,
+  snippetForeground: undefined, // TODO: symbolIcon.snippetForeground
 
   // The foreground color for string symbols. {default: #cccccc}
-  stringForeground: tokens.onSurfaceVariant,
+  stringForeground: undefined, // TODO: symbolIcon.stringForeground
 
   // The foreground color for struct symbols. {default: #cccccc}
-  structForeground: tokens.onSurfaceVariant,
+  structForeground: undefined, // TODO: symbolIcon.structForeground
 
   // The foreground color for text symbols. {default: #cccccc}
-  textForeground: tokens.onSurfaceVariant,
+  textForeground: undefined, // TODO: symbolIcon.textForeground
 
   // The foreground color for type parameter symbols. {default: #cccccc}
-  typeParameterForeground: tokens.onSurfaceVariant,
+  typeParameterForeground: undefined, // TODO: symbolIcon.typeParameterForeground
 
   // The foreground color for unit symbols. {default: #cccccc}
-  unitForeground: tokens.onSurfaceVariant,
+  unitForeground: undefined, // TODO: symbolIcon.unitForeground
 
   // The foreground color for variable symbols. {default: #75beff}
-  variableForeground: terminal.blue,
+  variableForeground: undefined, // TODO: symbolIcon.variableForeground
 };
 
 export default {
