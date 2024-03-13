@@ -131,6 +131,16 @@
         }
       ]
     },
+    "textPreformat.background": {
+      "type": "string",
+      "description": "Background color for preformatted text segments.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "textBlockQuote.background": {
       "type": "string",
       "description": "Background color for block quotes in text.",
@@ -549,7 +559,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorError.foreground": {
       "type": "string",
@@ -579,7 +591,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorWarning.foreground": {
       "type": "string",
@@ -609,7 +623,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorInfo.foreground": {
       "type": "string",
@@ -683,7 +699,7 @@
     },
     "editorStickyScroll.background": {
       "type": "string",
-      "description": "Sticky scroll background color for the editor",
+      "description": "Background color of sticky scroll in the editor",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -693,7 +709,27 @@
     },
     "editorStickyScrollHover.background": {
       "type": "string",
-      "description": "Sticky scroll on hover background color for the editor",
+      "description": "Background color of sticky scroll on hover in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScroll.border": {
+      "type": "string",
+      "description": "Border color of sticky scroll in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScroll.shadow": {
+      "type": "string",
+      "description": " Shadow color of sticky scroll in the editor",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -859,7 +895,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.selectionHighlightBackground": {
       "type": "string",
@@ -869,7 +907,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.selectionHighlightBorder": {
       "type": "string",
@@ -899,7 +939,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.findRangeHighlightBackground": {
       "type": "string",
@@ -909,7 +951,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.findMatchBorder": {
       "type": "string",
@@ -939,7 +983,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "searchEditor.findMatchBackground": {
       "type": "string",
@@ -979,7 +1025,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorHoverWidget.background": {
       "type": "string",
@@ -1111,6 +1159,16 @@
         }
       ]
     },
+    "editorLightBulbAi.foreground": {
+      "type": "string",
+      "description": "The color used for the lightbulb AI icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "diffEditor.insertedTextBackground": {
       "type": "string",
       "description": "Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.",
@@ -1119,7 +1177,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "diffEditor.removedTextBackground": {
       "type": "string",
@@ -1129,7 +1189,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "diffEditor.insertedLineBackground": {
       "type": "string",
@@ -1139,7 +1201,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "diffEditor.removedLineBackground": {
       "type": "string",
@@ -1149,7 +1213,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "diffEditorGutter.insertedLineBackground": {
       "type": "string",
@@ -1403,7 +1469,17 @@
     },
     "list.dropBackground": {
       "type": "string",
-      "description": "List/Tree drag and drop background when moving items around using the mouse.",
+      "description": "List/Tree drag and drop background when moving items over other items when using the mouse.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "list.dropBetweenBackground": {
+      "type": "string",
+      "description": "List/Tree drag and drop border color when moving items between items when using the mouse.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -1860,7 +1936,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.currentContentBackground": {
       "type": "string",
@@ -1870,7 +1948,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.incomingHeaderBackground": {
       "type": "string",
@@ -1880,7 +1960,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.incomingContentBackground": {
       "type": "string",
@@ -1890,7 +1972,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.commonHeaderBackground": {
       "type": "string",
@@ -1900,7 +1984,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.commonContentBackground": {
       "type": "string",
@@ -1910,7 +1996,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "merge.border": {
       "type": "string",
@@ -1960,7 +2048,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorOverviewRuler.selectionHighlightForeground": {
       "type": "string",
@@ -1970,7 +2060,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "minimap.findMatchHighlight": {
       "type": "string",
@@ -1980,7 +2072,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "minimap.selectionOccurrenceHighlight": {
       "type": "string",
@@ -1990,7 +2084,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "minimap.selectionHighlight": {
       "type": "string",
@@ -2000,11 +2096,13 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
-    "minimap.errorHighlight": {
+    "minimap.infoHighlight": {
       "type": "string",
-      "description": "Minimap marker color for errors.",
+      "description": "Minimap marker color for infos.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -2015,6 +2113,16 @@
     "minimap.warningHighlight": {
       "type": "string",
       "description": "Minimap marker color for warnings.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "minimap.errorHighlight": {
+      "type": "string",
+      "description": "Minimap marker color for errors.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -2182,9 +2290,9 @@
         }
       ]
     },
-    "diffEditor.move.border": {
+    "multiDiffEditor.headerBackground": {
       "type": "string",
-      "description": "The border color for text that got moved in the diff editor.",
+      "description": "The background color of the diff editor's header",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -2192,9 +2300,19 @@
         }
       ]
     },
-    "diffEditor.moveActive.border": {
+    "multiDiffEditor.background": {
       "type": "string",
-      "description": "The active border color for text that got moved in the diff editor.",
+      "description": "The background color of the multi file diff editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "multiDiffEditor.border": {
+      "type": "string",
+      "description": "The border color of the multi file diff editor",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -2580,7 +2698,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.rangeHighlightBorder": {
       "type": "string",
@@ -2590,7 +2710,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.symbolHighlightBackground": {
       "type": "string",
@@ -2600,7 +2722,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.symbolHighlightBorder": {
       "type": "string",
@@ -2610,7 +2734,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorCursor.foreground": {
       "type": "string",
@@ -2953,7 +3079,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorOverviewRuler.errorForeground": {
       "type": "string",
@@ -3195,6 +3323,36 @@
         }
       ]
     },
+    "diffEditor.move.border": {
+      "type": "string",
+      "description": "The border color for text that got moved in the diff editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.moveActive.border": {
+      "type": "string",
+      "description": "The active border color for text that got moved in the diff editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.unchangedRegionShadow": {
+      "type": "string",
+      "description": "The color of the shadow around unchanged region widgets.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "editorOverviewRuler.bracketMatchForeground": {
       "type": "string",
       "description": "Overview ruler marker color for matching brackets.",
@@ -3213,7 +3371,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorGutter.foldingControlForeground": {
       "type": "string",
@@ -3243,7 +3403,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.wordHighlightStrongBackground": {
       "type": "string",
@@ -3253,7 +3415,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.wordHighlightTextBackground": {
       "type": "string",
@@ -3263,7 +3427,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editor.wordHighlightBorder": {
       "type": "string",
@@ -3303,7 +3469,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorOverviewRuler.wordHighlightStrongForeground": {
       "type": "string",
@@ -3313,7 +3481,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorOverviewRuler.wordHighlightTextForeground": {
       "type": "string",
@@ -3323,7 +3493,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "peekViewTitle.background": {
       "type": "string",
@@ -3635,6 +3807,16 @@
         }
       ]
     },
+    "editorWatermark.foreground": {
+      "type": "string",
+      "description": "Foreground color for the labels in the editor watermark.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "tab.activeBackground": {
       "type": "string",
       "description": "Active tab background color in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.",
@@ -3835,6 +4017,16 @@
         }
       ]
     },
+    "tab.dragAndDropBorder": {
+      "type": "string",
+      "description": "Border between tabs to indicate that a tab can be inserted between two tabs. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "tab.activeModifiedBorder": {
       "type": "string",
       "description": "Border on the top of modified active tabs in an active group. Tabs are the containers for editors in the editor area. Multiple tabs can be opened in one editor group. There can be multiple editor groups.",
@@ -3927,7 +4119,7 @@
     },
     "editorGroupHeader.noTabsBackground": {
       "type": "string",
-      "description": "Background color of the editor group title header when tabs are disabled (`\"workbench.editor.showTabs\": false`). Editor groups are the containers of editors.",
+      "description": "Background color of the editor group title header when (`\"workbench.editor.showTabs\": \"single\"`). Editor groups are the containers of editors.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4128,6 +4320,26 @@
     "panelSection.border": {
       "type": "string",
       "description": "Panel section border color used when multiple views are stacked horizontally in the panel. Panels are shown below the editor area and contain views like output and integrated terminal. Panel sections are views nested within the panels.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "outputView.background": {
+      "type": "string",
+      "description": "Output view background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "outputViewStickyScroll.background": {
+      "type": "string",
+      "description": "Output view sticky scroll background color.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4505,6 +4717,46 @@
         }
       ]
     },
+    "activityBarTop.foreground": {
+      "type": "string",
+      "description": "Active foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "activityBarTop.activeBorder": {
+      "type": "string",
+      "description": "Focus border color for the active item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "activityBarTop.inactiveForeground": {
+      "type": "string",
+      "description": "Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "activityBarTop.dropBorder": {
+      "type": "string",
+      "description": "Drag and drop feedback color for the items in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "profileBadge.background": {
       "type": "string",
       "description": "Profile badge background color. The profile badge shows on top of the settings gear icon in the activity bar.",
@@ -4785,6 +5037,86 @@
         }
       ]
     },
+    "commandCenter.foreground": {
+      "type": "string",
+      "description": "Foreground color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.activeForeground": {
+      "type": "string",
+      "description": "Active foreground color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.inactiveForeground": {
+      "type": "string",
+      "description": "Foreground color of the command center when the window is inactive",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.background": {
+      "type": "string",
+      "description": "Background color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.activeBackground": {
+      "type": "string",
+      "description": "Active background color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.border": {
+      "type": "string",
+      "description": "Border color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.activeBorder": {
+      "type": "string",
+      "description": "Active border color of the command center",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "commandCenter.inactiveBorder": {
+      "type": "string",
+      "description": "Border color of the command center when the window is inactive",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "notificationCenter.border": {
       "type": "string",
       "description": "Notifications center border color. Notifications slide in from the bottom right of the window.",
@@ -4915,89 +5247,19 @@
         }
       ]
     },
-    "commandCenter.foreground": {
-      "type": "string",
-      "description": "Foreground color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.activeForeground": {
-      "type": "string",
-      "description": "Active foreground color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.inactiveForeground": {
-      "type": "string",
-      "description": "Foreground color of the command center when the window is inactive",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.background": {
-      "type": "string",
-      "description": "Background color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.activeBackground": {
-      "type": "string",
-      "description": "Active background color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.border": {
-      "type": "string",
-      "description": "Border color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.activeBorder": {
-      "type": "string",
-      "description": "Active border color of the command center",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "commandCenter.inactiveBorder": {
-      "type": "string",
-      "description": "Border color of the command center when the window is inactive",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
     "chat.requestBorder": {
       "type": "string",
       "description": "The border color of a chat request.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "chat.requestBackground": {
+      "type": "string",
+      "description": "The background color of a chat request.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -5018,6 +5280,26 @@
     "chat.slashCommandForeground": {
       "type": "string",
       "description": "The foreground color of a chat slash command.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "chat.avatarBackground": {
+      "type": "string",
+      "description": "The background color of a chat avatar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "chat.avatarForeground": {
+      "type": "string",
+      "description": "The foreground color of a chat avatar.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -5048,6 +5330,16 @@
     "commentsView.unresolvedIcon": {
       "type": "string",
       "description": "Icon color for unresolved comments.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorCommentsWidget.replyInputBackground": {
+      "type": "string",
+      "description": "Background color for comment reply input box.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -5663,7 +5955,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "terminal.hoverHighlightBackground": {
       "type": "string",
@@ -5693,7 +5987,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "terminal.findMatchHighlightBorder": {
       "type": "string",
@@ -5723,11 +6019,33 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "terminal.tab.activeBorder": {
       "type": "string",
       "description": "Border on the side of the terminal tab in the panel. This defaults to tab.activeBorder.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "terminalStickyScroll.background": {
+      "type": "string",
+      "description": "The background color of the sticky scroll overlay in the terminal.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "terminalStickyScrollHover.background": {
+      "type": "string",
+      "description": "The background color of the sticky scroll overlay in the terminal when hovered.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -5815,9 +6133,119 @@
         }
       ]
     },
+    "testing.messagePeekBorder": {
+      "type": "string",
+      "description": "Color of the peek view borders and arrow when peeking a logged message.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "testing.peekHeaderBackground": {
       "type": "string",
       "description": "Color of the peek view borders and arrow.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.messagePeekHeaderBackground": {
+      "type": "string",
+      "description": "Color of the peek view borders and arrow when peeking a logged message.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.coveredBackground": {
+      "type": "string",
+      "description": "Background color of text that was covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.coveredBorder": {
+      "type": "string",
+      "description": "Border color of text that was covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.coveredGutterBackground": {
+      "type": "string",
+      "description": "Gutter color of regions where code was covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.uncoveredBranchBackground": {
+      "type": "string",
+      "description": "Background of the widget shown for an uncovered branch.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.uncoveredBackground": {
+      "type": "string",
+      "description": "Background color of text that was not covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.uncoveredBorder": {
+      "type": "string",
+      "description": "Border color of text that was not covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.uncoveredGutterBackground": {
+      "type": "string",
+      "description": "Gutter color of regions where code not covered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.coverCountBadgeBackground": {
+      "type": "string",
+      "description": "Background for the badge indicating execution count",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.coverCountBadgeForeground": {
+      "type": "string",
+      "description": "Foreground for the badge indicating execution count",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -5983,7 +6411,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "inlineChatInput.border": {
       "type": "string",
@@ -6035,9 +6465,29 @@
         }
       ]
     },
+    "editorOverviewRuler.inlineChatInserted": {
+      "type": "string",
+      "description": "Overview ruler marker color for inline chat inserted content.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "inlineChatDiff.removed": {
       "type": "string",
       "description": "Background color of removed text in the interactive editor input",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorOverviewRuler.inlineChatRemoved": {
+      "type": "string",
+      "description": "Overview ruler marker color for inline chat removed content.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6058,16 +6508,6 @@
     "debugExceptionWidget.background": {
       "type": "string",
       "description": "Exception widget background color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "ports.iconRunningProcessForeground": {
-      "type": "string",
-      "description": "The color of the icon for a port that has an associated running process.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6105,25 +6545,17 @@
         }
       ]
     },
-    "editor.inlineValuesForeground": {
+    "commandCenter.debuggingBackground": {
       "type": "string",
-      "description": "Color for the debug inline value text.",
+      "description": "Command center background color when a program is being debugged",
       "format": "color-hex",
       "defaultSnippets": [
         {
           "body": "${1:#ff0000}"
         }
-      ]
-    },
-    "editor.inlineValuesBackground": {
-      "type": "string",
-      "description": "Color for the debug inline value background.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "editorGutter.modifiedBackground": {
       "type": "string",
@@ -6215,6 +6647,26 @@
         }
       ]
     },
+    "keybindingTable.headerBackground": {
+      "type": "string",
+      "description": "Background color for the keyboard shortcuts table header.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "keybindingTable.rowsBackground": {
+      "type": "string",
+      "description": "Background color for the keyboard shortcuts table alternating rows.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "debugIcon.breakpointForeground": {
       "type": "string",
       "description": "Icon color for breakpoints.",
@@ -6265,9 +6717,9 @@
         }
       ]
     },
-    "notebook.cellBorderColor": {
+    "editor.inlineValuesForeground": {
       "type": "string",
-      "description": "The border color for notebook cells.",
+      "description": "Color for the debug inline value text.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6275,9 +6727,9 @@
         }
       ]
     },
-    "notebook.focusedEditorBorder": {
+    "editor.inlineValuesBackground": {
       "type": "string",
-      "description": "The color of the notebook cell editor border.",
+      "description": "Color for the debug inline value background.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6285,249 +6737,9 @@
         }
       ]
     },
-    "notebookStatusSuccessIcon.foreground": {
+    "ports.iconRunningProcessForeground": {
       "type": "string",
-      "description": "The error icon color of notebook cells in the cell status bar.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookEditorOverviewRuler.runningCellForeground": {
-      "type": "string",
-      "description": "The color of the running cell decoration in the notebook editor overview ruler.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookStatusErrorIcon.foreground": {
-      "type": "string",
-      "description": "The error icon color of notebook cells in the cell status bar.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookStatusRunningIcon.foreground": {
-      "type": "string",
-      "description": "The running icon color of notebook cells in the cell status bar.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.outputContainerBorderColor": {
-      "type": "string",
-      "description": "The border color of the notebook output container.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.outputContainerBackgroundColor": {
-      "type": "string",
-      "description": "The color of the notebook output container background.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.cellToolbarSeparator": {
-      "type": "string",
-      "description": "The color of the separator in the cell bottom toolbar",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.focusedCellBackground": {
-      "type": "string",
-      "description": "The background color of a cell when the cell is focused.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.selectedCellBackground": {
-      "type": "string",
-      "description": "The background color of a cell when the cell is selected.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.cellHoverBackground": {
-      "type": "string",
-      "description": "The background color of a cell when the cell is hovered.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.selectedCellBorder": {
-      "type": "string",
-      "description": "The color of the cell's top and bottom border when the cell is selected but not focused.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.inactiveSelectedCellBorder": {
-      "type": "string",
-      "description": "The color of the cell's borders when multiple cells are selected.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.focusedCellBorder": {
-      "type": "string",
-      "description": "The color of the cell's focus indicator borders when the cell is focused.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.inactiveFocusedCellBorder": {
-      "type": "string",
-      "description": "The color of the cell's top and bottom border when a cell is focused while the primary focus is outside of the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.cellStatusBarItemHoverBackground": {
-      "type": "string",
-      "description": "The background color of notebook cell status bar items.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.cellInsertionIndicator": {
-      "type": "string",
-      "description": "The color of the notebook cell insertion indicator.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookScrollbarSlider.background": {
-      "type": "string",
-      "description": "Notebook scrollbar slider background color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookScrollbarSlider.hoverBackground": {
-      "type": "string",
-      "description": "Notebook scrollbar slider background color when hovering.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebookScrollbarSlider.activeBackground": {
-      "type": "string",
-      "description": "Notebook scrollbar slider background color when clicked on.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.symbolHighlightBackground": {
-      "type": "string",
-      "description": "Background color of highlighted cell",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.cellEditorBackground": {
-      "type": "string",
-      "description": "Cell editor background color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "notebook.editorBackground": {
-      "type": "string",
-      "description": "Notebook background color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "keybindingTable.headerBackground": {
-      "type": "string",
-      "description": "Background color for the keyboard shortcuts table header.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "keybindingTable.rowsBackground": {
-      "type": "string",
-      "description": "Background color for the keyboard shortcuts table alternating rows.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "searchEditor.textInputBorder": {
-      "type": "string",
-      "description": "Search editor text input box border.",
+      "description": "The color of the icon for a port that has an associated running process.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6785,9 +6997,309 @@
         }
       ]
     },
-    "scm.providerBorder": {
+    "notebook.cellBorderColor": {
       "type": "string",
-      "description": "SCM Provider separator border.",
+      "description": "The border color for notebook cells.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.focusedEditorBorder": {
+      "type": "string",
+      "description": "The color of the notebook cell editor border.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookStatusSuccessIcon.foreground": {
+      "type": "string",
+      "description": "The error icon color of notebook cells in the cell status bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookEditorOverviewRuler.runningCellForeground": {
+      "type": "string",
+      "description": "The color of the running cell decoration in the notebook editor overview ruler.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookStatusErrorIcon.foreground": {
+      "type": "string",
+      "description": "The error icon color of notebook cells in the cell status bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookStatusRunningIcon.foreground": {
+      "type": "string",
+      "description": "The running icon color of notebook cells in the cell status bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.outputContainerBorderColor": {
+      "type": "string",
+      "description": "The border color of the notebook output container.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.outputContainerBackgroundColor": {
+      "type": "string",
+      "description": "The color of the notebook output container background.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.cellToolbarSeparator": {
+      "type": "string",
+      "description": "The color of the separator in the cell bottom toolbar",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.focusedCellBackground": {
+      "type": "string",
+      "description": "The background color of a cell when the cell is focused.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.selectedCellBackground": {
+      "type": "string",
+      "description": "The background color of a cell when the cell is selected.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.cellHoverBackground": {
+      "type": "string",
+      "description": "The background color of a cell when the cell is hovered.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.selectedCellBorder": {
+      "type": "string",
+      "description": "The color of the cell's top and bottom border when the cell is selected but not focused.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.inactiveSelectedCellBorder": {
+      "type": "string",
+      "description": "The color of the cell's borders when multiple cells are selected.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.focusedCellBorder": {
+      "type": "string",
+      "description": "The color of the cell's focus indicator borders when the cell is focused.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.inactiveFocusedCellBorder": {
+      "type": "string",
+      "description": "The color of the cell's top and bottom border when a cell is focused while the primary focus is outside of the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.cellStatusBarItemHoverBackground": {
+      "type": "string",
+      "description": "The background color of notebook cell status bar items.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.cellInsertionIndicator": {
+      "type": "string",
+      "description": "The color of the notebook cell insertion indicator.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookScrollbarSlider.background": {
+      "type": "string",
+      "description": "Notebook scrollbar slider background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookScrollbarSlider.hoverBackground": {
+      "type": "string",
+      "description": "Notebook scrollbar slider background color when hovering.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebookScrollbarSlider.activeBackground": {
+      "type": "string",
+      "description": "Notebook scrollbar slider background color when clicked on.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.symbolHighlightBackground": {
+      "type": "string",
+      "description": "Background color of highlighted cell",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.cellEditorBackground": {
+      "type": "string",
+      "description": "Cell editor background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "notebook.editorBackground": {
+      "type": "string",
+      "description": "Notebook background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "interactive.activeCodeBorder": {
+      "type": "string",
+      "description": "The border color for the current interactive code cell when the editor has focus.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "interactive.inactiveCodeBorder": {
+      "type": "string",
+      "description": "The border color for the current interactive code cell when the editor does not have focus.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scm.historyItemAdditionsForeground": {
+      "type": "string",
+      "description": "History item additions foreground color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scm.historyItemDeletionsForeground": {
+      "type": "string",
+      "description": "History item deletions foreground color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scm.historyItemStatisticsBorder": {
+      "type": "string",
+      "description": "History item statistics border color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scm.historyItemSelectedStatisticsBorder": {
+      "type": "string",
+      "description": "History item selected statistics border color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "searchEditor.textInputBorder": {
+      "type": "string",
+      "description": "Search editor text input box border.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6873,7 +7385,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "extensionIcon.verifiedForeground": {
       "type": "string",
@@ -6883,7 +7397,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "extensionIcon.preReleaseForeground": {
       "type": "string",
@@ -6893,7 +7409,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "extensionIcon.sponsorForeground": {
       "type": "string",
@@ -6903,7 +7421,9 @@
         {
           "body": "${1:#ff0000}"
         }
-      ]
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "terminal.ansiBlack": {
       "type": "string",
@@ -7065,26 +7585,6 @@
         }
       ]
     },
-    "interactive.activeCodeBorder": {
-      "type": "string",
-      "description": "The border color for the current interactive code cell when the editor has focus.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "interactive.inactiveCodeBorder": {
-      "type": "string",
-      "description": "The border color for the current interactive code cell when the editor does not have focus.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
     "gitDecoration.addedResourceForeground": {
       "type": "string",
       "description": "Color for added resources.",
@@ -7178,6 +7678,46 @@
     "gitDecoration.submoduleResourceForeground": {
       "type": "string",
       "description": "Color for submodule resources.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "markdown.extension.editor.codeSpan.background": {
+      "type": "string",
+      "description": "Background color of code spans in the Markdown editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "markdown.extension.editor.codeSpan.border": {
+      "type": "string",
+      "description": "Border color of code spans in the Markdown editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "markdown.extension.editor.formattingMark.foreground": {
+      "type": "string",
+      "description": "Color of formatting marks (paragraphs, hard line breaks, links, etc.) in the Markdown editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "markdown.extension.editor.trailingSpace.background": {
+      "type": "string",
+      "description": "Background color of trailing space (U+0020) characters in the Markdown editor.",
       "format": "color-hex",
       "defaultSnippets": [
         {
