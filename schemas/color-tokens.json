@@ -37,7 +37,7 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": [],
+        "required": ["name", "tones"],
         "additionalProperties": false,
         "properties": {
           "name": {

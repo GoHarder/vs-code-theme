@@ -1,5 +1,5 @@
 {
-  "$schema": "./schema.json",
+  "$schema": "../../schemas/color-source.json",
   "interface": {
     "primary": "#2479d0",
     "tertiary": {
