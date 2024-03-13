@@ -168,7 +168,7 @@ const editor = {
 
   // Background color for folded ranges. The color must not be opaque so as
   // not to hide underlying decorations. {default: #264f784d}
-  foldBackground: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
+  foldBackground: chroma(tokens.onSurfaceVariant).alpha(0.05).hex(),
 };
 
 const editorLineNumber = {
