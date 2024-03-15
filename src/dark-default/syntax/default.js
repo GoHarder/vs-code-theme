@@ -1,29 +1,80 @@
-import { tokens, ansi } from '../colors/interface.js';
+// import { tokens, ansi } from '../colors/interface.js';
+import { tokens, syntax } from '../colors.js';
 
-// #808080 ansi.white._60
-// #c8c8c8 ansi.white._70
-// #d4d4d4 ansi.white._80
-// #d16969 ansi.red._60
-// #ce9178 ansi.orange._70
-// #d7ba7d ansi.yellow._70
-// #dcdcaa ansi.yellow._80
-// #6a9955 ansi.green._50
-// #b5cea8 ansi.green._80
-// #4ec9b0 ansi.cyan._80
-// #000080
-// #569cd6 ansi.blue._80
-// #4fc1ff ansi.blue._90
-// #9cdcfe ansi.white._90
-// #b267e6 ansi.magenta._60
-// #c586c0 ansi.magenta._70
-// #646695 ansi.magenta._50
+const src = {
+  // Color 0 is only for comments
+  color0: { original: '#6A9955', adjusted: syntax.white0._60 },
+  color1: { original: '#808080', adjusted: syntax.white0._50 }, // #74777c
+  color2: { original: '#c8c8c8', adjusted: syntax.white0._80 }, // #c1c7d2
+  color3: { original: '#d4d4d4', adjusted: syntax.white0._90 }, // #dde3ee
+  color4: { original: '#d16969', adjusted: syntax.red0._60 }, // #d6737c
+  color5: { original: '#ce9178', adjusted: syntax.orange0._60 }, // #c67f68
+  color6: { original: '#d7ba7d', adjusted: syntax.yellow0._80 }, // #e2c383
+  color7: { original: '#dcdcaa', adjusted: syntax.yellow0._90 }, // #ffdf9f
+  color8: { original: '#6a9955', adjusted: syntax.green0._50 }, // #657e52
+  color9: { original: '#b5cea8', adjusted: syntax.green0._80 }, // #b4cf9c
+  color10: { original: '#4ec9b0', adjusted: syntax.cyan0._70 }, // #87b3b2
+  color11: { original: '#000080', adjusted: syntax.blue0._20 }, // #0e334e
+  color12: { original: '#569cd6', adjusted: syntax.blue0._60 }, // #7494b3
+  color13: { original: '#4fc1ff', adjusted: syntax.blue0._70 }, // #8eaecf
+  color14: { original: '#9cdcfe', adjusted: syntax.blue0._80 }, // #a9caeb
+  color15: { original: '#b267e6', adjusted: syntax.magenta0._60 }, // #ab85a4
+  color16: { original: '#c586c0', adjusted: syntax.magenta0._70 }, // #c79fbf
+  color17: { original: '#646695', adjusted: syntax.blue0._50 }, // #5a7a98
+  color18: { original: '#6796E6', adjusted: syntax.blue0._70 }, // #8eaecf
+  color19: { original: '#F44747', adjusted: syntax.red0._50 }, // #b75b645
+};
 
-export default [
+export const icons = {
+  debug: {
+    name: src.color14.adjusted,
+    value: src.color1.adjusted,
+    string: src.color5.adjusted,
+    boolean: src.color12.adjusted,
+    number: src.color9.adjusted,
+  },
+  symbol: {
+    array: undefined,
+    boolean: src.color12.adjusted, // constant.language
+    class: src.color10.adjusted, // entity.name.type
+    color: undefined,
+    constant: src.color12.adjusted, // constant.language
+    constructor: src.color12.adjusted, // storage.type
+    enumerator: src.color10.adjusted, // entity.name.type
+    enumeratorMember: src.color13.adjusted, // variable.other.enummember
+    event: undefined,
+    field: src.color12.adjusted, // entity.name.tag
+    file: undefined,
+    folder: undefined,
+    function: src.color7.adjusted, // entity.name.function
+    interface: src.color10.adjusted, // entity.name.type
+    key: undefined,
+    keyword: src.color12.adjusted, // keyword.control
+    method: src.color7.adjusted, // entity.name.function
+    module: undefined,
+    namespace: src.color10.adjusted, // entity.name.type
+    null: src.color12.adjusted, // constant.language
+    number: src.color9.adjusted, // constant.numeric
+    object: undefined,
+    operator: src.color3.adjusted, // keyword.operator
+    package: undefined,
+    property: src.color14.adjusted, // entity.other.attribute-name
+    reference: undefined,
+    snippet: undefined,
+    string: src.color5.adjusted, // string
+    struct: undefined,
+    text: undefined,
+    typeParameter: src.color10.adjusted, // entity.name.type
+    unit: undefined,
+    variable: src.color12.adjusted, // variable.language
+  },
+};
+
+export const scopes = [
   {
     scope: ['meta.embedded', 'source.groovy.embedded', 'string meta.image.inline.markdown', 'variable.legacy.builtin.python'],
     settings: {
-      // foreground: '#D4D4D4',
-      foreground: ansi.white._80,
+      foreground: src.color3.adjusted,
     },
   },
   {
@@ -41,57 +92,49 @@ export default [
   {
     scope: 'header',
     settings: {
-      // foreground: '#000080',
-      foreground: ansi.blue._5,
+      foreground: src.color11.adjusted,
     },
   },
   {
     scope: 'comment',
     settings: {
-      // foreground: '#6A9955',
-      foreground: ansi.white._60,
+      foreground: syntax.white0._60,
     },
   },
   {
     scope: 'constant.language',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['constant.numeric', 'variable.other.enummember', 'keyword.operator.plus.exponent', 'keyword.operator.minus.exponent'],
     settings: {
-      // foreground: '#B5CEA8',
-      foreground: ansi.green._80,
+      foreground: src.color9.adjusted,
     },
   },
   {
     scope: 'constant.regexp',
     settings: {
-      // foreground: '#646695',
-      foreground: ansi.magenta._50,
+      foreground: src.color17.adjusted,
     },
   },
   {
     scope: 'entity.name.tag',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['entity.name.tag.css', 'entity.name.tag.less'],
     settings: {
-      // foreground: '#D7BA7D',
-      foreground: ansi.yellow._70,
+      foreground: src.color6.adjusted,
     },
   },
   {
     scope: 'entity.other.attribute-name',
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
@@ -107,15 +150,13 @@ export default [
       'entity.other.attribute-name.scss',
     ],
     settings: {
-      // foreground: '#D7BA7D',
-      foreground: ansi.yellow._70,
+      foreground: src.color6.adjusted,
     },
   },
   {
     scope: 'invalid',
     settings: {
-      // foreground: '#F44747',
-      foreground: tokens.errorFixed,
+      foreground: src.color19.adjusted,
     },
   },
   {
@@ -127,16 +168,14 @@ export default [
   {
     scope: 'markup.bold',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
       fontStyle: 'bold',
     },
   },
   {
     scope: 'markup.heading',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
       fontStyle: 'bold',
     },
   },
@@ -144,6 +183,12 @@ export default [
     scope: 'markup.italic',
     settings: {
       fontStyle: 'italic',
+    },
+  },
+  {
+    scope: ['markup.bold markup.italic', 'markup.italic markup.bold'],
+    settings: {
+      fontStyle: 'bold italic',
     },
   },
   {
@@ -155,176 +200,151 @@ export default [
   {
     scope: 'markup.inserted',
     settings: {
-      // foreground: '#B5CEA8',
-      foreground: ansi.green._80,
+      foreground: src.color9.adjusted,
     },
   },
   {
     scope: 'markup.deleted',
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'markup.changed',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'punctuation.definition.quote.begin.markdown',
     settings: {
-      // foreground: '#6A9955',
-      foreground: ansi.green._60,
+      foreground: src.color8.adjusted,
     },
   },
   {
     scope: 'punctuation.definition.list.begin.markdown',
     settings: {
-      // foreground: '#6796E6',
-      foreground: ansi.blue._80,
+      foreground: src.color18.adjusted,
     },
   },
   {
     scope: 'markup.inline.raw',
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'punctuation.definition.tag',
     settings: {
-      // foreground: '#808080',
-      foreground: ansi.white._60,
+      foreground: src.color1.adjusted,
     },
   },
   {
     scope: ['meta.preprocessor', 'entity.name.function.preprocessor'],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'meta.preprocessor.string',
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'meta.preprocessor.numeric',
     settings: {
-      // foreground: '#B5CEA8',
-      foreground: ansi.green._80,
+      foreground: src.color9.adjusted,
     },
   },
   {
     scope: 'meta.structure.dictionary.key.python',
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
     scope: 'meta.diff.header',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'storage',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'storage.type',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['storage.modifier', 'keyword.operator.noexcept'],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['string', 'meta.embedded.assembly'],
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'string.tag',
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'string.value',
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
     scope: 'string.regexp',
     settings: {
-      // foreground: '#D16969',
-      foreground: ansi.red._60,
+      foreground: src.color4.adjusted,
     },
   },
   {
     scope: ['punctuation.definition.template-expression.begin', 'punctuation.definition.template-expression.end', 'punctuation.section.embedded'],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['meta.template.expression'],
     settings: {
-      // foreground: '#D4D4D4',
-      foreground: ansi.white._80,
+      foreground: src.color3.adjusted,
     },
   },
   {
     scope: ['support.type.vendored.property-name', 'support.type.property-name', 'source.css variable', 'source.coffee.embedded'],
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
     scope: 'keyword',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'keyword.control',
     settings: {
-      // foreground: '#569CD6'
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'keyword.operator',
     settings: {
-      // foreground: '#D4D4D4',
-      foreground: ansi.white._80,
+      foreground: src.color3.adjusted,
     },
   },
   {
@@ -341,57 +361,49 @@ export default [
       'keyword.operator.wordlike',
     ],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'keyword.other.unit',
     settings: {
-      // foreground: '#B5CEA8',
-      foreground: ansi.green._80,
+      foreground: src.color9.adjusted,
     },
   },
   {
     scope: ['punctuation.section.embedded.begin.php', 'punctuation.section.embedded.end.php'],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'support.function.git-rebase',
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
     scope: 'constant.sha.git-rebase',
     settings: {
-      // foreground: '#B5CEA8',
-      foreground: ansi.green._80,
+      foreground: src.color9.adjusted,
     },
   },
   {
     scope: ['storage.modifier.import.java', 'variable.language.wildcard.java', 'storage.modifier.package.java'],
     settings: {
-      // foreground: '#D4D4D4',
-      foreground: ansi.white._80,
+      foreground: src.color3.adjusted,
     },
   },
   {
     scope: 'variable.language',
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: ['entity.name.function', 'support.function', 'support.constant.handlebars', 'source.powershell variable.other.member', 'entity.name.operator.custom-literal'],
     settings: {
-      // foreground: '#DCDCAA',
-      foreground: ansi.yellow._80,
+      foreground: src.color7.adjusted,
     },
   },
   {
@@ -430,15 +442,13 @@ export default [
       'storage.type.primitive.groovy',
     ],
     settings: {
-      // foreground: '#4EC9B0',
-      foreground: ansi.cyan._80,
+      foreground: src.color10.adjusted,
     },
   },
   {
     scope: ['meta.type.cast.expr', 'meta.type.new.expr', 'support.constant.math', 'support.constant.dom', 'support.constant.json', 'entity.other.inherited-class'],
     settings: {
-      // foreground: '#4EC9B0',
-      foreground: ansi.cyan._80,
+      foreground: src.color10.adjusted,
     },
   },
   {
@@ -452,29 +462,25 @@ export default [
       'entity.name.operator',
     ],
     settings: {
-      // foreground: '#C586C0',
-      foreground: ansi.magenta._70,
+      foreground: src.color16.adjusted,
     },
   },
   {
     scope: ['variable', 'meta.definition.variable.name', 'support.variable', 'entity.name.variable', 'constant.other.placeholder'],
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
     scope: ['variable.other.constant', 'variable.other.enummember'],
     settings: {
-      // foreground: '#4FC1FF',
-      foreground: ansi.blue._90,
+      foreground: src.color13.adjusted,
     },
   },
   {
     scope: ['meta.object-literal.key'],
     settings: {
-      // foreground: '#9CDCFE',
-      foreground: ansi.white._90,
+      foreground: src.color14.adjusted,
     },
   },
   {
@@ -488,8 +494,7 @@ export default [
       'support.constant.color',
     ],
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
@@ -503,8 +508,7 @@ export default [
       'support.other.parenthesis.regexp',
     ],
     settings: {
-      // foreground: '#CE9178',
-      foreground: ansi.orange._70,
+      foreground: src.color5.adjusted,
     },
   },
   {
@@ -515,49 +519,43 @@ export default [
       'constant.character.set.regexp',
     ],
     settings: {
-      // foreground: '#D16969',
-      foreground: ansi.red._60,
+      foreground: src.color4.adjusted,
     },
   },
   {
     scope: ['keyword.operator.or.regexp', 'keyword.control.anchor.regexp'],
     settings: {
-      // foreground: '#DCDCAA',
-      foreground: ansi.yellow._80,
+      foreground: src.color7.adjusted,
     },
   },
   {
     scope: 'keyword.operator.quantifier.regexp',
     settings: {
-      // foreground: '#D7BA7D',
-      foreground: ansi.yellow._70,
+      foreground: src.color6.adjusted,
     },
   },
   {
     scope: ['constant.character', 'constant.other.option'],
     settings: {
-      // foreground: '#569CD6',
-      foreground: ansi.blue._80,
+      foreground: src.color12.adjusted,
     },
   },
   {
     scope: 'constant.character.escape',
     settings: {
-      // foreground: '#D7BA7D',
-      foreground: ansi.yellow._70,
+      foreground: src.color6.adjusted,
     },
   },
   {
     scope: 'entity.name.label',
     settings: {
-      // foreground: '#C8C8C8',
-      foreground: ansi.white._70,
+      foreground: src.color2.adjusted,
     },
   },
   {
     scope: 'keyword.other.dotenv',
     settings: {
-      foreground: '#FF000000',
+      foreground: '#00000000',
     },
   },
   {
@@ -584,8 +582,7 @@ export default [
   {
     scope: 'token.debug-token',
     settings: {
-      // foreground: '#B267E6',
-      foreground: ansi.magenta._70,
+      foreground: src.color15.adjusted,
     },
   },
 ];

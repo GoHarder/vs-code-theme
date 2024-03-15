@@ -1,5 +1,7 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+// import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
+import { icons } from '../syntax/index.js';
 
 const debugToolBar = {
   // Debug toolbar background color. {default: #333333}
@@ -50,20 +52,20 @@ const debugView = {
 const debugTokenExpression = {
   // Foreground color for the token names shown in debug views (such as in
   // the Variables or Watch view). {default: #c586c0}
-  name: undefined,
+  name: icons.debug.name,
 
   // Foreground color for the token values shown in debug views.
   // {default: #cccccc99}
-  value: undefined,
+  value: icons.debug.value,
 
   // Foreground color for strings in debug views. {default: #ce9178}
-  string: undefined,
+  string: icons.debug.string,
 
   // Foreground color for booleans in debug views. {default: #4e94ce}
-  boolean: undefined,
+  boolean: icons.debug.boolean,
 
   // Foreground color for numbers in debug views. {default: #b5cea8}
-  number: undefined,
+  number: icons.debug.number,
 
   // Foreground color for expression errors in debug views.
   // {default: #f48771}

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { ansi } from './colors/interface.js';
 
 import colors from './interface/index.js';
-import tokenColors from './syntax/index.js';
+import { tokenColors } from './syntax/index.js';
 
 const getFilePath = (file) => fileURLToPath(new URL(`../../themes/${file}`, import.meta.url));
 

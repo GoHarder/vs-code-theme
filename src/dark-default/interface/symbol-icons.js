@@ -5,107 +5,109 @@
 // -------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
+import { constant, entity, keyword, storage, string, variable } from '../syntax/text-mate.js';
+import { icons } from '../syntax/index.js';
 
 const symbolIcon = {
   // The foreground color for array symbols. {default: #cccccc}
-  arrayForeground: undefined, // TODO: symbolIcon.arrayForeground
+  arrayForeground: icons.symbol.array || tokens.onSurfaceVariant,
 
   // The foreground color for boolean symbols. {default: #cccccc}
-  booleanForeground: undefined, // TODO: symbolIcon.booleanForeground
+  booleanForeground: icons.symbol.boolean || tokens.onSurfaceVariant,
 
   // The foreground color for class symbols. {default: #ee9d28}
-  classForeground: undefined, // TODO: symbolIcon.classForeground
+  classForeground: icons.symbol.class || tokens.onSurfaceVariant,
 
   // The foreground color for color symbols. {default: #cccccc}
-  colorForeground: undefined, // TODO: symbolIcon.colorForeground
+  colorForeground: icons.symbol.color || tokens.onSurfaceVariant,
 
   // The foreground color for constant symbols. {default: #cccccc}
-  constantForeground: undefined, // TODO: symbolIcon.constantForeground
+  constantForeground: icons.symbol.constant || tokens.onSurfaceVariant,
 
   // The foreground color for constructor symbols. {default: #b180d7}
-  constructorForeground: undefined, // TODO: symbolIcon.constructorForeground
+  constructorForeground: icons.symbol.constructor || tokens.onSurfaceVariant,
 
   // The foreground color for enumerator symbols. {default: #ee9d28}
-  enumeratorForeground: undefined, // TODO: symbolIcon.enumeratorForeground
+  enumeratorForeground: icons.symbol.enumerator || tokens.onSurfaceVariant,
 
   // The foreground color for enumerator member symbols. {default: #75beff}
-  enumeratorMemberForeground: undefined, // TODO: symbolIcon.enumeratorMemberForeground
+  enumeratorMemberForeground: icons.symbol.enumeratorMember || tokens.onSurfaceVariant,
 
   // The foreground color for event symbols. {default: #ee9d28}
-  eventForeground: undefined, // TODO: symbolIcon.eventForeground
+  eventForeground: icons.symbol.event || tokens.onSurfaceVariant,
 
   // The foreground color for field symbols. {default: #75beff}
-  fieldForeground: undefined, // TODO: symbolIcon.fieldForeground
+  fieldForeground: icons.symbol.field || tokens.onSurfaceVariant,
 
   // The foreground color for file symbols. {default: #cccccc}
-  fileForeground: undefined, // TODO: symbolIcon.fileForeground
+  fileForeground: icons.symbol.file || tokens.onSurfaceVariant,
 
   // The foreground color for folder symbols. {default: #cccccc}
-  folderForeground: undefined, // TODO: symbolIcon.folderForeground
+  folderForeground: icons.symbol.folder || tokens.onSurfaceVariant,
 
   // The foreground color for function symbols. {default: #b180d7}
-  functionForeground: undefined, // TODO: symbolIcon.functionForeground
+  functionForeground: icons.symbol.function || tokens.onSurfaceVariant,
 
   // The foreground color for interface symbols. {default: #75beff}
-  interfaceForeground: undefined, // TODO: symbolIcon.interfaceForeground
+  interfaceForeground: icons.symbol.interface || tokens.onSurfaceVariant,
 
   // The foreground color for key symbols. {default: #cccccc}
-  keyForeground: undefined, // TODO: symbolIcon.keyForeground
+  keyForeground: icons.symbol.key || tokens.onSurfaceVariant,
 
   // The foreground color for keyword symbols. {default: #cccccc}
-  keywordForeground: undefined, // TODO: symbolIcon.keywordForeground
+  keywordForeground: icons.symbol.keyword || tokens.onSurfaceVariant,
 
   // The foreground color for method symbols. {default: #b180d7}
-  methodForeground: undefined, // TODO: symbolIcon.methodForeground
+  methodForeground: icons.symbol.method || tokens.onSurfaceVariant,
 
   // The foreground color for module symbols. {default: #cccccc}
-  moduleForeground: undefined, // TODO: symbolIcon.moduleForeground
+  moduleForeground: icons.symbol.module || tokens.onSurfaceVariant,
 
   // The foreground color for namespace symbols. {default: #cccccc}
-  namespaceForeground: undefined, // TODO: symbolIcon.namespaceForeground
+  namespaceForeground: icons.symbol.namespace || tokens.onSurfaceVariant,
 
   // The foreground color for null symbols. {default: #cccccc}
-  nullForeground: undefined, // TODO: symbolIcon.nullForeground
+  nullForeground: icons.symbol.null || tokens.onSurfaceVariant,
 
   // The foreground color for number symbols. {default: #cccccc}
-  numberForeground: undefined, // TODO: symbolIcon.numberForeground
+  numberForeground: icons.symbol.number || tokens.onSurfaceVariant,
 
   // The foreground color for object symbols. {default: #cccccc}
-  objectForeground: undefined, // TODO: symbolIcon.objectForeground
+  objectForeground: icons.symbol.object || tokens.onSurfaceVariant,
 
   // The foreground color for operator symbols. {default: #cccccc}
-  operatorForeground: undefined, // TODO: symbolIcon.operatorForeground
+  operatorForeground: icons.symbol.operator || tokens.onSurfaceVariant,
 
   // The foreground color for package symbols. {default: #cccccc}
-  packageForeground: undefined, // TODO: symbolIcon.packageForeground
+  packageForeground: icons.symbol.package || tokens.onSurfaceVariant,
 
   // The foreground color for property symbols. {default: #cccccc}
-  propertyForeground: undefined, // TODO: symbolIcon.propertyForeground
+  propertyForeground: icons.symbol.property || tokens.onSurfaceVariant,
 
   // The foreground color for reference symbols. {default: #cccccc}
-  referenceForeground: undefined, // TODO: symbolIcon.referenceForeground
+  referenceForeground: icons.symbol.reference || tokens.onSurfaceVariant,
 
   // The foreground color for snippet symbols. {default: #cccccc}
-  snippetForeground: undefined, // TODO: symbolIcon.snippetForeground
+  snippetForeground: icons.symbol.snippet || tokens.onSurfaceVariant,
 
   // The foreground color for string symbols. {default: #cccccc}
-  stringForeground: undefined, // TODO: symbolIcon.stringForeground
+  stringForeground: icons.symbol.string || tokens.onSurfaceVariant,
 
   // The foreground color for struct symbols. {default: #cccccc}
-  structForeground: undefined, // TODO: symbolIcon.structForeground
+  structForeground: icons.symbol.struct || tokens.onSurfaceVariant,
 
   // The foreground color for text symbols. {default: #cccccc}
-  textForeground: undefined, // TODO: symbolIcon.textForeground
+  textForeground: icons.symbol.text || tokens.onSurfaceVariant,
 
   // The foreground color for type parameter symbols. {default: #cccccc}
-  typeParameterForeground: undefined, // TODO: symbolIcon.typeParameterForeground
+  typeParameterForeground: icons.symbol.typeParameter || tokens.onSurfaceVariant,
 
   // The foreground color for unit symbols. {default: #cccccc}
-  unitForeground: undefined, // TODO: symbolIcon.unitForeground
+  unitForeground: icons.symbol.unit || tokens.onSurfaceVariant,
 
   // The foreground color for variable symbols. {default: #75beff}
-  variableForeground: undefined, // TODO: symbolIcon.variableForeground
+  variableForeground: icons.symbol.variable || tokens.onSurfaceVariant,
 };
 
 export default {

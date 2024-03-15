@@ -33,7 +33,7 @@ import peek from 'tm-themes/themes/nord.json' assert { type: 'json' };
 import textMate from './text-mate.js';
 import tokens from './token.js';
 
-import def from './default.js';
+import { scopes as def, icons as defIco } from './default.js';
 import { editor } from '../colors.js';
 
 const root = [
@@ -527,7 +527,9 @@ const settings = [
   ...tokens,
 ];
 
-// export default def;
-// export default root;
-export default settings;
-// export default peek.tokenColors;
+export const icons = defIco;
+
+export const tokenColors = def;
+// export const tokenColors= root;
+// export const tokenColors= settings;
+// export const tokenColors= peek.tokenColors;
