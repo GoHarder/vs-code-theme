@@ -92,10 +92,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Adjust annoying editor settings
 - Refactored color scheme tool and updated schemas
 
-## [0.1.3]
-- Added first syntax prototype.
-- Removed deprecated tools.
-- Fixed crashes for color updates.
-- Updated code references.
-- Updated schemas.
-- Reduced opacity of folded editor backgrounds.
+## [0.1.4]
+- Added first syntax prototype
+- Removed deprecated tools
+- Fixed crashes for color updates
+- Updated code references
+- Updated schemas
+- Reduced opacity of folded editor backgrounds
+
+## [0.1.5]
+- Reset syntax to default pattern from failed test

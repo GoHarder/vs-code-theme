@@ -1,6 +1,6 @@
 {
   "name": "goharder-vscode-theme",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "GoHarder theme for visual studio code.",
   "scripts": {
     "dev-dark": "cd src/dark-default; nodemon index",
