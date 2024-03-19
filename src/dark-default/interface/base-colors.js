@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+
+import { tokens } from '../colors.js';
 
 // Overall border color for focused elements. {default: #007fd4}
 const focusBorder = tokens.secondary;

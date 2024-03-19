@@ -216,6 +216,14 @@ const customTokens = {
   onAltError: ansi.red._20,
   altErrorContainer: ansi.red._30,
   onAltErrorContainer: ansi.red._90,
+
+  // Link
+  link: ansi.cyan._80,
+  onLink: ansi.cyan._20,
+  linkContainer: ansi.cyan._30,
+  onLinkContainer: ansi.cyan._90,
+
+  linkHover: calcStateLayer(ansi.cyan._80, ansi.cyan._20, 0.08),
 };
 
 export const tokens = { ...defaultTokens, ...customTokens };

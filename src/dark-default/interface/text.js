@@ -3,7 +3,7 @@
 // Colors inside a text document, such as the welcome page.
 // --------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const textBlockQuote = {
   // Background color for block quotes in text. {default: #222222}
@@ -21,10 +21,12 @@ const textCodeBlock = {
 const textLink = {
   // Foreground color for links in text when clicked on and on mouse hover.
   // {default: #3794ff}
-  activeForeground: tokens.primaryHover,
+  // activeForeground: tokens.primaryHover,
+  activeForeground: tokens.linkHover,
 
   // Foreground color for links in text. {default: #3794ff}
-  foreground: tokens.primary,
+  // foreground: tokens.primary,
+  foreground: tokens.link,
 };
 
 const textPreformat = {
