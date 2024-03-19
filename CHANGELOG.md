@@ -102,3 +102,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.1.5]
 - Reset syntax to default pattern from failed test
+
+## [0.1.6]
+- Updated link colors and bright terminal colors
