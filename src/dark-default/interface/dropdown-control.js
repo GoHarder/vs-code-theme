@@ -5,11 +5,11 @@
 // not used on macOS currently.
 // ------------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const dropdown = {
   // Dropdown background. {default: #3c3c3c}
-  background: '#00000000',
+  background: tokens.surfaceContainer,
 
   // Dropdown list background. {default: null}
   listBackground: tokens.surfaceContainer,
