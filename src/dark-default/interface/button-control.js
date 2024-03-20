@@ -4,7 +4,7 @@
 // the Explorer of a new window.
 // ----------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const button = {
   // Button foreground color. {default: #ffffff}
