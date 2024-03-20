@@ -105,3 +105,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [0.1.6]
 - Updated link colors and bright terminal colors
+
+## [0.1.7]
+- Adjusted editor links
+- Fixed invisible dropdown background
+- Updated color source
+- Made auto complete text more visible
