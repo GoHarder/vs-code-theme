@@ -9,7 +9,7 @@
 // ---------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const editor = {
   // Editor background color. {default: #1e1e1e}
@@ -242,7 +242,7 @@ const editorLink = {
   // NOTE: Example image available.
 
   // Color of active links. {default: #4e94ce}
-  activeForeground: tokens.primary,
+  activeForeground: tokens.linkHover,
 };
 
 const editorWhitespace = {
@@ -295,7 +295,8 @@ const editorCodeLens = {
   // NOTE: Example image available.
 
   // Foreground color of an editor CodeLens. {default: #999999}
-  foreground: chroma(tokens.primary).alpha(0.7).hex(),
+  // foreground: chroma(tokens.primary).alpha(0.7).hex(),
+  foreground: chroma(tokens.link).alpha(0.7).hex(),
 };
 
 const editorLightBulb = {
