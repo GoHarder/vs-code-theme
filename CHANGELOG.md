@@ -111,3 +111,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed invisible dropdown background
 - Updated color source
 - Made auto complete text more visible
+
+## [0.1.8]
+- Updated color source.
+- Adjusted ghost text to match theme.
