@@ -5,7 +5,7 @@
 // -----------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const list = {
   // List/Tree background color for the selected item when the list/tree is

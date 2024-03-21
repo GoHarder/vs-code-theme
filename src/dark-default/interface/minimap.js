@@ -4,7 +4,7 @@
 // ---------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const minimap = {
   // Highlight color for matches from search within files.

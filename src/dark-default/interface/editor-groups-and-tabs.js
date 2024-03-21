@@ -6,7 +6,7 @@
 // ------------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const editorGroup = {
   // Color to separate multiple editor groups from each other.

@@ -5,7 +5,7 @@
 // Bar.
 // -----------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const activityBar = {
   // Activity Bar background color. {default: #333333}

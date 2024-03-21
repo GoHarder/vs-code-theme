@@ -8,13 +8,13 @@ import inputControl from './input-control.js';
 import scrollbarControl from './scrollbar-control.js';
 import badge from './badge.js';
 import progressbar from './progressbar.js';
-import listsAndTrees from './lists-and-trees.js'; // NOTE: Bookmark
+import listsAndTrees from './lists-and-trees.js';
 import activityBar from './activity-bar.js';
 import profiles from './profiles.js';
 import sideBar from './side-bar.js';
 import minimap from './minimap.js';
 import editorGroupsAndTabs from './editor-groups-and-tabs.js';
-import editor from './editor.js';
+import editor from './editor.js'; // BOOKMARK
 import diffEditor from './diff-editor.js';
 import chat from './chat.js';
 import inlineChat from './inline-chat.js';
