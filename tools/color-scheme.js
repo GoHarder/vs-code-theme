@@ -265,6 +265,7 @@ const getOrange = (source, bright) => {
   const redKey = bright ? 'brightRed' : 'red';
   const yellowKey = bright ? 'brightYellow' : 'yellow';
   const orangeKey = bright ? 'brightOrange' : 'orange';
+  const orangeIndex = bright ? 1 : 0;
   const red = syntax.find((s) => s.name === ansi[redKey]);
   const yellow = syntax.find((s) => s.name === ansi[yellowKey]);
 
@@ -278,12 +279,41 @@ const getOrange = (source, bright) => {
   const scale = chroma.scale([red.value, yellow.value]);
 
   source.syntax.push({
-    name: orangeKey,
+    name: `orange${orangeIndex}`,
     value: scale(0.5).hex(),
     blend,
   });
 
   source.ansi[orangeKey] = orangeKey;
+
+  return source;
+};
+
+const getTeal = (source, bright) => {
+  const { ansi, syntax } = source;
+  const blueKey = bright ? 'brightBlue' : 'blue';
+  const greenKey = bright ? 'brightGreen' : 'green';
+  const tealKey = bright ? 'brightTeal' : 'teal';
+  const tealIndex = bright ? 1 : 0;
+  const blue = syntax.find((s) => s.name === ansi[blueKey]);
+  const green = syntax.find((s) => s.name === ansi[greenKey]);
+
+  if (!blue || !green) {
+    console.log('Could not find blue or green');
+    return source;
+  }
+
+  const blend = blue.blend && green.blend;
+
+  const scale = chroma.scale([blue.value, green.value]);
+
+  source.syntax.push({
+    name: `teal${tealIndex}`,
+    value: scale(0.5).hex(),
+    blend,
+  });
+
+  source.ansi[tealKey] = tealKey;
 
   return source;
 };
@@ -298,6 +328,9 @@ inquirer
 
     if (!fileData.ansi.orange) fileData = getOrange(fileData, false);
     if (!fileData.ansi.brightOrange) fileData = getOrange(fileData, true);
+
+    if (!fileData.ansi.teal) fileData = getTeal(fileData, false);
+    if (!fileData.ansi.brightTeal) fileData = getTeal(fileData, true);
 
     const syntaxPallets = buildSyntaxPalettes(fileData);
 
