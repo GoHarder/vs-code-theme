@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const diffEditor = {
   // Border color between the two text editors. {default: null}
@@ -34,12 +34,12 @@ const diffEditor = {
 
   // Background color for text that got removed. The color must not be
   // opaque so as not to hide underlying decorations. {default: #ff000033}
-  removedTextBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedTextBackground: chroma(tokens.altErrorContainer).alpha(0.2).hex(),
 
   // Background color for lines that got removed. The color must not be
   // opaque so as not to hide underlying decorations. {default: #ff000033}
   // removedLineBackground: undefined,
-  removedLineBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedLineBackground: chroma(tokens.altErrorContainer).alpha(0.2).hex(),
 
   // Outline color for text that got removed. {default: null}
   removedTextBorder: undefined, // Done
@@ -69,7 +69,7 @@ const diffEditorGutter = {
 
   // Background color for the margin where lines got removed.
   // {default: null}
-  removedLineBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedLineBackground: chroma(tokens.altErrorContainer).alpha(0.2).hex(),
 };
 
 const diffEditorOverview = {
