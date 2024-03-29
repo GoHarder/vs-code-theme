@@ -10,6 +10,7 @@
 
 import chroma from 'chroma-js';
 import { tokens } from '../colors.js';
+import { icons } from '../syntax/index.js';
 
 const editor = {
   // Editor background color. {default: #1e1e1e}
@@ -260,23 +261,23 @@ const editorInlayHint = {
   // true.
   // -------------------------------------------------------------------
 
-  // Background color of inline hints. {default: #4d4d4d40},
-  background: undefined,
-
   // Foreground color of inline hints. {default: #cccccc},
-  foreground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+  foreground: icons.editorInlay.default,
+
+  // Background color of inline hints. {default: #4d4d4d40},
+  background: chroma(icons.editorInlay.default).alpha(0.25).hex(),
 
   // Foreground color of inline hints for types {default: #cccccc},
-  typeForeground: undefined, // Done
+  typeForeground: icons.editorInlay.type,
 
   // Background color of inline hints for types {default: #4d4d4d40},
-  typeBackground: undefined, // Done
+  typeBackground: chroma(icons.editorInlay.type).alpha(0.25).hex(),
 
   // Foreground color of inline hints for parameters {default: #cccccc},
-  parameterForeground: undefined, // Done
+  parameterForeground: icons.editorInlay.parameter,
 
   // Background color of inline hints for parameters {default: #4d4d4d40},
-  parameterBackground: undefined, // Done
+  parameterBackground: chroma(icons.editorInlay.parameter).alpha(0.25).hex(),
 };
 
 const editorRuler = {
