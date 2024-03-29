@@ -15,7 +15,7 @@ import sideBar from './side-bar.js';
 import minimap from './minimap.js';
 import editorGroupsAndTabs from './editor-groups-and-tabs.js';
 import editor from './editor.js'; // BOOKMARK
-import diffEditor from './diff-editor.js';
+import diffEditor from './diff-editor.js'; // DONE
 import chat from './chat.js';
 import inlineChat from './inline-chat.js';
 import editorWidget from './editor-widget.js';

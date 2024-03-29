@@ -113,5 +113,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Made auto complete text more visible
 
 ## [0.1.8]
-- Updated color source.
-- Adjusted ghost text to match theme.
+- Updated color source
+- Adjusted ghost text to match theme
+
+## [0.1.9]
+- Added icon colors
+- Updated diff editor colors
+- Removed unused log
+- Removed unused imports
+- Added editor inlay hint settings
+- Added more tools
