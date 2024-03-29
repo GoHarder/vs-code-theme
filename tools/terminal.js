@@ -30,8 +30,6 @@ const init = async () => {
       /** @type {ColorTokens} */
       const colorTokens = await readJsonFile(`./src/colors/${colorTokenFile}`);
 
-      console.log(ansi);
-
       const { neutral } = colorTokens.interface;
 
       const filter = ['orange', 'brightOrange', 'teal', 'brightTeal'];
