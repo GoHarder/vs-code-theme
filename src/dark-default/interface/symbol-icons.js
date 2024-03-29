@@ -4,9 +4,7 @@
 // breadcrumb navigation, and suggest widget:
 // -------------------------------------------------------------------
 
-import chroma from 'chroma-js';
 import { tokens } from '../colors.js';
-import { constant, entity, keyword, storage, string, variable } from '../syntax/text-mate.js';
 import { icons } from '../syntax/index.js';
 
 const symbolIcon = {
