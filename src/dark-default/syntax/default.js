@@ -33,6 +33,11 @@ export const icons = {
     boolean: src.color12.adjusted,
     number: src.color9.adjusted,
   },
+  editorInlay: {
+    default: tokens.onSurfaceVariant,
+    type: src.color10.adjusted,
+    parameter: src.color14.adjusted,
+  },
   symbol: {
     array: undefined,
     boolean: src.color12.adjusted, // constant.language
@@ -51,7 +56,7 @@ export const icons = {
     key: undefined,
     keyword: src.color12.adjusted, // keyword.control
     method: src.color7.adjusted, // entity.name.function
-    module: undefined,
+    module: undefined, // found typing in a rust file `io`
     namespace: src.color10.adjusted, // entity.name.type
     null: src.color12.adjusted, // constant.language
     number: src.color9.adjusted, // constant.numeric
@@ -59,10 +64,10 @@ export const icons = {
     operator: src.color3.adjusted, // keyword.operator
     package: undefined,
     property: src.color14.adjusted, // entity.other.attribute-name
-    reference: undefined,
-    snippet: undefined,
+    reference: src.color14.adjusted, // variable
+    snippet: undefined, // found default is ok
     string: src.color5.adjusted, // string
-    struct: undefined,
+    struct: src.color10.adjusted, // entity.name.type
     text: undefined,
     typeParameter: src.color10.adjusted, // entity.name.type
     unit: undefined,
