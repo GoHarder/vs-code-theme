@@ -91,16 +91,6 @@
         }
       ]
     },
-    "textSeparator.foreground": {
-      "type": "string",
-      "description": "Color for text separators.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
     "textLink.foreground": {
       "type": "string",
       "description": "Foreground color for links in text.",
@@ -114,6 +104,16 @@
     "textLink.activeForeground": {
       "type": "string",
       "description": "Foreground color for links in text when clicked on and on mouse hover.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "textSeparator.foreground": {
+      "type": "string",
+      "description": "Color for text separators.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -171,6 +171,772 @@
         }
       ]
     },
+    "sash.hoverBorder": {
+      "type": "string",
+      "description": "Border color of active sashes.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "badge.background": {
+      "type": "string",
+      "description": "Badge background color. Badges are small information labels, e.g. for search results count.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "badge.foreground": {
+      "type": "string",
+      "description": "Badge foreground color. Badges are small information labels, e.g. for search results count.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scrollbar.shadow": {
+      "type": "string",
+      "description": "Scrollbar shadow to indicate that the view is scrolled.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scrollbarSlider.background": {
+      "type": "string",
+      "description": "Scrollbar slider background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scrollbarSlider.hoverBackground": {
+      "type": "string",
+      "description": "Scrollbar slider background color when hovering.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "scrollbarSlider.activeBackground": {
+      "type": "string",
+      "description": "Scrollbar slider background color when clicked on.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "progressBar.background": {
+      "type": "string",
+      "description": "Background color of the progress bar that can show for long running operations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.background": {
+      "type": "string",
+      "description": "Editor background color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.foreground": {
+      "type": "string",
+      "description": "Editor default foreground color.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScroll.background": {
+      "type": "string",
+      "description": "Background color of sticky scroll in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScrollHover.background": {
+      "type": "string",
+      "description": "Background color of sticky scroll on hover in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScroll.border": {
+      "type": "string",
+      "description": "Border color of sticky scroll in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorStickyScroll.shadow": {
+      "type": "string",
+      "description": " Shadow color of sticky scroll in the editor",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWidget.background": {
+      "type": "string",
+      "description": "Background color of editor widgets, such as find/replace.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWidget.foreground": {
+      "type": "string",
+      "description": "Foreground color of editor widgets, such as find/replace.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWidget.border": {
+      "type": "string",
+      "description": "Border color of editor widgets. The color is only used if the widget chooses to have a border and if the color is not overridden by a widget.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWidget.resizeBorder": {
+      "type": "string",
+      "description": "Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorError.background": {
+      "type": "string",
+      "description": "Background color of error text in the editor. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editorError.foreground": {
+      "type": "string",
+      "description": "Foreground color of error squigglies in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorError.border": {
+      "type": "string",
+      "description": "If set, color of double underlines for errors in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWarning.background": {
+      "type": "string",
+      "description": "Background color of warning text in the editor. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editorWarning.foreground": {
+      "type": "string",
+      "description": "Foreground color of warning squigglies in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorWarning.border": {
+      "type": "string",
+      "description": "If set, color of double underlines for warnings in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInfo.background": {
+      "type": "string",
+      "description": "Background color of info text in the editor. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editorInfo.foreground": {
+      "type": "string",
+      "description": "Foreground color of info squigglies in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInfo.border": {
+      "type": "string",
+      "description": "If set, color of double underlines for infos in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorHint.foreground": {
+      "type": "string",
+      "description": "Foreground color of hint squigglies in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorHint.border": {
+      "type": "string",
+      "description": "If set, color of double underlines for hints in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorLink.activeForeground": {
+      "type": "string",
+      "description": "Color of active links.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.selectionBackground": {
+      "type": "string",
+      "description": "Color of the editor selection.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.selectionForeground": {
+      "type": "string",
+      "description": "Color of the selected text for high contrast.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.inactiveSelectionBackground": {
+      "type": "string",
+      "description": "Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editor.selectionHighlightBackground": {
+      "type": "string",
+      "description": "Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editor.selectionHighlightBorder": {
+      "type": "string",
+      "description": "Border color for regions with the same content as the selection.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.findMatchBackground": {
+      "type": "string",
+      "description": "Color of the current search match.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.findMatchHighlightBackground": {
+      "type": "string",
+      "description": "Color of the other search matches. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editor.findRangeHighlightBackground": {
+      "type": "string",
+      "description": "Color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editor.findMatchBorder": {
+      "type": "string",
+      "description": "Border color of the current search match.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.findMatchHighlightBorder": {
+      "type": "string",
+      "description": "Border color of the other search matches.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.findRangeHighlightBorder": {
+      "type": "string",
+      "description": "Border color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editor.hoverHighlightBackground": {
+      "type": "string",
+      "description": "Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editorHoverWidget.background": {
+      "type": "string",
+      "description": "Background color of the editor hover.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorHoverWidget.foreground": {
+      "type": "string",
+      "description": "Foreground color of the editor hover.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorHoverWidget.border": {
+      "type": "string",
+      "description": "Border color of the editor hover.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorHoverWidget.statusBarBackground": {
+      "type": "string",
+      "description": "Background color of the editor hover status bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.foreground": {
+      "type": "string",
+      "description": "Foreground color of inline hints",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.background": {
+      "type": "string",
+      "description": "Background color of inline hints",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.typeForeground": {
+      "type": "string",
+      "description": "Foreground color of inline hints for types",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.typeBackground": {
+      "type": "string",
+      "description": "Background color of inline hints for types",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.parameterForeground": {
+      "type": "string",
+      "description": "Foreground color of inline hints for parameters",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorInlayHint.parameterBackground": {
+      "type": "string",
+      "description": "Background color of inline hints for parameters",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorLightBulb.foreground": {
+      "type": "string",
+      "description": "The color used for the lightbulb actions icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorLightBulbAutoFix.foreground": {
+      "type": "string",
+      "description": "The color used for the lightbulb auto fix actions icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorLightBulbAi.foreground": {
+      "type": "string",
+      "description": "The color used for the lightbulb AI icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.snippetTabstopHighlightBackground": {
+      "type": "string",
+      "description": "Highlight background color of a snippet tabstop.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.snippetTabstopHighlightBorder": {
+      "type": "string",
+      "description": "Highlight border color of a snippet tabstop.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.snippetFinalTabstopHighlightBackground": {
+      "type": "string",
+      "description": "Highlight background color of the final tabstop of a snippet.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editor.snippetFinalTabstopHighlightBorder": {
+      "type": "string",
+      "description": "Highlight border color of the final tabstop of a snippet.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.insertedTextBackground": {
+      "type": "string",
+      "description": "Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "diffEditor.removedTextBackground": {
+      "type": "string",
+      "description": "Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "diffEditor.insertedLineBackground": {
+      "type": "string",
+      "description": "Background color for lines that got inserted. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "diffEditor.removedLineBackground": {
+      "type": "string",
+      "description": "Background color for lines that got removed. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "diffEditorGutter.insertedLineBackground": {
+      "type": "string",
+      "description": "Background color for the margin where lines got inserted.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditorGutter.removedLineBackground": {
+      "type": "string",
+      "description": "Background color for the margin where lines got removed.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditorOverview.insertedForeground": {
+      "type": "string",
+      "description": "Diff overview ruler foreground for inserted content.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditorOverview.removedForeground": {
+      "type": "string",
+      "description": "Diff overview ruler foreground for removed content.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.insertedTextBorder": {
+      "type": "string",
+      "description": "Outline color for the text that got inserted.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.removedTextBorder": {
+      "type": "string",
+      "description": "Outline color for text that got removed.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.border": {
+      "type": "string",
+      "description": "Border color between the two text editors.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.diagonalFill": {
+      "type": "string",
+      "description": "Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.unchangedRegionBackground": {
+      "type": "string",
+      "description": "The background color of unchanged blocks in the diff editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.unchangedRegionForeground": {
+      "type": "string",
+      "description": "The foreground color of unchanged blocks in the diff editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "diffEditor.unchangedCodeBackground": {
+      "type": "string",
+      "description": "The background color of unchanged code in the diff editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "widget.shadow": {
       "type": "string",
       "description": "Shadow color of widgets such as find/replace inside the editor.",
@@ -184,6 +950,252 @@
     "widget.border": {
       "type": "string",
       "description": "Border color of widgets such as find/replace inside the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "toolbar.hoverBackground": {
+      "type": "string",
+      "description": "Toolbar background when hovering over actions using the mouse",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "toolbar.hoverOutline": {
+      "type": "string",
+      "description": "Toolbar outline when hovering over actions using the mouse",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "toolbar.activeBackground": {
+      "type": "string",
+      "description": "Toolbar background when holding the mouse over actions",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "breadcrumb.foreground": {
+      "type": "string",
+      "description": "Color of focused breadcrumb items.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "breadcrumb.background": {
+      "type": "string",
+      "description": "Background color of breadcrumb items.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "breadcrumb.focusForeground": {
+      "type": "string",
+      "description": "Color of focused breadcrumb items.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "breadcrumb.activeSelectionForeground": {
+      "type": "string",
+      "description": "Color of selected breadcrumb items.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "breadcrumbPicker.background": {
+      "type": "string",
+      "description": "Background color of breadcrumb item picker.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "merge.currentHeaderBackground": {
+      "type": "string",
+      "description": "Current header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.currentContentBackground": {
+      "type": "string",
+      "description": "Current content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.incomingHeaderBackground": {
+      "type": "string",
+      "description": "Incoming header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.incomingContentBackground": {
+      "type": "string",
+      "description": "Incoming content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.commonHeaderBackground": {
+      "type": "string",
+      "description": "Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.commonContentBackground": {
+      "type": "string",
+      "description": "Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "merge.border": {
+      "type": "string",
+      "description": "Border color on headers and the splitter in inline merge-conflicts.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorOverviewRuler.currentContentForeground": {
+      "type": "string",
+      "description": "Current overview ruler foreground for inline merge-conflicts.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorOverviewRuler.incomingContentForeground": {
+      "type": "string",
+      "description": "Incoming overview ruler foreground for inline merge-conflicts.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorOverviewRuler.commonContentForeground": {
+      "type": "string",
+      "description": "Common ancestor overview ruler foreground for inline merge-conflicts.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorOverviewRuler.findMatchForeground": {
+      "type": "string",
+      "description": "Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "editorOverviewRuler.selectionHighlightForeground": {
+      "type": "string",
+      "description": "Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
+      "patternErrorMessage": "This color must be transparent or it will obscure content"
+    },
+    "problemsErrorIcon.foreground": {
+      "type": "string",
+      "description": "The color used for the problems error icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "problemsWarningIcon.foreground": {
+      "type": "string",
+      "description": "The color used for the problems warning icon.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "problemsInfoIcon.foreground": {
+      "type": "string",
+      "description": "The color used for the problems info icon.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -481,9 +1493,9 @@
         }
       ]
     },
-    "badge.background": {
+    "checkbox.background": {
       "type": "string",
-      "description": "Badge background color. Badges are small information labels, e.g. for search results count.",
+      "description": "Background color of checkbox widget.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -491,9 +1503,9 @@
         }
       ]
     },
-    "badge.foreground": {
+    "checkbox.selectBackground": {
       "type": "string",
-      "description": "Badge foreground color. Badges are small information labels, e.g. for search results count.",
+      "description": "Background color of checkbox widget when the element it's in is selected.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -501,9 +1513,9 @@
         }
       ]
     },
-    "scrollbar.shadow": {
+    "checkbox.foreground": {
       "type": "string",
-      "description": "Scrollbar shadow to indicate that the view is scrolled.",
+      "description": "Foreground color of checkbox widget.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -511,9 +1523,9 @@
         }
       ]
     },
-    "scrollbarSlider.background": {
+    "checkbox.border": {
       "type": "string",
-      "description": "Scrollbar slider background color.",
+      "description": "Border color of checkbox widget.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -521,305 +1533,9 @@
         }
       ]
     },
-    "scrollbarSlider.hoverBackground": {
+    "checkbox.selectBorder": {
       "type": "string",
-      "description": "Scrollbar slider background color when hovering.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "scrollbarSlider.activeBackground": {
-      "type": "string",
-      "description": "Scrollbar slider background color when clicked on.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "progressBar.background": {
-      "type": "string",
-      "description": "Background color of the progress bar that can show for long running operations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorError.background": {
-      "type": "string",
-      "description": "Background color of error text in the editor. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editorError.foreground": {
-      "type": "string",
-      "description": "Foreground color of error squigglies in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorError.border": {
-      "type": "string",
-      "description": "If set, color of double underlines for errors in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWarning.background": {
-      "type": "string",
-      "description": "Background color of warning text in the editor. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editorWarning.foreground": {
-      "type": "string",
-      "description": "Foreground color of warning squigglies in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWarning.border": {
-      "type": "string",
-      "description": "If set, color of double underlines for warnings in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInfo.background": {
-      "type": "string",
-      "description": "Background color of info text in the editor. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editorInfo.foreground": {
-      "type": "string",
-      "description": "Foreground color of info squigglies in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInfo.border": {
-      "type": "string",
-      "description": "If set, color of double underlines for infos in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorHint.foreground": {
-      "type": "string",
-      "description": "Foreground color of hint squigglies in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorHint.border": {
-      "type": "string",
-      "description": "If set, color of double underlines for hints in the editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "sash.hoverBorder": {
-      "type": "string",
-      "description": "Border color of active sashes.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.background": {
-      "type": "string",
-      "description": "Editor background color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.foreground": {
-      "type": "string",
-      "description": "Editor default foreground color.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorStickyScroll.background": {
-      "type": "string",
-      "description": "Background color of sticky scroll in the editor",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorStickyScrollHover.background": {
-      "type": "string",
-      "description": "Background color of sticky scroll on hover in the editor",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorStickyScroll.border": {
-      "type": "string",
-      "description": "Border color of sticky scroll in the editor",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorStickyScroll.shadow": {
-      "type": "string",
-      "description": " Shadow color of sticky scroll in the editor",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWidget.background": {
-      "type": "string",
-      "description": "Background color of editor widgets, such as find/replace.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWidget.foreground": {
-      "type": "string",
-      "description": "Foreground color of editor widgets, such as find/replace.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWidget.border": {
-      "type": "string",
-      "description": "Border color of editor widgets. The color is only used if the widget chooses to have a border and if the color is not overridden by a widget.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorWidget.resizeBorder": {
-      "type": "string",
-      "description": "Border color of the resize bar of editor widgets. The color is only used if the widget chooses to have a resize border and if the color is not overridden by a widget.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInput.background": {
-      "type": "string",
-      "description": "Quick picker background color. The quick picker widget is the container for pickers like the command palette.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInput.foreground": {
-      "type": "string",
-      "description": "Quick picker foreground color. The quick picker widget is the container for pickers like the command palette.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInputTitle.background": {
-      "type": "string",
-      "description": "Quick picker title background color. The quick picker widget is the container for pickers like the command palette.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "pickerGroup.foreground": {
-      "type": "string",
-      "description": "Quick picker color for grouping labels.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "pickerGroup.border": {
-      "type": "string",
-      "description": "Quick picker color for grouping borders.",
+      "description": "Border color of checkbox widget when the element it's in is selected.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -860,466 +1576,6 @@
     "keybindingLabel.bottomBorder": {
       "type": "string",
       "description": "Keybinding label border bottom color. The keybinding label is used to represent a keyboard shortcut.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.selectionBackground": {
-      "type": "string",
-      "description": "Color of the editor selection.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.selectionForeground": {
-      "type": "string",
-      "description": "Color of the selected text for high contrast.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.inactiveSelectionBackground": {
-      "type": "string",
-      "description": "Color of the selection in an inactive editor. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editor.selectionHighlightBackground": {
-      "type": "string",
-      "description": "Color for regions with the same content as the selection. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editor.selectionHighlightBorder": {
-      "type": "string",
-      "description": "Border color for regions with the same content as the selection.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.findMatchBackground": {
-      "type": "string",
-      "description": "Color of the current search match.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.findMatchHighlightBackground": {
-      "type": "string",
-      "description": "Color of the other search matches. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editor.findRangeHighlightBackground": {
-      "type": "string",
-      "description": "Color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editor.findMatchBorder": {
-      "type": "string",
-      "description": "Border color of the current search match.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.findMatchHighlightBorder": {
-      "type": "string",
-      "description": "Border color of the other search matches.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.findRangeHighlightBorder": {
-      "type": "string",
-      "description": "Border color of the range limiting the search. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "searchEditor.findMatchBackground": {
-      "type": "string",
-      "description": "Color of the Search Editor query matches.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "searchEditor.findMatchBorder": {
-      "type": "string",
-      "description": "Border color of the Search Editor query matches.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "search.resultsInfoForeground": {
-      "type": "string",
-      "description": "Color of the text in the search viewlet's completion message.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.hoverHighlightBackground": {
-      "type": "string",
-      "description": "Highlight below the word for which a hover is shown. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editorHoverWidget.background": {
-      "type": "string",
-      "description": "Background color of the editor hover.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorHoverWidget.foreground": {
-      "type": "string",
-      "description": "Foreground color of the editor hover.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorHoverWidget.border": {
-      "type": "string",
-      "description": "Border color of the editor hover.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorHoverWidget.statusBarBackground": {
-      "type": "string",
-      "description": "Background color of the editor hover status bar.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorLink.activeForeground": {
-      "type": "string",
-      "description": "Color of active links.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.foreground": {
-      "type": "string",
-      "description": "Foreground color of inline hints",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.background": {
-      "type": "string",
-      "description": "Background color of inline hints",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.typeForeground": {
-      "type": "string",
-      "description": "Foreground color of inline hints for types",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.typeBackground": {
-      "type": "string",
-      "description": "Background color of inline hints for types",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.parameterForeground": {
-      "type": "string",
-      "description": "Foreground color of inline hints for parameters",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorInlayHint.parameterBackground": {
-      "type": "string",
-      "description": "Background color of inline hints for parameters",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorLightBulb.foreground": {
-      "type": "string",
-      "description": "The color used for the lightbulb actions icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorLightBulbAutoFix.foreground": {
-      "type": "string",
-      "description": "The color used for the lightbulb auto fix actions icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorLightBulbAi.foreground": {
-      "type": "string",
-      "description": "The color used for the lightbulb AI icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.insertedTextBackground": {
-      "type": "string",
-      "description": "Background color for text that got inserted. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "diffEditor.removedTextBackground": {
-      "type": "string",
-      "description": "Background color for text that got removed. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "diffEditor.insertedLineBackground": {
-      "type": "string",
-      "description": "Background color for lines that got inserted. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "diffEditor.removedLineBackground": {
-      "type": "string",
-      "description": "Background color for lines that got removed. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "diffEditorGutter.insertedLineBackground": {
-      "type": "string",
-      "description": "Background color for the margin where lines got inserted.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditorGutter.removedLineBackground": {
-      "type": "string",
-      "description": "Background color for the margin where lines got removed.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditorOverview.insertedForeground": {
-      "type": "string",
-      "description": "Diff overview ruler foreground for inserted content.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditorOverview.removedForeground": {
-      "type": "string",
-      "description": "Diff overview ruler foreground for removed content.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.insertedTextBorder": {
-      "type": "string",
-      "description": "Outline color for the text that got inserted.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.removedTextBorder": {
-      "type": "string",
-      "description": "Outline color for text that got removed.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.border": {
-      "type": "string",
-      "description": "Border color between the two text editors.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.diagonalFill": {
-      "type": "string",
-      "description": "Color of the diff editor's diagonal fill. The diagonal fill is used in side-by-side diff views.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.unchangedRegionBackground": {
-      "type": "string",
-      "description": "The background color of unchanged blocks in the diff editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.unchangedRegionForeground": {
-      "type": "string",
-      "description": "The foreground color of unchanged blocks in the diff editor.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "diffEditor.unchangedCodeBackground": {
-      "type": "string",
-      "description": "The background color of unchanged code in the diff editor.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -1597,6 +1853,16 @@
         }
       ]
     },
+    "list.deemphasizedForeground": {
+      "type": "string",
+      "description": "List/Tree foreground color for items that are deemphasized.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
     "tree.indentGuidesStroke": {
       "type": "string",
       "description": "Tree stroke color for the indentation guides.",
@@ -1630,107 +1896,6 @@
     "tree.tableOddRowsBackground": {
       "type": "string",
       "description": "Background color for odd table rows.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "list.deemphasizedForeground": {
-      "type": "string",
-      "description": "List/Tree foreground color for items that are deemphasized. ",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "checkbox.background": {
-      "type": "string",
-      "description": "Background color of checkbox widget.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "checkbox.selectBackground": {
-      "type": "string",
-      "description": "Background color of checkbox widget when the element it's in is selected.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "checkbox.foreground": {
-      "type": "string",
-      "description": "Foreground color of checkbox widget.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "checkbox.border": {
-      "type": "string",
-      "description": "Border color of checkbox widget.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "checkbox.selectBorder": {
-      "type": "string",
-      "description": "Border color of checkbox widget when the element it's in is selected.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInput.list.focusBackground": {
-      "type": "string",
-      "description": "",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "deprecationMessage": "Please use quickInputList.focusBackground instead"
-    },
-    "quickInputList.focusForeground": {
-      "type": "string",
-      "description": "Quick picker foreground color for the focused item.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInputList.focusIconForeground": {
-      "type": "string",
-      "description": "Quick picker icon foreground color for the focused item.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "quickInputList.focusBackground": {
-      "type": "string",
-      "description": "Quick picker background color for the focused item.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -1807,262 +1972,6 @@
           "body": "${1:#ff0000}"
         }
       ]
-    },
-    "toolbar.hoverBackground": {
-      "type": "string",
-      "description": "Toolbar background when hovering over actions using the mouse",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "toolbar.hoverOutline": {
-      "type": "string",
-      "description": "Toolbar outline when hovering over actions using the mouse",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "toolbar.activeBackground": {
-      "type": "string",
-      "description": "Toolbar background when holding the mouse over actions",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.snippetTabstopHighlightBackground": {
-      "type": "string",
-      "description": "Highlight background color of a snippet tabstop.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.snippetTabstopHighlightBorder": {
-      "type": "string",
-      "description": "Highlight border color of a snippet tabstop.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.snippetFinalTabstopHighlightBackground": {
-      "type": "string",
-      "description": "Highlight background color of the final tabstop of a snippet.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editor.snippetFinalTabstopHighlightBorder": {
-      "type": "string",
-      "description": "Highlight border color of the final tabstop of a snippet.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "breadcrumb.foreground": {
-      "type": "string",
-      "description": "Color of focused breadcrumb items.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "breadcrumb.background": {
-      "type": "string",
-      "description": "Background color of breadcrumb items.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "breadcrumb.focusForeground": {
-      "type": "string",
-      "description": "Color of focused breadcrumb items.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "breadcrumb.activeSelectionForeground": {
-      "type": "string",
-      "description": "Color of selected breadcrumb items.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "breadcrumbPicker.background": {
-      "type": "string",
-      "description": "Background color of breadcrumb item picker.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "merge.currentHeaderBackground": {
-      "type": "string",
-      "description": "Current header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.currentContentBackground": {
-      "type": "string",
-      "description": "Current content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.incomingHeaderBackground": {
-      "type": "string",
-      "description": "Incoming header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.incomingContentBackground": {
-      "type": "string",
-      "description": "Incoming content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.commonHeaderBackground": {
-      "type": "string",
-      "description": "Common ancestor header background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.commonContentBackground": {
-      "type": "string",
-      "description": "Common ancestor content background in inline merge-conflicts. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "merge.border": {
-      "type": "string",
-      "description": "Border color on headers and the splitter in inline merge-conflicts.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorOverviewRuler.currentContentForeground": {
-      "type": "string",
-      "description": "Current overview ruler foreground for inline merge-conflicts.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorOverviewRuler.incomingContentForeground": {
-      "type": "string",
-      "description": "Incoming overview ruler foreground for inline merge-conflicts.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorOverviewRuler.commonContentForeground": {
-      "type": "string",
-      "description": "Common ancestor overview ruler foreground for inline merge-conflicts.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "editorOverviewRuler.findMatchForeground": {
-      "type": "string",
-      "description": "Overview ruler marker color for find matches. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
-    },
-    "editorOverviewRuler.selectionHighlightForeground": {
-      "type": "string",
-      "description": "Overview ruler marker color for selection highlights. The color must not be opaque so as not to hide underlying decorations.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ],
-      "pattern": "^#(?:(?<rgba>[0-9a-fA-f]{3}[0-9a-eA-E])|(?:[0-9a-fA-F]{6}(?:(?![fF]{2})(?:[0-9a-fA-F]{2}))))?$",
-      "patternErrorMessage": "This color must be transparent or it will obscure content"
     },
     "minimap.findMatchHighlight": {
       "type": "string",
@@ -2180,36 +2089,6 @@
         }
       ]
     },
-    "problemsErrorIcon.foreground": {
-      "type": "string",
-      "description": "The color used for the problems error icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "problemsWarningIcon.foreground": {
-      "type": "string",
-      "description": "The color used for the problems warning icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
-    "problemsInfoIcon.foreground": {
-      "type": "string",
-      "description": "The color used for the problems info icon.",
-      "format": "color-hex",
-      "defaultSnippets": [
-        {
-          "body": "${1:#ff0000}"
-        }
-      ]
-    },
     "charts.foreground": {
       "type": "string",
       "description": "The foreground color used in charts.",
@@ -2283,6 +2162,127 @@
     "charts.purple": {
       "type": "string",
       "description": "The purple color used in chart visualizations.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInput.background": {
+      "type": "string",
+      "description": "Quick picker background color. The quick picker widget is the container for pickers like the command palette.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInput.foreground": {
+      "type": "string",
+      "description": "Quick picker foreground color. The quick picker widget is the container for pickers like the command palette.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInputTitle.background": {
+      "type": "string",
+      "description": "Quick picker title background color. The quick picker widget is the container for pickers like the command palette.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "pickerGroup.foreground": {
+      "type": "string",
+      "description": "Quick picker color for grouping labels.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "pickerGroup.border": {
+      "type": "string",
+      "description": "Quick picker color for grouping borders.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInput.list.focusBackground": {
+      "type": "string",
+      "description": "",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ],
+      "deprecationMessage": "Please use quickInputList.focusBackground instead"
+    },
+    "quickInputList.focusForeground": {
+      "type": "string",
+      "description": "Quick picker foreground color for the focused item.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInputList.focusIconForeground": {
+      "type": "string",
+      "description": "Quick picker icon foreground color for the focused item.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "quickInputList.focusBackground": {
+      "type": "string",
+      "description": "Quick picker background color for the focused item.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "search.resultsInfoForeground": {
+      "type": "string",
+      "description": "Color of the text in the search viewlet's completion message.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "searchEditor.findMatchBackground": {
+      "type": "string",
+      "description": "Color of the Search Editor query matches.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "searchEditor.findMatchBorder": {
+      "type": "string",
+      "description": "Border color of the Search Editor query matches.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -2751,6 +2751,46 @@
     "editorCursor.background": {
       "type": "string",
       "description": "The background color of the editor cursor. Allows customizing the color of a character overlapped by a block cursor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorMultiCursor.primary.foreground": {
+      "type": "string",
+      "description": "Color of the primary editor cursor when multiple cursors are present.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorMultiCursor.primary.background": {
+      "type": "string",
+      "description": "The background color of the primary editor cursor when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorMultiCursor.secondary.foreground": {
+      "type": "string",
+      "description": "Color of secondary editor cursors when multiple cursors are present.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "editorMultiCursor.secondary.background": {
+      "type": "string",
+      "description": "The background color of secondary editor cursors when multiple cursors are present. Allows customizing the color of a character overlapped by a block cursor.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4719,7 +4759,7 @@
     },
     "activityBarTop.foreground": {
       "type": "string",
-      "description": "Active foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "description": "Active foreground color of the item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4729,7 +4769,17 @@
     },
     "activityBarTop.activeBorder": {
       "type": "string",
-      "description": "Focus border color for the active item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "description": "Focus border color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "activityBarTop.activeBackground": {
+      "type": "string",
+      "description": "Background color for the active item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4739,7 +4789,7 @@
     },
     "activityBarTop.inactiveForeground": {
       "type": "string",
-      "description": "Inactive foreground color of the item in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "description": "Inactive foreground color of the item in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4749,7 +4799,17 @@
     },
     "activityBarTop.dropBorder": {
       "type": "string",
-      "description": "Drag and drop feedback color for the items in the Activity bar when it is on top. The activity allows to switch between views of the side bar.",
+      "description": "Drag and drop feedback color for the items in the Activity bar when it is on top / bottom. The activity allows to switch between views of the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "activityBarTop.background": {
+      "type": "string",
+      "description": "Background color of the activity bar when set to top / bottom.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -4950,6 +5010,16 @@
     "sideBarSectionHeader.border": {
       "type": "string",
       "description": "Side bar section header border color. The side bar is the container for views like explorer and search. Side bar sections are views nested within the side bar.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "sideBarActivityBarTop.border": {
+      "type": "string",
+      "description": "Border color between the activity bar at the top/bottom and the views.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -6286,6 +6356,66 @@
     "testing.message.info.lineBackground": {
       "type": "string",
       "description": "Margin color beside info messages shown inline in the editor.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconErrored.retired": {
+      "type": "string",
+      "description": "Retired color for the 'Errored' icon in the test explorer.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconFailed.retired": {
+      "type": "string",
+      "description": "Retired color for the 'failed' icon in the test explorer.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconPassed.retired": {
+      "type": "string",
+      "description": "Retired color for the 'passed' icon in the test explorer.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconQueued.retired": {
+      "type": "string",
+      "description": "Retired color for the 'Queued' icon in the test explorer.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconUnset.retired": {
+      "type": "string",
+      "description": "Retired color for the 'Unset' icon in the test explorer.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "testing.iconSkipped.retired": {
+      "type": "string",
+      "description": "Retired color for the 'Skipped' icon in the test explorer.",
       "format": "color-hex",
       "defaultSnippets": [
         {
@@ -7678,6 +7808,16 @@
     "gitDecoration.submoduleResourceForeground": {
       "type": "string",
       "description": "Color for submodule resources.",
+      "format": "color-hex",
+      "defaultSnippets": [
+        {
+          "body": "${1:#ff0000}"
+        }
+      ]
+    },
+    "rust_analyzer.syntaxTreeBorder": {
+      "type": "string",
+      "description": "Color of the border displayed in the Rust source code for the selected syntax node (see \"Show Syntax Tree\" command)",
       "format": "color-hex",
       "defaultSnippets": [
         {
