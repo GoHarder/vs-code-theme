@@ -56,10 +56,10 @@ const diffEditor = {
   unchangedCodeBackground: tokens.surfaceContainerLow,
 
   // {default: #ffa500}
-  moveActive: { border: undefined }, // TODO: diffEditor.moveActive.border
+  moveActive: { border: tokens.warning },
 
   // {default: #000000}
-  unchangedRegionShadow: undefined, // TODO: diffEditor.unchangedRegionShadow
+  unchangedRegionShadow: tokens.outline,
 };
 
 const diffEditorGutter = {
@@ -97,4 +97,6 @@ export default {
   'diffEditor.unchangedRegionForeground': diffEditor.unchangedRegionForeground,
   'diffEditor.unchangedCodeBackground': diffEditor.unchangedCodeBackground,
   'diffEditor.move.border': diffEditor.move.border,
+  'diffEditor.moveActive.border': diffEditor.moveActive.border,
+  'diffEditor.unchangedRegionShadow': diffEditor.unchangedRegionShadow,
 };
