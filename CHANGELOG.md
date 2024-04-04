@@ -123,3 +123,11 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Removed unused imports
 - Added editor inlay hint settings
 - Added more tools
+
+## [0.1.10]
+- Updated terminal cursor color
+- Added inline chat input settings
+- Added range highlight foreground
+- Completed diff editor settings
+- Updated color reference
+- Updated workspace reference
