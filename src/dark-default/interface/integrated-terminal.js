@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { ansi, tokens } from '../colors/interface.js';
+import { ansi, tokens } from '../colors.js';
 
 const terminal = {
   // The background of the Integrated Terminal's viewport. {default: null}
@@ -126,7 +126,7 @@ const terminalCursor = {
   background: undefined, // Done
 
   // The foreground color of the terminal cursor. {default: null}
-  foreground: undefined, // Done
+  foreground: tokens.tertiary, // Done
 };
 
 const terminalCommandDecoration = {
