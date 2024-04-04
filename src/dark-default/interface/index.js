@@ -14,14 +14,14 @@ import profiles from './profiles.js';
 import sideBar from './side-bar.js';
 import minimap from './minimap.js';
 import editorGroupsAndTabs from './editor-groups-and-tabs.js';
-import editor from './editor.js'; // BOOKMARK
-import diffEditor from './diff-editor.js'; // DONE
+import editor from './editor.js';
+import diffEditor from './diff-editor.js';
 import chat from './chat.js';
 import inlineChat from './inline-chat.js';
 import editorWidget from './editor-widget.js';
-import peekView from './peek-view.js';
+import peekView from './peek-view.js'; // MARK: Bookmark
 import mergeConflicts from './merge-conflicts.js';
-import panel from './panel.js';
+import panel from './panel.js'; // DONE
 import statusBar from './status-bar.js';
 import titleBar from './title-bar.js';
 import menuBar from './menu-bar.js';
@@ -32,7 +32,7 @@ import extension from './extension.js';
 import quickPicker from './quick-picker.js';
 import keybindingLabel from './keybinding-label.js';
 import keyboardShortcutTable from './keyboard-shortcut-table.js';
-import integratedTerminal from './integrated-terminal.js';
+import integratedTerminal from './integrated-terminal.js'; // DONE
 import debug from './debug.js';
 import testing from './testing.js';
 import welcomePage from './welcome-page.js';

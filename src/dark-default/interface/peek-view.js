@@ -5,7 +5,7 @@
 // ------------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const peekView = {
   // Color of the peek view borders and arrow. {default: #3794ff}

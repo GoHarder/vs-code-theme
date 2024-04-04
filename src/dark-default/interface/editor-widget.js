@@ -5,7 +5,7 @@
 // -----------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const editorWidget = {
   // Foreground color of editor widgets, such as find/replace.
@@ -111,6 +111,8 @@ const debugExceptionWidget = {
   border: undefined, // TODO: debugExceptionWidget.border
 };
 
+// MARK: Marker Navigation
+
 // NOTE: Opens with F8 key
 const editorMarkerNavigation = {
   // Editor marker navigation widget background. {default: #1e1e1e}
@@ -119,7 +121,7 @@ const editorMarkerNavigation = {
 
 const editorMarkerNavigationError = {
   // Editor marker navigation widget error color. {default: #f14c4c}
-  background: tokens.errorContainer,
+  background: tokens.altErrorContainer,
 
   // Editor marker navigation widget error heading background.
   // {default: #f14c4c1a}
