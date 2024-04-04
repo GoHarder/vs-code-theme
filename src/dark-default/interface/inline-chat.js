@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const inlineChat = {
   // Background color of the interactive editor widget. {default: #252526}
@@ -17,18 +17,18 @@ const inlineChat = {
 
 const inlineChatInput = {
   // Border color of the interactive editor input. {default: #454545}
-  border: undefined, // TODO: inlineChatInput.border
+  border: tokens.outlineVariant,
 
   // Border color of the interactive editor input when focused.
   // {default: #007fd4}
-  focusBorder: undefined, // TODO: inlineChatInput.focusBorder
+  focusBorder: tokens.outline,
 
   // Foreground color of the interactive editor input placeholder.
   // {default: #cccccc80}
-  placeholderForeground: undefined, // TODO: inlineChatInput.placeholderForeground
+  placeholderForeground: tokens.onSurfaceVariant,
 
   // Background color of the interactive editor input. {default: #3c3c3c}
-  background: undefined, // TODO: inlineChatInput.background
+  background: '#00000000',
 };
 
 const inlineChatDiff = {
