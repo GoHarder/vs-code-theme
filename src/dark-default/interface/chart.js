@@ -1,30 +1,30 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { ansi, tokens } from '../colors.js';
 
 const charts = {
   // Contrast color for text in charts. {default: #cccccc}
-  foreground: undefined, // TODO: charts.foreground
+  foreground: tokens.onSurfaceVariant,
 
   // Color for lines in charts. {default: #cccccc80}
-  lines: undefined, // TODO: charts.lines
+  lines: ansi.white,
 
   // Color for red elements in charts. {default: #f14c4c}
-  red: undefined, // TODO: charts.red
+  red: ansi.red,
 
   // Color for blue elements in charts. {default: #3794ff}
-  blue: undefined, // TODO: charts.blue
+  blue: ansi.blue,
 
   // Color for yellow elements in charts. {default: #cca700}
-  yellow: undefined, // TODO: charts.yellow
+  yellow: ansi.yellow,
 
   // Color for orange elements in charts. {default: #d18616}
-  orange: undefined, // TODO: charts.orange
+  orange: ansi.orange,
 
   // Color for green elements in charts. {default: #89d185}
-  green: undefined, // TODO: charts.green
+  green: ansi.green,
 
   // Color for purple elements in charts. {default: #b180d7}
-  purple: undefined, // TODO: charts.purple
+  purple: ansi.magenta,
 };
 
 export default {
