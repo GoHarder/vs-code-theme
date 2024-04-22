@@ -4,7 +4,7 @@
 // -------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const statusBar = {
   // Standard Status Bar background color.
@@ -94,18 +94,18 @@ const statusBarItem = {
   // Status bar error items background color. Error items stand out from
   // other status bar entries to indicate error conditions.
   // {default: #c72e0f}
-  errorBackground: tokens.errorContainer,
+  errorBackground: tokens.altErrorContainer,
 
   // Status bar error items foreground color. Error items stand out
   // from other status bar entries to indicate error conditions.
   // {default: #ffffff}
-  errorForeground: tokens.onErrorContainer,
+  errorForeground: tokens.onAltErrorContainer,
 
   // Added in release 1.82.0 {default: #ffffff1f}
-  errorHoverBackground: chroma(tokens.onErrorContainer).alpha(0.1).hex(),
+  errorHoverBackground: chroma(tokens.onAltErrorContainer).alpha(0.1).hex(),
 
   // Added in release 1.82.0 {default: #ffffff}
-  errorHoverForeground: tokens.onSurface,
+  errorHoverForeground: tokens.onAltErrorContainer,
 
   // Status bar warning items background color. Warning items stand
   // out from other status bar entries to indicate warning conditions.
