@@ -15,7 +15,7 @@
   },
   "syntax": [
     { "name": "black0", "value": "#2e3440", "blend": false },
-    { "name": "black1", "value": "#495366", "blend": false },
+    { "name": "black1", "value": "#4c566a", "blend": false },
     { "name": "red0", "value": "#bf616a", "blend": false },
     { "name": "red1", "value": "#e5747f", "blend": false },
     { "name": "green0", "value": "#a3be8c", "blend": false },
@@ -23,7 +23,7 @@
     { "name": "yellow0", "value": "#ebcb8b", "blend": false },
     { "name": "yellow1", "value": "#ffe396", "blend": false },
     { "name": "blue0", "value": "#81a1c1", "blend": false },
-    { "name": "blue1", "value": "#7795b4", "blend": false },
+    { "name": "blue1", "value": "#9ac0e7", "blend": false },
     { "name": "magenta0", "value": "#b48ead", "blend": false },
     { "name": "magenta1", "value": "#daacd1", "blend": false },
     { "name": "cyan0", "value": "#88c0d0", "blend": false },

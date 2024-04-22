@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const pickerGroup = {
   // Quick picker (Quick Open) color for grouping borders.

@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const keybindingTable = {
   // Background color for the keyboard shortcuts table header.

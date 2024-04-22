@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const merge = {
   // Current header background in inline merge conflicts. The color must

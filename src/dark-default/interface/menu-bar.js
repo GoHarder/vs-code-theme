@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const menubar = {
   // Foreground color of the selected menu item in the menubar.

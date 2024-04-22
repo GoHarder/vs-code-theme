@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const extensionButton = {
   // Extension view button foreground color (for example Install button).

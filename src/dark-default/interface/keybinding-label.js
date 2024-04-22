@@ -13,7 +13,7 @@
 // NOTE: Example image available.
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const keybindingLabel = {
   // NOTE: The keybinding label is used to represent a keyboard shortcut
