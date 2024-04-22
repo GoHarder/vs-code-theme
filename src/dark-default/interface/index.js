@@ -19,9 +19,9 @@ import diffEditor from './diff-editor.js';
 import chat from './chat.js';
 import inlineChat from './inline-chat.js';
 import editorWidget from './editor-widget.js';
-import peekView from './peek-view.js'; // MARK: Bookmark
+import peekView from './peek-view.js';
 import mergeConflicts from './merge-conflicts.js';
-import panel from './panel.js'; // DONE
+import panel from './panel.js';
 import statusBar from './status-bar.js';
 import titleBar from './title-bar.js';
 import menuBar from './menu-bar.js';
@@ -32,19 +32,19 @@ import extension from './extension.js';
 import quickPicker from './quick-picker.js';
 import keybindingLabel from './keybinding-label.js';
 import keyboardShortcutTable from './keyboard-shortcut-table.js';
-import integratedTerminal from './integrated-terminal.js'; // DONE
+import integratedTerminal from './integrated-terminal.js'; // MARK: Bookmark
 import debug from './debug.js';
 import testing from './testing.js';
-import welcomePage from './welcome-page.js';
+import welcomePage from './welcome-page.js'; // DONE
 import git from './git.js';
 import settingsEditor from './settings-editor.js';
-import breadcrumbs from './breadcrumbs.js';
+import breadcrumbs from './breadcrumbs.js'; // DONE
 import snippets from './snippets.js';
 import symbolIcons from './symbol-icons.js';
 import debugIcons from './debug-icons.js';
 import notebook from './notebook.js';
-import chart from './chart.js';
-import ports from './ports.js';
+import chart from './chart.js'; // DONE
+import ports from './ports.js'; // DONE
 import commentsView from './comments-view.js';
 
 const rawSections = [

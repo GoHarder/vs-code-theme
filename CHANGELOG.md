@@ -131,3 +131,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Completed diff editor settings
 - Updated color reference
 - Updated workspace reference
+
+## [0.2.0]
+- Updated status bar errors
+- Updated notification links
+- Dulled editor ghost text
+- Added chart colors
+- Updated color reference
