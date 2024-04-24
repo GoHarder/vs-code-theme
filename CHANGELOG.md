@@ -138,3 +138,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Dulled editor ghost text
 - Added chart colors
 - Updated color reference
+
+## [0.2.1]
+- Added testing colors
+- Added merge conflict colors
+- Updated color reference
+- Added alt error fixed color
