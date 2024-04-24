@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const gitDecoration = {
   // NOTE: Used for file labels and the SCM viewlet.
@@ -14,13 +14,13 @@ const gitDecoration = {
   untrackedResourceForeground: tokens.good,
 
   // Color for conflicting Git resources. {default: #e4676b}
-  conflictingResourceForeground: tokens.errorFixed,
+  conflictingResourceForeground: tokens.altErrorFixed,
 
   // Color for deleted Git resources. {default: #c74e39}
-  deletedResourceForeground: tokens.errorFixed,
+  deletedResourceForeground: tokens.altErrorFixed,
 
   // Color for staged deletions git decorations. {default: #c74e39}
-  stageDeletedResourceForeground: chroma(tokens.errorFixed).alpha(0.7).hex(),
+  stageDeletedResourceForeground: chroma(tokens.altErrorFixed).alpha(0.7).hex(),
 
   // Color for modified Git resources. {default: #e2c08d}
   modifiedResourceForeground: tokens.warning,

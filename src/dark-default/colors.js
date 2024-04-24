@@ -217,6 +217,8 @@ const customTokens = {
   altErrorContainer: ansi.red._30,
   onAltErrorContainer: ansi.red._90,
 
+  altErrorFixed: ansi.red._60,
+
   // Link
   link: ansi.cyan._80,
   onLink: ansi.cyan._20,

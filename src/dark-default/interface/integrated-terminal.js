@@ -140,7 +140,7 @@ const terminalCommandDecoration = {
 
   // The terminal command decoration background color for error commands.
   // {default: #f14c4c}
-  errorBackground: undefined,
+  errorBackground: tokens.altErrorFixed,
 };
 
 const terminalOverviewRuler = {
