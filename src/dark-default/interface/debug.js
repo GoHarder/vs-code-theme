@@ -1,5 +1,4 @@
 import chroma from 'chroma-js';
-// import { tokens } from '../colors/interface.js';
 import { tokens } from '../colors.js';
 import { icons } from '../syntax/index.js';
 

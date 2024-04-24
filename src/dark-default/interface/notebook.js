@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const notebook = {
   // Notebook background color. {default: #1e1e1e}
@@ -83,7 +83,7 @@ const notebookStatusErrorIcon = {
 const notebookStatusRunningIcon = {
   // The running icon color of notebook cells in the cell status bar.
   // {default: #cccccc}
-  foreground: '#ff0000', // TODO: notebookStatusRunningIcon.foreground
+  foreground: undefined, // TODO: notebookStatusRunningIcon.foreground
 };
 
 const notebookStatusSuccessIcon = {

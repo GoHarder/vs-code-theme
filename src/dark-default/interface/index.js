@@ -32,19 +32,19 @@ import extension from './extension.js';
 import quickPicker from './quick-picker.js';
 import keybindingLabel from './keybinding-label.js';
 import keyboardShortcutTable from './keyboard-shortcut-table.js';
-import integratedTerminal from './integrated-terminal.js'; // MARK: Bookmark
+import integratedTerminal from './integrated-terminal.js';
 import debug from './debug.js';
 import testing from './testing.js';
-import welcomePage from './welcome-page.js'; // DONE
+import welcomePage from './welcome-page.js';
 import git from './git.js';
 import settingsEditor from './settings-editor.js';
-import breadcrumbs from './breadcrumbs.js'; // DONE
+import breadcrumbs from './breadcrumbs.js';
 import snippets from './snippets.js';
 import symbolIcons from './symbol-icons.js';
 import debugIcons from './debug-icons.js';
 import notebook from './notebook.js';
-import chart from './chart.js'; // DONE
-import ports from './ports.js'; // DONE
+import chart from './chart.js';
+import ports from './ports.js';
 import commentsView from './comments-view.js';
 
 const rawSections = [

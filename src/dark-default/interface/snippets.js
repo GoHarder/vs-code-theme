@@ -4,7 +4,7 @@
 // ------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const editor = {
   // Highlight background color of a snippet tabstop. {default: #7c7c7c4d}

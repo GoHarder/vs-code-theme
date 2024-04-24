@@ -5,7 +5,7 @@
 // -------------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const settings = {
   // The line that indicates a modified setting. {default: #0c7d9d}
