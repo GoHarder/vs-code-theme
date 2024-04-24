@@ -1,21 +1,21 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const testing = {
   // Color for the 'failed' icon in the test explorer. {default: #f14c4c}
-  iconFailed: undefined, // TODO: testing.iconFailed
+  iconFailed: tokens.altErrorFixed,
 
   // Color for the 'Errored' icon in the test explorer. {default: #f14c4c}
-  iconErrored: undefined, // TODO: testing.iconErrored
+  iconErrored: tokens.altErrorFixed,
 
   // Color for the 'passed' icon in the test explorer. {default: #73c991}
-  iconPassed: undefined, // TODO: testing.iconPassed
+  iconPassed: tokens.good,
 
   // Color for 'run' icons in the editor. {default: #73c991}
-  runAction: undefined, // TODO: testing.runAction
+  runAction: tokens.good,
 
   // Color for the 'Queued' icon in the test explorer. {default: #cca700}
-  iconQueued: undefined, // TODO: testing.iconQueued
+  iconQueued: tokens.warning,
 
   // Color for the 'Unset' icon in the test explorer. {default: #848484}
   iconUnset: undefined, // TODO: testing.iconUnset
