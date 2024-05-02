@@ -5,7 +5,7 @@
 // with a header.
 // --------------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const notificationCenter = {
   // Notification Center border color. {default: null}
@@ -39,7 +39,7 @@ const notifications = {
 
 const notificationLink = {
   // Notification links foreground color. {default: #3794ff}
-  foreground: tokens.primary, // Done
+  foreground: tokens.link,
 };
 
 const notificationsErrorIcon = {

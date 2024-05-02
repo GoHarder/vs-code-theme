@@ -5,7 +5,7 @@
 // ---------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const toolbar = {
   // Toolbar background when hovering over actions using the mouse.

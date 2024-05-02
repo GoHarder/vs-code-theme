@@ -5,16 +5,16 @@
 // Bar.
 // -----------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const activityBar = {
-  // Activity Bar background color. {default: #2c2c2c}
+  // Activity Bar background color. {default: #333333}
   background: tokens.surfaceContainerHigh,
 
   // Drag and drop feedback color for the activity bar items. The activity
   // bar is showing on the far left or right and allows to switch between
   // views of the side bar. {default: #ffffff}
-  dropBorder: undefined, // Done
+  dropBorder: tokens.onSurfaceVariant,
 
   // Activity Bar foreground color (for example used for the icons).
   // {default: #ffffff}
@@ -39,25 +39,25 @@ const activityBar = {
 };
 
 const activityBarTop = {
-  // {default: #424242}
+  // {default: #e7e7e7}
   activeBorder: tokens.primary,
 
-  // {default: #424242}
+  // {default: #e7e7e7}
   dropBorder: tokens.onSurfaceVariant,
 
-  // {default: #424242}
+  // {default: #e7e7e7}
   foreground: tokens.primary,
 
-  // {default: #424242bf}
+  // {default: #e7e7e799}
   inactiveForeground: tokens.onSurfaceVariant,
 };
 
 const activityBarBadge = {
   // Activity notification badge background color. {default: #007acc}
-  background: tokens.tertiaryContainer,
+  background: tokens.tertiary,
 
   // Activity notification badge foreground color. {default: #ffffff}
-  foreground: tokens.onTertiaryContainer,
+  foreground: tokens.onTertiary,
 };
 
 export default {

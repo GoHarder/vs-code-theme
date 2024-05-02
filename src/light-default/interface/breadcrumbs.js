@@ -3,7 +3,7 @@
 // The theme colors for breadcrumbs navigation.
 // --------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const breadcrumb = {
   // Color of breadcrumb items. {default: #cccccccc}

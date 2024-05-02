@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const profileBadge = {
   // Profile badge background color. The profile badge shows on top of the

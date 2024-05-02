@@ -5,7 +5,7 @@
 // ------------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const panel = {
   // Panel background color. {default: #1e1e1e}

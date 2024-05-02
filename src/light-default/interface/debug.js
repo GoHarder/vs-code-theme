@@ -1,5 +1,6 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
+import { icons } from '../syntax/index.js';
 
 const debugToolBar = {
   // Debug toolbar background color. {default: #333333}
@@ -12,11 +13,11 @@ const debugToolBar = {
 const editor = {
   // Background color of the top stack frame highlight in the editor.
   // {default: #ffff0033}
-  stackFrameHighlightBackground: undefined, // TODO: editor.stackFrameHighlightBackground
+  stackFrameHighlightBackground: chroma(tokens.warning).alpha(0.2).hex(),
 
   // Background color of the focused stack frame highlight in the editor.
   // {default: #7abd7a4d}
-  focusedStackFrameHighlightBackground: undefined, // TODO: editor.stackFrameHighlightBackground
+  focusedStackFrameHighlightBackground: chroma(tokens.warning).alpha(0.2).hex(),
 
   // Color for the debug inline value text. {default: #ffffff80}
   inlineValuesForeground: undefined, // TODO: editor.inlineValuesForeground
@@ -28,46 +29,46 @@ const editor = {
 const debugView = {
   // Foreground color for a label shown in the CALL STACK view when the
   // debugger breaks on an exception. {default: #cccccc}
-  exceptionLabelForeground: undefined, // TODO: debugView.exceptionLabelForeground
+  exceptionLabelForeground: tokens.onSurface,
 
   // Background color for a label shown in the CALL STACK view when the
   // debugger breaks on an exception. {default: #6c2022}
-  exceptionLabelBackground: undefined, // TODO: debugView.exceptionLabelBackground
+  exceptionLabelBackground: tokens.errorContainer,
 
   // Foreground color for a label in the CALL STACK view showing the current
   // session's or thread's state. {default: #cccccc}
-  stateLabelForeground: tokens.warning,
+  stateLabelForeground: tokens.onPrimaryContainer,
 
   // Background color for a label in the CALL STACK view showing the current
   // session's or thread's state. {default: #88888844}
-  stateLabelBackground: tokens.surfaceContainer,
+  stateLabelBackground: tokens.primaryContainer,
 
   // Color used to highlight value changes in the debug views (such as in
   // the Variables view). {default: #569cd6}
-  valueChangedHighlight: undefined, // TODO: debugView.valueChangedHighlight
+  valueChangedHighlight: chroma(tokens.warning).alpha(0.8).hex(),
 };
 
 const debugTokenExpression = {
   // Foreground color for the token names shown in debug views (such as in
   // the Variables or Watch view). {default: #c586c0}
-  name: undefined, // TODO: debugTokenExpression.name
+  name: icons.debug.name,
 
   // Foreground color for the token values shown in debug views.
   // {default: #cccccc99}
-  value: undefined, // TODO: debugTokenExpression.value
+  value: icons.debug.value,
 
   // Foreground color for strings in debug views. {default: #ce9178}
-  string: undefined, // TODO: debugTokenExpression.string
+  string: icons.debug.string,
 
   // Foreground color for booleans in debug views. {default: #4e94ce}
-  boolean: undefined, // TODO: debugTokenExpression.boolean
+  boolean: icons.debug.boolean,
 
   // Foreground color for numbers in debug views. {default: #b5cea8}
-  number: undefined, // TODO: debugTokenExpression.number
+  number: icons.debug.number,
 
   // Foreground color for expression errors in debug views.
   // {default: #f48771}
-  error: undefined, // TODO: debugTokenExpression.error
+  error: tokens.errorFixed,
 };
 
 export default {

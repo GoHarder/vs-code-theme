@@ -4,7 +4,7 @@
 // workbench when visible.
 // ------------------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const banner = {
   // Banner background color. {default: #04395e}

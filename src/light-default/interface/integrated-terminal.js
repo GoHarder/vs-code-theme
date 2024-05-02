@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { terminal as t, tokens } from '../colors/interface.js';
+import { ansi, tokens } from '../colors.js';
 
 const terminal = {
   // The background of the Integrated Terminal's viewport. {default: null}
@@ -18,63 +18,63 @@ const terminal = {
 
   // 'BrightBlack' ANSI color in the terminal. {default: #666666}
   // ansiBrightBlack: pallet.ansiBrightBlack,
-  ansiBrightBlack: t.brightBlackBase,
+  ansiBrightBlack: ansi.brightBlack.base,
 
   // 'Blue' ANSI color in the terminal. {default: #2472c8}
   // ansiBlue: pallet.ansiBlue,
-  ansiBlue: t.blueBase,
+  ansiBlue: ansi.blue.base,
 
   // 'BrightBlue' ANSI color in the terminal. {default: #3b8eea}
   // ansiBrightBlue: pallet.ansiBrightBlue,
-  ansiBrightBlue: t.brightBlueBase,
+  ansiBrightBlue: ansi.brightBlue.base,
 
   // 'Cyan' ANSI color in the terminal. {default: #11a8cd}
   // ansiCyan: pallet.ansiCyan,
-  ansiCyan: t.cyanBase,
+  ansiCyan: ansi.cyan.base,
 
   // 'BrightCyan' ANSI color in the terminal. {default: #29b8db}
   // ansiBrightCyan: pallet.ansiBrightCyan,
-  ansiBrightCyan: t.brightCyanBase,
+  ansiBrightCyan: ansi.brightCyan.base,
 
   // 'Green' ANSI color in the terminal. {default: #0dbc79}
   // ansiGreen: pallet.ansiGreen,
-  ansiGreen: t.greenBase,
+  ansiGreen: ansi.green.base,
 
   // 'BrightGreen' ANSI color in the terminal. {default: #23d18b}
   // ansiBrightGreen: pallet.ansiBrightGreen,
-  ansiBrightGreen: t.brightGreenBase,
+  ansiBrightGreen: ansi.brightGreen.base,
 
   // 'Magenta' ANSI color in the terminal. {default: #bc3fbc}
   // ansiMagenta: pallet.ansiMagenta,
-  ansiMagenta: t.magentaBase,
+  ansiMagenta: ansi.magenta.base,
 
   // 'BrightMagenta' ANSI color in the terminal. {default: #d670d6}
   // ansiBrightMagenta: pallet.ansiBrightMagenta,
-  ansiBrightMagenta: t.brightMagentaBase,
+  ansiBrightMagenta: ansi.brightMagenta.base,
 
   // 'Red' ANSI color in the terminal. {default: #cd3131}
   // ansiRed: pallet.ansiRed,
-  ansiRed: t.redBase,
+  ansiRed: ansi.red.base,
 
   // 'BrightRed' ANSI color in the terminal. {default: #f14c4c}
   // ansiBrightRed: pallet.ansiBrightRed,
-  ansiBrightRed: t.brightRedBase,
+  ansiBrightRed: ansi.brightRed.base,
 
   // 'Yellow' ANSI color in the terminal. {default: #e5e510}
   // ansiYellow: pallet.ansiYellow,
-  ansiYellow: t.yellowBase,
+  ansiYellow: ansi.yellow.base,
 
   // 'BrightYellow' ANSI color in the terminal. {default: #f5f543}
   // ansiBrightYellow: pallet.ansiBrightYellow,
-  ansiBrightYellow: t.brightYellowBase,
+  ansiBrightYellow: ansi.brightYellow.base,
 
   // 'White' ANSI color in the terminal. {default: #e5e5e5}
   // ansiWhite: pallet.ansiWhite,
-  ansiWhite: t.whiteBase,
+  ansiWhite: ansi.white.base,
 
   // 'BrightWhite' ANSI color in the terminal. {default: #e5e5e5}
   // ansiBrightWhite: pallet.ansiBrightWhite,
-  ansiBrightWhite: t.brightWhiteBase,
+  ansiBrightWhite: ansi.brightWhite.base,
 
   // The selection background color of the terminal. {default: #264f78}
   selectionBackground: tokens.infoContainer,
@@ -126,7 +126,7 @@ const terminalCursor = {
   background: undefined, // Done
 
   // The foreground color of the terminal cursor. {default: null}
-  foreground: undefined, // Done
+  foreground: tokens.tertiary, // Done
 };
 
 const terminalCommandDecoration = {
@@ -140,7 +140,7 @@ const terminalCommandDecoration = {
 
   // The terminal command decoration background color for error commands.
   // {default: #f14c4c}
-  errorBackground: undefined,
+  errorBackground: tokens.altErrorFixed,
 };
 
 const terminalOverviewRuler = {

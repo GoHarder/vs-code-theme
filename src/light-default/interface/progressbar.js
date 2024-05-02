@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const progressBar = {
   // Background color of the progress bar shown for long running operations.

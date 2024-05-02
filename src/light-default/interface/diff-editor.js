@@ -5,7 +5,7 @@
 // --------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const diffEditor = {
   // Border color between the two text editors. {default: null}
@@ -21,12 +21,12 @@ const diffEditor = {
 
   // Background color for text that got inserted. The color must not be
   // opaque so as not to hide underlying decorations. {default: #9ccc2c33}
-  insertedTextBackground: chroma(tokens.goodContainer).alpha(0.2).hex(),
+  insertedTextBackground: chroma(tokens.good).alpha(0.2).hex(),
   // insertedTextBackground: tokens.goodContainer + opacity._20_0,
 
   // Background color for lines that got inserted. The color must not be
   // opaque so as not to hide underlying decorations. {default: #9bb95533}
-  insertedLineBackground: chroma(tokens.goodContainer).alpha(0.2).hex(),
+  insertedLineBackground: chroma(tokens.good).alpha(0.2).hex(),
   // insertedLineBackground: tokens.goodContainer + opacity._20_0,
 
   // Outline color for the text that got inserted. {default: null}
@@ -34,12 +34,12 @@ const diffEditor = {
 
   // Background color for text that got removed. The color must not be
   // opaque so as not to hide underlying decorations. {default: #ff000033}
-  removedTextBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedTextBackground: chroma(tokens.altError).alpha(0.2).hex(),
 
   // Background color for lines that got removed. The color must not be
   // opaque so as not to hide underlying decorations. {default: #ff000033}
   // removedLineBackground: undefined,
-  removedLineBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedLineBackground: chroma(tokens.altError).alpha(0.2).hex(),
 
   // Outline color for text that got removed. {default: null}
   removedTextBorder: undefined, // Done
@@ -56,20 +56,20 @@ const diffEditor = {
   unchangedCodeBackground: tokens.surfaceContainerLow,
 
   // {default: #ffa500}
-  moveActive: { border: undefined }, // TODO: diffEditor.moveActive.border
+  moveActive: { border: tokens.warningFixed },
 
   // {default: #000000}
-  unchangedRegionShadow: undefined, // TODO: diffEditor.unchangedRegionShadow
+  unchangedRegionShadow: tokens.outline,
 };
 
 const diffEditorGutter = {
   // Background color for the margin where lines got inserted.
   // {default: null}
-  insertedLineBackground: chroma(tokens.goodContainer).alpha(0.2).hex(),
+  insertedLineBackground: chroma(tokens.good).alpha(0.2).hex(),
 
   // Background color for the margin where lines got removed.
   // {default: null}
-  removedLineBackground: chroma(tokens.errorContainer).alpha(0.2).hex(),
+  removedLineBackground: chroma(tokens.altError).alpha(0.2).hex(),
 };
 
 const diffEditorOverview = {
@@ -97,4 +97,6 @@ export default {
   'diffEditor.unchangedRegionForeground': diffEditor.unchangedRegionForeground,
   'diffEditor.unchangedCodeBackground': diffEditor.unchangedCodeBackground,
   'diffEditor.move.border': diffEditor.move.border,
+  'diffEditor.moveActive.border': diffEditor.moveActive.border,
+  'diffEditor.unchangedRegionShadow': diffEditor.unchangedRegionShadow,
 };

@@ -9,8 +9,10 @@
 // ---------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
+import { icons } from '../syntax/index.js';
 
+// MARK: Editor
 const editor = {
   // Editor background color. {default: #1e1e1e}
   background: tokens.surface,
@@ -29,7 +31,7 @@ const editor = {
   selectionBackground: tokens.infoContainer,
 
   // Color of the selected text for high contrast. {default: null}
-  selectionForeground: tokens.onSurfaceVariant,
+  selectionForeground: undefined, // Done
 
   // Color of the selection in an inactive editor. The color must not be
   // opaque so as not to hide underlying decorations. {default: #264f7880}
@@ -42,7 +44,7 @@ const editor = {
 
   // Border color for regions with the same content as the selection.
   // {default: null}
-  selectionHighlightBorder: tokens.info,
+  selectionHighlightBorder: tokens.infoContainer,
 
   // --------------------------------------------------------------------
   // Word highlight colors are visible when the cursor is inside a symbol
@@ -90,7 +92,7 @@ const editor = {
   findMatchBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // Border color of the current search match. {default: null}
-  findMatchBorder: chroma(tokens.onSurface).alpha(0.7).hex(),
+  findMatchBorder: chroma(tokens.onSurface).alpha(0.6).hex(),
 
   // Color of the other search matches. The color must not be opaque so as
   // not to hide underlying decorations. {default: #ea5c0055}
@@ -168,9 +170,10 @@ const editor = {
 
   // Background color for folded ranges. The color must not be opaque so as
   // not to hide underlying decorations. {default: #264f784d}
-  foldBackground: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
+  foldBackground: chroma(tokens.onSurfaceVariant).alpha(0.05).hex(),
 };
 
+// MARK: Editor Line Number
 const editorLineNumber = {
   // Color of editor line numbers. {default: #858585}
   foreground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
@@ -183,15 +186,17 @@ const editorLineNumber = {
   dimmedForeground: chroma(tokens.onSurfaceVariant).alpha(0.3).hex(),
 };
 
+// MARK: Editor Cursor
 const editorCursor = {
   // The background color of the editor cursor. Allows customizing the
   // color of a character overlapped by a block cursor. {default: null}
   background: undefined, // Done
 
   // Color of the editor cursor. {default: #aeafad}
-  foreground: tokens.warning,
+  foreground: tokens.tertiary,
 };
 
+// MARK: Search
 const search = {
   // ---------------------------------------------------------------------
   // Search colors are used in the search viewlet's global search results.
@@ -204,6 +209,7 @@ const search = {
   resultsInfoForeground: tokens.onSurfaceVariant,
 };
 
+// MARK: Search Editor
 const searchEditor = {
   // ----------------------------------------------------------------------
   // Search Editor colors highlight results in a Search Editor. This can be
@@ -222,19 +228,21 @@ const searchEditor = {
   textInputBorder: undefined, // Done
 };
 
+// MARK: Editor Unicode
 const editorUnicodeHighlight = {
   // --------------------------------
   // The color for unicode highlights
   // --------------------------------
 
   // Border color used to highlight unicode characters. {default: #bd9b03}
-  border: tokens.warning,
+  border: tokens.warningFixed,
 
   // Background color used to highlight unicode characters.
   // {default: #bd9b0326}
-  background: chroma(tokens.warning).alpha(0.08).hex(),
+  background: chroma(tokens.warningFixed).alpha(0.08).hex(),
 };
 
+// MARK: Editor Other
 const editorLink = {
   // --------------------------------------------------
   // The link color is visible when clicking on a link.
@@ -242,7 +250,7 @@ const editorLink = {
   // NOTE: Example image available.
 
   // Color of active links. {default: #4e94ce}
-  activeForeground: tokens.primary,
+  activeForeground: tokens.linkHover,
 };
 
 const editorWhitespace = {
@@ -260,23 +268,23 @@ const editorInlayHint = {
   // true.
   // -------------------------------------------------------------------
 
-  // Background color of inline hints. {default: #4d4d4d40},
-  background: undefined,
-
   // Foreground color of inline hints. {default: #cccccc},
-  foreground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+  foreground: icons.editorInlay.default,
+
+  // Background color of inline hints. {default: #4d4d4d40},
+  background: chroma(icons.editorInlay.default).alpha(0.25).hex(),
 
   // Foreground color of inline hints for types {default: #cccccc},
-  typeForeground: undefined, // Done
+  typeForeground: icons.editorInlay.type,
 
   // Background color of inline hints for types {default: #4d4d4d40},
-  typeBackground: undefined, // Done
+  typeBackground: chroma(icons.editorInlay.type).alpha(0.25).hex(),
 
   // Foreground color of inline hints for parameters {default: #cccccc},
-  parameterForeground: undefined, // Done
+  parameterForeground: icons.editorInlay.parameter,
 
   // Background color of inline hints for parameters {default: #4d4d4d40},
-  parameterBackground: undefined, // Done
+  parameterBackground: chroma(icons.editorInlay.parameter).alpha(0.25).hex(),
 };
 
 const editorRuler = {
@@ -295,12 +303,14 @@ const editorCodeLens = {
   // NOTE: Example image available.
 
   // Foreground color of an editor CodeLens. {default: #999999}
-  foreground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+  // foreground: chroma(tokens.primary).alpha(0.7).hex(),
+  foreground: chroma(tokens.link).alpha(0.7).hex(),
 };
 
+// MARK: Editor Lightbulb
 const editorLightBulb = {
   // The color used for the lightbulb actions icon. {default: #ffcc00}
-  foreground: tokens.warning,
+  foreground: tokens.warningFixed,
 };
 
 const editorLightBulbAutoFix = {
@@ -309,6 +319,7 @@ const editorLightBulbAutoFix = {
   foreground: tokens.info,
 };
 
+// MARK: Editor Brackets
 const editorBracketMatch = {
   // ------------------------------
   // Bracket Matches
@@ -352,7 +363,7 @@ const editorBracketPairGuide = {
 
   // Background color of active bracket pair guides (1).
   // {default: #00000000}
-  activeBackground1: chroma(tokens.onSurfaceVariant).alpha(0.6).hex(),
+  activeBackground1: chroma(tokens.onSurfaceVariant).alpha(0.3).hex(),
 
   // Background color of active bracket pair guides (2).
   // {default: #00000000}
@@ -376,7 +387,7 @@ const editorBracketPairGuide = {
 
   // Background color of inactive bracket pair guides (1).
   // {default: #00000000}
-  background1: chroma(tokens.onSurfaceVariant).alpha(0.2).hex(),
+  background1: chroma(tokens.onSurfaceVariant).alpha(0.08).hex(),
 
   // Background color of inactive bracket pair guides (2).
   // {default: #00000000}
@@ -399,6 +410,7 @@ const editorBracketPairGuide = {
   background6: undefined, // Done
 };
 
+// MARK: Editor Overview
 const editorOverviewRuler = {
   // ---------------------------------------------------------------------
   // Overview Ruler
@@ -420,7 +432,7 @@ const editorOverviewRuler = {
   // Overview ruler marker color for highlighted ranges, like by the Quick
   // Open, Symbol in File and Find features. The color must not be opaque
   // so as not to hide underlying decorations. {default: #007acc99}
-  rangeHighlightForeground: undefined, // TODO: editorOverviewRuler.rangeHighlightForeground
+  rangeHighlightForeground: chroma(tokens.onSurfaceVariant).alpha(0.6).hex(),
 
   // Overview ruler marker color for selection highlights. The color must
   // not be opaque so as not to hide underlying decorations.
@@ -455,7 +467,7 @@ const editorOverviewRuler = {
   errorForeground: tokens.errorFixed,
 
   // Overview ruler marker color for warnings. {default: #cca700}
-  warningForeground: tokens.warning,
+  warningForeground: tokens.warningFixed,
 
   // Overview ruler marker color for infos. {default: #3794ff}
   infoForeground: tokens.info,
@@ -464,6 +476,7 @@ const editorOverviewRuler = {
   bracketMatchForeground: tokens.onSurfaceVariant,
 };
 
+// MARK: Editor Error
 const editorError = {
   // Foreground color of error squiggles in the editor. {default: #f14c4c}
   foreground: tokens.errorFixed, // Done
@@ -476,19 +489,21 @@ const editorError = {
   background: chroma(tokens.errorContainer).alpha(0.2).hex(),
 };
 
+// MARK: Editor Warning
 const editorWarning = {
   // Foreground color of warning squiggles in the editor.
   // {default: #cca700}
-  foreground: tokens.warning,
+  foreground: tokens.warningFixed,
 
   // Border color of warning boxes in the editor. {default: null}
   border: undefined, // Done
 
   // Background color of warning text in the editor. The color must not be
   // opaque so as not to hide underlying decorations. {default: null}
-  background: chroma(tokens.warning).alpha(0.08).hex(),
+  background: chroma(tokens.warningFixed).alpha(0.08).hex(),
 };
 
+// MARK: Editor Info
 const editorInfo = {
   // Foreground color of info squiggles in the editor. {default: #3794ff}
   foreground: tokens.info,
@@ -501,6 +516,7 @@ const editorInfo = {
   background: chroma(tokens.info).alpha(0.08).hex(),
 };
 
+// MARK: Editor Hint
 const editorHint = {
   // Foreground color of hints in the editor. {default: #eeeeeeb3}
   foreground: undefined, // TODO: editorHint.foreground
@@ -509,6 +525,7 @@ const editorHint = {
   border: undefined, // TODO: editorHint.border
 };
 
+// MARK: Icons
 const problemsErrorIcon = {
   // The color used for the problems error icon. {default: #f14c4c}
   foreground: undefined, // Done
@@ -524,6 +541,7 @@ const problemsInfoIcon = {
   foreground: undefined, // Done
 };
 
+// MARK: Editor Unnecessary Code
 const editorUnnecessaryCode = {
   // ------------------
   // Unused Source Code
@@ -540,6 +558,7 @@ const editorUnnecessaryCode = {
   opacity: undefined, // Done
 };
 
+// MARK: Editor Gutter
 const editorGutter = {
   // -----------------------------------------------------------
   // The gutter contains the glyph margins and the line numbers.
@@ -575,6 +594,7 @@ const editorGutter = {
   commentUnresolvedGlyphForeground: undefined, // TODO: editorGutter.commentUnresolvedGlyphForeground
 };
 
+// MARK: Editor Comments Widget
 const editorCommentsWidget = {
   // --------------------------------------------------------------------
   // The editor comments widget can be seen when reviewing pull requests.

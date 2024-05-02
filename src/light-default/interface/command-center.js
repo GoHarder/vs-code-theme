@@ -1,30 +1,30 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const commandCenter = {
-  // Foreground color of the Command Center. {default: #333333}
+  // Foreground color of the Command Center. {default: #cccccc}
   foreground: tokens.onSurface,
 
-  // Background color of the Command Center. {default: #0000000d}
+  // Background color of the Command Center. {default: #ffffff0d}
   background: tokens.surfaceContainerHigh,
 
-  // Border color of the Command Center. {default: #33333333}
+  // Border color of the Command Center. {default: #cccccc33}
   border: tokens.outlineVariant,
 
-  // Active foreground color of the Command Center. {default: #333333}
+  // Active foreground color of the Command Center. {default: #cccccc}
   activeForeground: tokens.onSecondaryContainer,
 
-  // Active background color of the Command Center. {default: #00000014}
+  // Active background color of the Command Center. {default: #ffffff14}
   activeBackground: tokens.secondaryContainer,
 
-  // Active border color of the command center. {default: #3333334d}
+  // Active border color of the command center. {default: #cccccc4d}
   activeBorder: tokens.secondaryContainer,
 
   // Foreground color of the Command Center when the window is inactive.
-  // {default: #33333399}
+  // {default: #cccccc99}
   inactiveForeground: tokens.onSurfaceVariant,
 
   // Border color of the Command Center when the window is inactive.
-  // {default: #33333326}
+  // {default: #cccccc26}
   inactiveBorder: tokens.outlineVariant,
 };
 

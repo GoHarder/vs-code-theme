@@ -4,7 +4,7 @@
 // the Explorer of a new window.
 // ----------------------------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const button = {
   // Button foreground color. {default: #ffffff}
@@ -37,7 +37,7 @@ const checkbox = {
   background: '#00000000',
 
   // Foreground color of checkbox widget. {default: #616161}
-  foreground: tokens.primary,
+  foreground: tokens.good,
 
   // Border color of checkbox widget. {default: #cecece}
   border: tokens.onSurfaceVariant,

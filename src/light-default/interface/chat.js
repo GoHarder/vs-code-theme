@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const chat = {
   // The background color of a chat request. {default: #ffffff08}

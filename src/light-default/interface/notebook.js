@@ -1,101 +1,101 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const notebook = {
   // Notebook background color. {default: #1e1e1e}
-  editorBackground: undefined,
+  editorBackground: tokens.surface,
 
   // The border color for notebook cells. {default: #37373d}
-  cellBorderColor: undefined,
+  cellBorderColor: tokens.outlineVariant,
 
   // The background color of a cell when the cell is hovered. {default: null}
-  cellHoverBackground: undefined,
+  cellHoverBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // The color of the notebook cell insertion indicator. {default: #007fd4}
-  cellInsertionIndicator: undefined,
+  cellInsertionIndicator: tokens.onSurfaceVariant,
 
   // The background color of notebook cell status bar items.
   // {default: #ffffff26}
-  cellStatusBarItemHoverBackground: undefined,
+  cellStatusBarItemHoverBackground: undefined, // TODO: notebook.cellStatusBarItemHoverBackground
 
   // The color of the separator in the cell bottom toolbar
   // {default: #80808059}
-  cellToolbarSeparator: undefined,
+  cellToolbarSeparator: tokens.outline,
 
   // The color of the notebook cell editor background {default: #252526}
-  cellEditorBackground: undefined,
+  cellEditorBackground: tokens.surfaceContainerLow,
 
   // The background color of a cell when the cell is focused. {default: null}
-  focusedCellBackground: undefined,
+  focusedCellBackground: tokens.surfaceContainerLow,
 
   // The color of the cell's focus indicator borders when the cell is
   // focused. {default: #007fd4}
-  focusedCellBorder: undefined,
+  focusedCellBorder: tokens.primary,
 
   // The color of the notebook cell editor border. {default: #007fd4}
-  focusedEditorBorder: undefined,
+  focusedEditorBorder: undefined, // Done
 
   // The color of the cell's top and bottom border when a cell is focused
   // while the primary focus is outside of the editor. {default: #37373d}
-  inactiveFocusedCellBorder: undefined,
+  inactiveFocusedCellBorder: tokens.outlineVariant,
 
   // The color of the cell's borders when multiple cells are selected.
   // {default: null}
-  inactiveSelectedCellBorder: undefined,
+  inactiveSelectedCellBorder: undefined, // TODO: notebook.inactiveSelectedCellBorder
 
   // The Color of the notebook output container background. {default: null}
-  outputContainerBackgroundColor: undefined,
+  outputContainerBackgroundColor: undefined, // Done
 
   // The border color of the notebook output container. {default: null}
-  outputContainerBorderColor: undefined,
+  outputContainerBorderColor: undefined, // TODO: notebook.outputContainerBorderColor
 
   // The background color of a cell when the cell is selected.
   // {default: #37373d}
-  selectedCellBackground: undefined,
+  selectedCellBackground: undefined, // TODO: notebook.selectedCellBackground
 
   // The color of the cell's top and bottom border when the cell is selected
   // but not focused. {default: #37373d}
-  selectedCellBorder: undefined,
+  selectedCellBorder: undefined, // TODO: notebook.selectedCellBorder
 
   // Background color of highlighted cell {default: #ffffff0b}
-  symbolHighlightBackground: undefined,
+  symbolHighlightBackground: tokens.surfaceContainer, // TODO: notebook.symbolHighlightBackground
 };
 
 const notebookScrollbarSlider = {
   // Notebook scrollbar slider background color when clicked on.
   // {default: #bfbfbf66}
-  activeBackground: undefined,
+  activeBackground: undefined, // Done
 
   // Notebook scrollbar slider background color. {default: #79797966}
-  background: undefined,
+  background: undefined, // Done
 
   // Notebook scrollbar slider background color when hovering.
   // {default: #646464b3}
-  hoverBackground: undefined,
+  hoverBackground: undefined, // Done
 };
 
 const notebookStatusErrorIcon = {
   // The error icon color of notebook cells in the cell status bar.
   // {default: #f48771}
-  foreground: undefined,
+  foreground: undefined, // Done
 };
 
 const notebookStatusRunningIcon = {
   // The running icon color of notebook cells in the cell status bar.
   // {default: #cccccc}
-  foreground: undefined,
+  foreground: undefined, // TODO: notebookStatusRunningIcon.foreground
 };
 
 const notebookStatusSuccessIcon = {
   // The success icon color of notebook cells in the cell status bar.
   // {default: #89d185}
-  foreground: undefined,
+  foreground: undefined, // Done
 };
 
 const notebookEditorOverviewRuler = {
   // The color of the running cell decoration in the notebook editor
   // overview ruler. {default: #89d185}
-  runningCellForeground: undefined,
+  runningCellForeground: undefined, // Done
 };
 
 export default {

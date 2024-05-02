@@ -1,11 +1,10 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 // Overall border color for focused elements. {default: #0090f1}
 const focusBorder = tokens.secondary;
 
 // Overall foreground color. {default: #616161}
-
 const foreground = tokens.onSurface;
 
 // Overall foreground for disabled elements. {default: #61616180}
@@ -17,7 +16,7 @@ const descriptionForeground = chroma(tokens.onSurface).alpha(0.7).hex();
 
 // Overall foreground color for error messages (this color is only used if
 // not overridden by a component). {default: #ff1212b3}
-const errorForeground = tokens.errorFixed;
+const errorForeground = tokens.error;
 
 const widget = {
   // Border color of widgets such as Find/Replace inside the editor.

@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const titleBar = {
   // Title Bar background when the window is active. {default: #dddddd}

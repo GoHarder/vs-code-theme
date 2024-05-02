@@ -5,28 +5,28 @@
 // ---------------------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const merge = {
   // Current header background in inline merge conflicts. The color must
   // not be opaque so as not to hide underlying decorations.
   // {default: #40c8ae80}
-  currentHeaderBackground: undefined, // TODO: merge.currentHeaderBackground
+  currentHeaderBackground: chroma(tokens.good).alpha(0.5).hex(),
 
   // Current content background in inline merge conflicts. The color must
   // not be opaque so as not to hide underlying decorations.
   // {default: #40c8ae33}
-  currentContentBackground: undefined, // TODO: merge.currentContentBackground
+  currentContentBackground: chroma(tokens.good).alpha(0.2).hex(),
 
   // Incoming header background in inline merge conflicts. The color must
   // not be opaque so as not to hide underlying decorations.
   // {default: #40a6ff80}
-  incomingHeaderBackground: undefined, // TODO: merge.incomingHeaderBackground
+  incomingHeaderBackground: chroma(tokens.info).alpha(0.5).hex(),
 
   // Incoming content background in inline merge conflicts. The color must
   // not be opaque so as not to hide underlying decorations.
   // {default: #40a6ff33}
-  incomingContentBackground: undefined, // TODO: merge.incomingContentBackground
+  incomingContentBackground: chroma(tokens.info).alpha(0.2).hex(),
 
   // Border color on headers and the splitter in inline merge conflicts.
   // {default: null}
@@ -46,11 +46,11 @@ const merge = {
 const editorOverviewRuler = {
   // Current overview ruler foreground for inline merge conflicts.
   // {default: #40c8ae80}
-  currentContentForeground: undefined, // TODO: editorOverviewRuler.currentContentForeground
+  currentContentForeground: chroma(tokens.good).alpha(0.5).hex(),
 
   // Incoming overview ruler foreground for inline merge conflicts.
   // {default: #40a6ff80}
-  incomingContentForeground: undefined, // TODO: editorOverviewRuler.incomingContentForeground
+  incomingContentForeground: chroma(tokens.info).alpha(0.5).hex(),
 
   // Common ancestor overview ruler foreground for inline merge conflicts.
   // {default: #60606066}
@@ -100,13 +100,13 @@ const mergeEditor = {
     input1: {
       // The background color of decorations in input 1.
       // {default: #40c8ae33}
-      background: undefined, // TODO: mergeEditor.conflict.input1.background
+      background: chroma(tokens.good).alpha(0.2).hex(),
     },
 
     input2: {
       // The background color of decorations in input 2.
       // {default: #40a6ff33}
-      background: undefined, // TODO: mergeEditor.conflict.input2.background
+      background: chroma(tokens.info).alpha(0.2).hex(),
     },
   },
 

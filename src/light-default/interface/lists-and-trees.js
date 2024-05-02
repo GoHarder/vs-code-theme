@@ -5,11 +5,11 @@
 // -----------------------------------------------------------
 
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const list = {
   // List/Tree background color for the selected item when the list/tree is
-  // active. {default: #0060c0}
+  // active. {default: #04395e}
   activeSelectionBackground: tokens.secondaryContainer,
 
   // List/Tree foreground color for the selected item when the list/tree is
@@ -22,7 +22,7 @@ const list = {
   activeSelectionIconForeground: undefined, // Done
 
   // List/Tree drag and drop background when moving items around using the
-  // mouse. {default: #d6ebff}
+  // mouse. {default: #062f4a}
   dropBackground: chroma(tokens.onSurface).alpha(0.1).hex(),
 
   // List/Tree background color for the focused item when the list/tree is
@@ -36,7 +36,7 @@ const list = {
 
   // List/Tree outline color for the focused item when the list/tree is
   // active. An active list/tree has keyboard focus, an inactive does not.
-  // {default: #0090f1}
+  // {default: #007fd4}
   focusOutline: undefined, // Done
 
   // List/Tree outline color for the focused item when the list/tree is
@@ -45,15 +45,15 @@ const list = {
   focusAndSelectionOutline: undefined, // Done
 
   // List/Tree foreground color of the match highlights on actively focused
-  // items when searching inside the list/tree. {default: #bbe7ff}
+  // items when searching inside the list/tree. {default: #2aaaff}
   focusHighlightForeground: tokens.onSurface,
 
   // List/Tree foreground color of the match highlights when searching
-  // inside the list/tree. {default: #0066bf}
+  // inside the list/tree. {default: #2aaaff}
   highlightForeground: tokens.primary,
 
   // List/Tree background when hovering over items using the mouse.
-  // {default: #f0f0f0}
+  // {default: #2a2d2e}
   hoverBackground: chroma(tokens.onSurface).alpha(0.08).hex(),
 
   // List/Tree foreground when hovering over items using the mouse.
@@ -61,7 +61,7 @@ const list = {
   hoverForeground: undefined, // Done
 
   // List/Tree background color for the selected item when the
-  // list/tree is inactive. {default: #e4e6f1}
+  // list/tree is inactive. {default: #37373d}
   inactiveSelectionBackground: chroma(tokens.onSurface).alpha(0.1).hex(),
 
   // List/Tree foreground color for the selected item when the
@@ -86,13 +86,13 @@ const list = {
 
   // List/Tree foreground color for invalid items, for example an
   // unresolved root in explorer. {default: #b89500}
-  invalidItemForeground: tokens.warning, // TODO: list.invalidItemForeground
+  invalidItemForeground: tokens.warningFixed,
 
-  // Foreground color of list items containing errors. {default: #b01011}
-  errorForeground: tokens.error,
+  // Foreground color of list items containing errors. {default: #f88070}
+  errorForeground: tokens.errorFixed,
 
-  // Foreground color of list items containing warnings. {default: #855f00}
-  warningForeground: tokens.warning, // TODO: list.warningForeground
+  // Foreground color of list items containing warnings. {default: #cca700}
+  warningForeground: tokens.warningFixed,
 
   // Background color of the filtered matches in lists and trees.
   // {default: #ea5c0055}
@@ -103,14 +103,9 @@ const list = {
   filterMatchBorder: '#00000000', // Done
 
   // List/Tree foreground color for items that are deemphasized.
-  // {default: #8e8e90}
+  // {default: #8c8c8c}
   deemphasizedForeground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
 };
-
-//"listFilterWidget.background": "#f3f3f3",
-//"listFilterWidget.noMatchesOutline": "#be1100",
-//"listFilterWidget.outline": "#00000000",
-//"listFilterWidget.shadow": "#00000029",
 
 const listFilterWidget = {
   // List/Tree Filter background color of typed text when searching inside
@@ -126,7 +121,7 @@ const listFilterWidget = {
   noMatchesOutline: undefined, // TODO: listFilterWidget.noMatchesOutline
 
   // Shadow color of the type filter widget in lists and tree.
-  shadow: undefined, // TODO: listFilterWidget.shadow
+  shadow: undefined, // Done
 };
 
 const tree = {

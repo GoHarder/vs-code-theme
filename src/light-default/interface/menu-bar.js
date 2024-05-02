@@ -1,12 +1,12 @@
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const menubar = {
   // Foreground color of the selected menu item in the menubar.
-  // {default: #333333}
+  // {default: #cccccc}
   selectionForeground: tokens.onSecondaryContainer,
 
   // Background color of the selected menu item in the menubar.
-  // {default: #b8b8b850}
+  // {default: #5a5d5e50}
   selectionBackground: tokens.secondaryContainer,
 
   // Border color of the selected menu item in the menubar. {default: null}
@@ -14,10 +14,10 @@ const menubar = {
 };
 
 const menu = {
-  // Foreground color of menu items. {default: #616161}
+  // Foreground color of menu items. {default: #f0f0f0}
   foreground: tokens.onSurface,
 
-  // Background color of menu items. {default: #ffffff}
+  // Background color of menu items. {default: #3c3c3c}
   background: tokens.surfaceContainer,
 
   // Foreground color of the selected menu item in menus.
@@ -25,13 +25,13 @@ const menu = {
   selectionForeground: tokens.onSecondaryContainer,
 
   // Background color of the selected menu item in menus.
-  // {default: #0060c0}
+  // {default: #04395e}
   selectionBackground: tokens.secondaryContainer,
 
   // Border color of the selected menu item in menus. {default: null}
   selectionBorder: undefined, // Done
 
-  // Color of a separator menu item in menus. {default: #d4d4d4}
+  // Color of a separator menu item in menus. {default: #606060}
   separatorBackground: tokens.outlineVariant,
 
   // Border color of menus. {default: null}

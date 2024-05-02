@@ -3,7 +3,7 @@
 // The theme colors for VS Code window border.
 // -------------------------------------------
 
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const window = {
   // Border color for the active (focused) window. {default: null}

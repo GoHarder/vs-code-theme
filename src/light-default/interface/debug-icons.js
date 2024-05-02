@@ -1,15 +1,15 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const debugIcon = {
   // Icon color for breakpoints. {default: #e51400}
-  breakpointForeground: undefined, // TODO: debugIcon.breakpointForeground
+  breakpointForeground: tokens.errorFixed,
 
   // Icon color for disabled breakpoints. {default: #848484}
-  breakpointDisabledForeground: undefined, // TODO: debugIcon.breakpointDisabledForeground
+  breakpointDisabledForeground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
 
   // Icon color for unverified breakpoints. {default: #848484}
-  breakpointUnverifiedForeground: undefined, // TODO: debugIcon.breakpointUnverifiedForeground
+  breakpointUnverifiedForeground: chroma(tokens.onSurfaceVariant).alpha(0.5).hex(),
 
   // Icon color for the current breakpoint stack frame. {default: #ffcc00}
   breakpointCurrentStackframeForeground: tokens.warning,
@@ -24,10 +24,10 @@ const debugIcon = {
   pauseForeground: tokens.info,
 
   // Debug toolbar icon for stop. {default: #f48771}
-  stopForeground: tokens.errorFixed,
+  stopForeground: tokens.altErrorFixed,
 
   // Debug toolbar icon for disconnect. {default: #f48771}
-  disconnectForeground: tokens.errorFixed,
+  disconnectForeground: tokens.altErrorFixed,
 
   // Debug toolbar icon for restart. {default: #89d185}
   restartForeground: tokens.good,
@@ -59,7 +59,7 @@ const debugConsole = {
 
   // Foreground color for error messages in debug REPL console.
   // {default: #f48771}
-  errorForeground: tokens.errorFixed,
+  errorForeground: tokens.altErrorFixed,
 
   // Foreground color for source filenames in debug REPL console.
   // {default: #cccccc}

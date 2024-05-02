@@ -1,8 +1,7 @@
 import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-
 import colors from './interface/index.js';
-import tokenColors from './syntax/index.js';
+import { tokenColors } from './syntax/index.js';
 
 const getFilePath = (file) => fileURLToPath(new URL(`../../themes/${file}`, import.meta.url));
 
@@ -21,3 +20,12 @@ try {
 } catch (err) {
   console.error(err);
 }
+
+/** @type {Intl.DateTimeFormatOptions} */
+const dateSettings = {
+  timeStyle: 'medium',
+};
+
+const internal = new Intl.DateTimeFormat('en-us', dateSettings);
+
+console.log(internal.format(Date.now()));
