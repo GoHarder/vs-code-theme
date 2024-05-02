@@ -3,14 +3,10 @@
   "interface": {
     "primary": {
       "value": "#8fa1b3",
-      "adjustColor": false
+      "adjustColor": true
     },
     "tertiary": {
       "color": "#ebcb8b"
-    },
-    "neutral": {
-      "value": "#2e3440",
-      "adjustColor": false
     }
   },
   "syntax": [

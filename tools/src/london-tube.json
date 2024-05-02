@@ -1,0 +1,47 @@
+{
+  "$schema": "../../schemas/color-source.json",
+  "interface": {
+    "primary": {
+      "value": "#8fa1b3",
+      "adjustColor": true
+    }
+  },
+  "syntax": [
+    { "name": "black0", "value": "#231f20", "blend": false },
+    { "name": "black1", "value": "#737171", "blend": false },
+    { "name": "red0", "value": "#ee2e24", "blend": false },
+    { "name": "red1", "value": "#ff3f26", "blend": false },
+    { "name": "green0", "value": "#00853e", "blend": false },
+    { "name": "green1", "value": "#00ab4f", "blend": false },
+    { "name": "yellow0", "value": "#ffd204", "blend": false },
+    { "name": "yellow1", "value": "#ffe203", "blend": false },
+    { "name": "blue0", "value": "#009ddc", "blend": false },
+    { "name": "blue1", "value": "#00a4ff", "blend": false },
+    { "name": "magenta0", "value": "#98005d", "blend": false },
+    { "name": "magenta1", "value": "#be0074", "blend": false },
+    { "name": "cyan0", "value": "#85cebc", "blend": false },
+    { "name": "cyan1", "value": "#9df4de", "blend": false },
+    { "name": "white0", "value": "#d9d8d8", "blend": false },
+    { "name": "white1", "value": "#ffffff", "blend": false }
+  ],
+  "ansi": {
+    "black": "black0",
+    "red": "red0",
+    "green": "green0",
+    "yellow": "yellow0",
+    "blue": "blue0",
+    "magenta": "magenta0",
+    "cyan": "cyan0",
+    "white": "white0",
+    "orange": "orange0",
+    "teal": "teal0",
+    "brightBlack": "black1",
+    "brightRed": "red1",
+    "brightGreen": "green1",
+    "brightYellow": "yellow1",
+    "brightBlue": "blue1",
+    "brightMagenta": "magenta1",
+    "brightCyan": "cyan1",
+    "brightWhite": "white1"
+  }
+}
