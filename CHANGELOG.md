@@ -144,3 +144,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added merge conflict colors
 - Updated color reference
 - Added alt error fixed color
+
+## [1.0.0]
+- Finished light theme
+- Cleaned up color settings files
