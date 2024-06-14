@@ -14,7 +14,7 @@ const terminal = {
   foreground: tokens.onSurfaceVariant,
 
   // 'Black' ANSI color in the terminal. {default: #000000}
-  ansiBlack: tokens.surface,
+  ansiBlack: tokens.black.base,
 
   // 'BrightBlack' ANSI color in the terminal. {default: #666666}
   // ansiBrightBlack: pallet.ansiBrightBlack,
