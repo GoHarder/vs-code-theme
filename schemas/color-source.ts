@@ -123,7 +123,7 @@ export interface InterfaceOptions1 {
   /**
    * Adjust the color for visual contrast.
    */
-  adjustColor: boolean;
+  adjustColor?: boolean;
 }
 export interface InterfaceOptions2 {
   /**

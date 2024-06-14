@@ -139,7 +139,10 @@ const getTones = (palette, tones) => {
  */
 const buildInterfacePalettes = (source) => {
   const { primary: p, secondary: s, tertiary: t, neutral: n } = source.interface;
-  const primary = getHueAndChroma(p.value, p.adjustColor);
+
+  const adjPri = p.adjustColor === undefined ? true : p.adjustColor;
+
+  const primary = getHueAndChroma(p.value, adjPri);
   const secondary = getSecondaryHueAndChroma(primary, s);
   const tertiary = getTertiaryHueAndChroma(primary, t);
   const error = { hue: 25, chroma: 84 };

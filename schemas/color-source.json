@@ -242,7 +242,7 @@
   "$defs": {
     "interface-options-1": {
       "type": "object",
-      "required": ["value", "adjustColor"],
+      "required": ["value"],
       "additionalProperties": false,
       "properties": {
         "value": {
