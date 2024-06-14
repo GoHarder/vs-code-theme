@@ -148,3 +148,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.0]
 - Finished light theme
 - Cleaned up color settings files
+
+## [1.0.1]
+- Updated interface colors
+- Removed deprecated code
+- Made primary adjust color optional
+- Set terminal black to actual black
