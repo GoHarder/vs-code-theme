@@ -193,7 +193,7 @@ const editorCursor = {
   background: undefined, // Done
 
   // Color of the editor cursor. {default: #aeafad}
-  foreground: tokens.tertiary,
+  foreground: tokens.onSurface,
 };
 
 // MARK: Search
@@ -235,11 +235,11 @@ const editorUnicodeHighlight = {
   // --------------------------------
 
   // Border color used to highlight unicode characters. {default: #bd9b03}
-  border: tokens.warning,
+  border: tokens.altWarning,
 
   // Background color used to highlight unicode characters.
   // {default: #bd9b0326}
-  background: chroma(tokens.warning).alpha(0.08).hex(),
+  background: chroma(tokens.altWarning).alpha(0.08).hex(),
 };
 
 // MARK: Editor Other

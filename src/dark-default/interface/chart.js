@@ -6,25 +6,25 @@ const charts = {
   foreground: tokens.onSurfaceVariant,
 
   // Color for lines in charts. {default: #cccccc80}
-  lines: ansi.white,
+  lines: ansi.white.base,
 
   // Color for red elements in charts. {default: #f14c4c}
-  red: ansi.red,
+  red: ansi.red.base,
 
   // Color for blue elements in charts. {default: #3794ff}
-  blue: ansi.blue,
+  blue: ansi.blue.base,
 
   // Color for yellow elements in charts. {default: #cca700}
-  yellow: ansi.yellow,
+  yellow: ansi.yellow.base,
 
   // Color for orange elements in charts. {default: #d18616}
-  orange: ansi.orange,
+  orange: ansi.orange.base,
 
   // Color for green elements in charts. {default: #89d185}
-  green: ansi.green,
+  green: ansi.green.base,
 
   // Color for purple elements in charts. {default: #b180d7}
-  purple: ansi.magenta,
+  purple: ansi.magenta.base,
 };
 
 export default {

@@ -1,5 +1,5 @@
 import chroma from 'chroma-js';
-import { tokens } from '../colors/interface.js';
+import { tokens } from '../colors.js';
 
 const scrollbar = {
   // Scrollbar slider shadow to indicate that the view is scrolled.

@@ -38,13 +38,13 @@ const extensionBadge = {
 
 const extensionIcon = {
   // The icon color for extension ratings. {default: #ff8e00}
-  starForeground: chroma(tokens.warning).alpha(0.9).hex(),
+  starForeground: chroma(tokens.altWarning).alpha(0.9).hex(),
 
   // The icon color for extension verified publisher. {default: #3794ff}
-  verifiedForeground: chroma(tokens.warning).alpha(0.9).hex(),
+  verifiedForeground: chroma(tokens.altWarning).alpha(0.9).hex(),
 
   // The icon color for pre-release extension. {default: #1d9271}
-  preReleaseForeground: chroma(tokens.secondaryContainer).alpha(0.9).hex(),
+  preReleaseForeground: chroma(tokens.goodContainer).alpha(0.9).hex(),
 
   // The icon color for extension sponsor. {default: #d758b3}
   sponsorForeground: chroma(tokens.errorFixed).alpha(0.9).hex(),

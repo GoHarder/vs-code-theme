@@ -16,7 +16,7 @@ const breadcrumb = {
   focusForeground: tokens.onSurface,
 
   // Color of selected breadcrumb items. {default: #e0e0e0}
-  activeSelectionForeground: tokens.primary,
+  activeSelectionForeground: tokens.link,
 };
 
 const breadcrumbPicker = {

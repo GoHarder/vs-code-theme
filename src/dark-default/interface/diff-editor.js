@@ -56,7 +56,7 @@ const diffEditor = {
   unchangedCodeBackground: tokens.surfaceContainerLow,
 
   // {default: #ffa500}
-  moveActive: { border: tokens.warning },
+  moveActive: { border: tokens.altWarning },
 
   // {default: #000000}
   unchangedRegionShadow: tokens.outline,

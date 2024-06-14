@@ -14,7 +14,7 @@ const terminal = {
   foreground: tokens.onSurfaceVariant,
 
   // 'Black' ANSI color in the terminal. {default: #000000}
-  ansiBlack: tokens.black.base,
+  ansiBlack: ansi.black.base,
 
   // 'BrightBlack' ANSI color in the terminal. {default: #666666}
   // ansiBrightBlack: pallet.ansiBrightBlack,
@@ -126,7 +126,7 @@ const terminalCursor = {
   background: undefined, // Done
 
   // The foreground color of the terminal cursor. {default: null}
-  foreground: tokens.tertiary, // Done
+  foreground: tokens.onSurface, // Done
 };
 
 const terminalCommandDecoration = {

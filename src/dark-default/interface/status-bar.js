@@ -94,18 +94,18 @@ const statusBarItem = {
   // Status bar error items background color. Error items stand out from
   // other status bar entries to indicate error conditions.
   // {default: #c72e0f}
-  errorBackground: tokens.altErrorContainer,
+  errorBackground: tokens.errorContainer,
 
   // Status bar error items foreground color. Error items stand out
   // from other status bar entries to indicate error conditions.
   // {default: #ffffff}
-  errorForeground: tokens.onAltErrorContainer,
+  errorForeground: tokens.onErrorContainer,
 
   // Added in release 1.82.0 {default: #ffffff1f}
-  errorHoverBackground: chroma(tokens.onAltErrorContainer).alpha(0.1).hex(),
+  errorHoverBackground: chroma(tokens.onErrorContainer).alpha(0.1).hex(),
 
   // Added in release 1.82.0 {default: #ffffff}
-  errorHoverForeground: tokens.onAltErrorContainer,
+  errorHoverForeground: tokens.onSurface,
 
   // Status bar warning items background color. Warning items stand
   // out from other status bar entries to indicate warning conditions.
@@ -123,18 +123,18 @@ const statusBarItem = {
   warningHoverBackground: chroma(tokens.onWarning).alpha(0.1).hex(),
 
   // Added in release 1.82.0 {default: #ffffff}
-  warningHoverForeground: tokens.onWarning,
+  warningHoverForeground: tokens.onSurface,
 
   // Status bar background color when the workbench is offline. The status
   // bar is shown in the bottom of the window. {default: #6c1717}
-  offlineBackground: tokens.errorContainer,
+  offlineBackground: tokens.altErrorContainer,
 
   // Status bar foreground color when the workbench is offline. The status
   // bar is shown in the bottom of the window. {default: #ffffff}
-  offlineForeground: tokens.onErrorContainer,
+  offlineForeground: tokens.onAltErrorContainer,
 
   // Added in release 1.82.0 {default: #ffffff1f}
-  offlineHoverBackground: chroma(tokens.onErrorContainer).alpha(0.1).hex(),
+  offlineHoverBackground: chroma(tokens.onAltErrorContainer).alpha(0.1).hex(),
 
   // Added in release 1.82.0 {default: #ffffff}
   offlineHoverForeground: tokens.onSurface,

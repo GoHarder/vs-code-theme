@@ -23,10 +23,10 @@ const gitDecoration = {
   stageDeletedResourceForeground: chroma(tokens.altErrorFixed).alpha(0.7).hex(),
 
   // Color for modified Git resources. {default: #e2c08d}
-  modifiedResourceForeground: tokens.warning,
+  modifiedResourceForeground: tokens.altWarning,
 
   // Color for staged modifications git decorations. {default: #e2c08d}
-  stageModifiedResourceForeground: chroma(tokens.warning).alpha(0.7).hex(),
+  stageModifiedResourceForeground: chroma(tokens.altWarning).alpha(0.7).hex(),
 
   // Color for ignored Git resources. {default: #8c8c8c}
   ignoredResourceForeground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),

@@ -68,19 +68,19 @@ const editorOverviewRuler = {
 const mergeEditor = {
   change: {
     // The background color for changes. {default: #9bb95533}
-    background: chroma(tokens.warningContainer).alpha(0.2).hex(),
+    background: chroma(tokens.altWarningContainer).alpha(0.2).hex(),
 
     // The background color for word changes. {default: #9ccc2c33}
-    word: { background: chroma(tokens.warningContainer).alpha(0.2).hex() },
+    word: { background: chroma(tokens.altWarningContainer).alpha(0.2).hex() },
   },
 
   conflict: {
     // The border color of unhandled unfocused conflicts.
     // {default: #ffa6007a}
-    unhandledUnfocused: { border: chroma(tokens.warning).alpha(0.7).hex() },
+    unhandledUnfocused: { border: chroma(tokens.altWarning).alpha(0.7).hex() },
 
     // The border color of unhandled focused conflicts. {default: #ffa600}
-    unhandledFocused: { border: tokens.warning },
+    unhandledFocused: { border: tokens.altWarning },
 
     // The border color of handled unfocused conflicts.
     // {default: #86868649}

@@ -13,11 +13,11 @@ const debugToolBar = {
 const editor = {
   // Background color of the top stack frame highlight in the editor.
   // {default: #ffff0033}
-  stackFrameHighlightBackground: chroma(tokens.warning).alpha(0.2).hex(),
+  stackFrameHighlightBackground: chroma(tokens.altWarning).alpha(0.2).hex(),
 
   // Background color of the focused stack frame highlight in the editor.
   // {default: #7abd7a4d}
-  focusedStackFrameHighlightBackground: chroma(tokens.warning).alpha(0.2).hex(),
+  focusedStackFrameHighlightBackground: chroma(tokens.altWarning).alpha(0.2).hex(),
 
   // Color for the debug inline value text. {default: #ffffff80}
   inlineValuesForeground: undefined, // TODO: editor.inlineValuesForeground
@@ -45,7 +45,7 @@ const debugView = {
 
   // Color used to highlight value changes in the debug views (such as in
   // the Variables view). {default: #569cd6}
-  valueChangedHighlight: chroma(tokens.warning).alpha(0.8).hex(),
+  valueChangedHighlight: chroma(tokens.altWarning).alpha(0.8).hex(),
 };
 
 const debugTokenExpression = {

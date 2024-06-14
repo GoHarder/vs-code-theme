@@ -31,7 +31,7 @@ const textLink = {
 
 const textPreformat = {
   // Foreground color for preformatted text segments. {default: #d7ba7d}
-  foreground: tokens.warning,
+  foreground: tokens.altWarning,
 
   // {default: #ffffff1a}
   background: tokens.surfaceContainerLowest,
