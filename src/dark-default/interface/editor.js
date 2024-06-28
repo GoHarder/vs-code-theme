@@ -461,7 +461,7 @@ const editorOverviewRuler = {
   addedForeground: undefined, // Done
 
   // Overview ruler marker color for deleted content. {default: #f14c4c99}
-  deletedForeground: undefined, // Done
+  deletedForeground: chroma(tokens.altError).alpha(0.6).hex(), // Done
 
   // Overview ruler marker color for errors. {default: #ff1212b3}
   errorForeground: tokens.errorFixed,
