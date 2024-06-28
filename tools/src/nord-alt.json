@@ -2,8 +2,7 @@
   "$schema": "../../schemas/color-source.json",
   "interface": {
     "primary": {
-      "value": "#8fa1b3",
-      "adjustColor": true
+      "value": "#81a1c1"
     },
     "tertiary": {
       "color": "#ebcb8b"
@@ -24,7 +23,7 @@
     { "name": "magenta1", "value": "#daacd1", "blend": false },
     { "name": "cyan0", "value": "#88c0d0", "blend": false },
     { "name": "cyan1", "value": "#a1e3f6", "blend": false },
-    { "name": "white0", "value": "#babdc1", "blend": false },
+    { "name": "white0", "value": "#d8dee9", "blend": false },
     { "name": "white1", "value": "#eceff4", "blend": false },
     { "name": "orange0", "value": "#d08770", "blend": false },
     { "name": "orange1", "value": "#f69f84", "blend": false },
