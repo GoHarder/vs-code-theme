@@ -1,4 +1,7 @@
+.vscode/settings.json
 node_modules
+reference
 themes
 git-log.txt
 *.vsix
+src/colors
