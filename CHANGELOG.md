@@ -154,3 +154,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Removed deprecated code
 - Made primary adjust color optional
 - Set terminal black to actual black
+
+## [1.0.2]
+- Updated color source
+- Adjusted deleted foreground
