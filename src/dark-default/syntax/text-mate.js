@@ -59,7 +59,7 @@ const comment = {
 };
 
 /** Various forms of constants. */
-const constant = {
+export const constant = {
   settings: {
     foreground: '#ff0000', // TODO: select color
   },
@@ -125,7 +125,7 @@ const constant = {
  * But we do use entity.* for the “placeholders” in the larger entity, e.g.
  * if the entity is a chapter, we would use entity.name.section for the chapter title.
  */
-const entity = {
+export const entity = {
   settings: {
     foreground: '#ff0000', // TODO: select color
   },
@@ -230,7 +230,7 @@ const invalid = {
  * Keywords (when these do not fall into the other groups).
  * - js/ts generator function dots
  */
-const keyword = {
+export const keyword = {
   settings: {
     foreground: syntax.yellow0._80, // #81a1c1
   },
@@ -389,7 +389,7 @@ const meta = {
 };
 
 /** Things relating to “storage”. */
-const storage = {
+export const storage = {
   settings: {
     foreground: syntax.blue0._70, // #81a1c1
   },
@@ -420,7 +420,7 @@ const storage = {
  * - js/ts es6 strings
  * - json property names
  */
-const string = {
+export const string = {
   settings: {
     foreground: syntax.green0._80, // #a3be8c,
   },
@@ -579,7 +579,7 @@ const support = {
  * - scss variables
  * - ts interface properties
  */
-const variable = {
+export const variable = {
   settings: {
     foreground: editor.foreground2,
   },

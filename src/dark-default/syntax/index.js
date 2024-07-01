@@ -528,7 +528,6 @@ const settings = [
 ];
 
 export const icons = defIco;
-
 export const tokenColors = def;
 // export const tokenColors= root;
 // export const tokenColors= settings;

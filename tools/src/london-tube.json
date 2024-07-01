@@ -2,7 +2,7 @@
   "$schema": "../../schemas/color-source.json",
   "interface": {
     "primary": {
-      "value": "#8fa1b3",
+      "value": "#009ddc",
       "adjustColor": true
     }
   },
@@ -21,8 +21,8 @@
     { "name": "magenta1", "value": "#be0074", "blend": false },
     { "name": "cyan0", "value": "#85cebc", "blend": false },
     { "name": "cyan1", "value": "#9df4de", "blend": false },
-    { "name": "white0", "value": "#d9d8d8", "blend": false },
-    { "name": "white1", "value": "#ffffff", "blend": false }
+    { "name": "white0", "value": "#a5a5a5", "blend": false },
+    { "name": "white1", "value": "#d9d8d8", "blend": false }
   ],
   "ansi": {
     "black": "black0",

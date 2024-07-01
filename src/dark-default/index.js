@@ -1,8 +1,5 @@
 import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-
-import { ansi } from './colors/interface.js';
-
 import colors from './interface/index.js';
 import { tokenColors } from './syntax/index.js';
 

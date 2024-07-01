@@ -114,7 +114,7 @@ export const ansiTokens = {
   onBrightWhiteContainer: ansi.brightWhite._90,
 };
 
-const { primary, secondary, tertiary, error, neutral, neutralVariant } = file.interface;
+const { primary, secondary, tertiary, error, warning, neutral, neutralVariant } = file.interface;
 
 const calcStateLayer = (color1, color2, opacity) => {
   const scale = chroma.scale([color1, color2]);
@@ -188,6 +188,8 @@ const defaultTokens = {
   shadow: neutral._0,
 };
 
+console.log(calcStateLayer(defaultTokens.primary, defaultTokens.onSurface, 0.38));
+
 const customTokens = {
   // Primary
   primaryHover: calcStateLayer(defaultTokens.primary, defaultTokens.onPrimary, 0.08),
@@ -201,11 +203,18 @@ const customTokens = {
   onGood: ansi.green._20,
   goodContainer: ansi.green._30,
   onGoodContainer: ansi.green._90,
+
   // Warning
-  warning: ansi.yellow._80,
-  onWarning: ansi.yellow._20,
-  warningContainer: ansi.yellow._30,
-  onWarningContainer: ansi.yellow._90,
+  warning: warning._80,
+  onWarning: warning._20,
+  warningContainer: warning._30,
+  onWarningContainer: warning._90,
+
+  // altWarning
+  altWarning: ansi.yellow._80,
+  onAltWarning: ansi.yellow._20,
+  altWarningContainer: ansi.yellow._30,
+  onAltWarningContainer: ansi.yellow._90,
   // Info
   info: ansi.blue._80,
   onInfo: ansi.blue._20,

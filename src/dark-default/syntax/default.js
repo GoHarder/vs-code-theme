@@ -558,12 +558,6 @@ export const scopes = [
     },
   },
   {
-    scope: 'keyword.other.dotenv',
-    settings: {
-      foreground: '#00000000',
-    },
-  },
-  {
     scope: 'token.info-token',
     settings: {
       // foreground: '#6796E6',
