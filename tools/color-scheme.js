@@ -146,6 +146,7 @@ const buildInterfacePalettes = (source) => {
   const secondary = getSecondaryHueAndChroma(primary, s);
   const tertiary = getTertiaryHueAndChroma(primary, t);
   const error = { hue: 25, chroma: 84 };
+  const warning = getHueAndChroma('#cca700', false);
 
   let neutral = { hue: primary.hue, chroma: Math.min(primary.chroma / 12, 4) };
   let neutralVariant = { hue: primary.hue, chroma: Math.min(primary.chroma / 6, 8) };
@@ -162,6 +163,7 @@ const buildInterfacePalettes = (source) => {
     ['secondary', secondary, standardTones],
     ['tertiary', tertiary, standardTones],
     ['error', error, standardTones],
+    ['warning', warning, standardTones],
     ['neutral', neutral, extendedTones],
     ['neutralVariant', neutralVariant, standardTones],
   ];
