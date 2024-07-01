@@ -14,6 +14,7 @@ export interface ColorPalletSchema {
     secondary: Normal;
     tertiary: Normal;
     error: Normal;
+    warning: Normal;
     neutral: Full;
     neutralVariant: Normal;
   };

@@ -10,7 +10,7 @@
     },
     "interface": {
       "type": "object",
-      "required": ["primary", "secondary", "tertiary", "error", "neutral", "neutralVariant"],
+      "required": ["primary", "secondary", "tertiary", "error", "warning", "neutral", "neutralVariant"],
       "additionalProperties": false,
       "properties": {
         "primary": {
@@ -23,6 +23,9 @@
           "$ref": "#/$defs/pallets/normal"
         },
         "error": {
+          "$ref": "#/$defs/pallets/normal"
+        },
+        "warning": {
           "$ref": "#/$defs/pallets/normal"
         },
         "neutral": {
