@@ -1,4 +1,4 @@
-import { tokens } from '../colors/interface.js';
+import { ansi, tokens } from '../colors.js';
 
 const settings = [
   {
@@ -22,7 +22,7 @@ const settings = [
   {
     scope: 'token.debug-token',
     settings: {
-      foreground: '#B267E6', // TODO: Set debug token
+      foreground: ansi.magenta.base,
     },
   },
 ];
