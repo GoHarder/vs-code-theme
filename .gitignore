@@ -4,4 +4,4 @@ reference
 themes
 git-log.txt
 *.vsix
-src/colors
+src/colors/*
