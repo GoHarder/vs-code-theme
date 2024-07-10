@@ -1,22 +1,29 @@
 import { readJsonFile } from '../lib/file-system.js';
 import chroma from 'chroma-js';
 
-const source = '#e30016';
+const args = process.argv.slice(2);
 
-const res = '#d75f00'; // 166
+const source = args[0];
+
+console.log(source);
+
+if (!source) {
+  console.log("usage: node tools/closest.js '<hex>'");
+  process.exit(1);
+}
 
 const ansi = await readJsonFile('./tools/ansi.json');
 
 const [r1, g1, b1] = chroma.hex(source).rgb();
 
-const diffs = ansi.map((hex) => {
-  const [r2, g2, b2] = chroma.hex(hex).rgb();
+const diffs = ansi.map((color) => {
+  const { hex, ansi, r, g, b } = color;
 
-  const diff = Math.sqrt(Math.pow(r1 - r2, 2) + Math.pow(g1 - g2, 2) + Math.pow(b1 - b2, 2));
+  const diff = Math.sqrt(Math.pow(r1 - r, 2) + Math.pow(g1 - g, 2) + Math.pow(b1 - b, 2));
 
-  return { hex, diff };
+  return { hex, ansi, r, g, b, diff };
 });
 
 const sorted = diffs.sort((a, b) => a.diff - b.diff);
 
-console.log(sorted[0].hex);
+console.table(sorted.at(0));
