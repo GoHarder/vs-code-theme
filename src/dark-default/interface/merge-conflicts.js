@@ -30,7 +30,7 @@ const merge = {
 
   // Border color on headers and the splitter in inline merge conflicts.
   // {default: null}
-  border: undefined, // TODO: merge.border
+  border: tokens.outline,
 
   // Common ancestor content background in inline merge-conflicts. The
   // color must not be opaque so as not to hide underlying decorations.
@@ -95,7 +95,7 @@ const mergeEditor = {
     },
 
     // The foreground color for changes in input 1. {default: #fcba03}
-    unhandled: { minimapOverViewRuler: undefined },
+    unhandled: { minimapOverViewRuler: tokens.altWarning },
 
     input1: {
       // The background color of decorations in input 1.
