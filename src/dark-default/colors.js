@@ -234,7 +234,7 @@ const customTokens = {
   linkContainer: ansi.cyan._30,
   onLinkContainer: ansi.cyan._90,
 
-  linkHover: calcStateLayer(ansi.cyan._80, ansi.cyan._20, 0.08),
+  linkHover: calcStateLayer(ansi.cyan._80, defaultTokens.onSurface, 0.1),
 };
 
 export const tokens = { ...defaultTokens, ...customTokens };
