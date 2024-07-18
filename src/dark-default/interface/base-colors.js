@@ -9,11 +9,11 @@ const focusBorder = tokens.secondary;
 const foreground = tokens.onSurface;
 
 // Overall foreground for disabled elements. {default: #cccccc80}
-const disabledForeground = chroma(tokens.onSurface).alpha(0.5).hex();
+const disabledForeground = chroma(tokens.onSurface).alpha(0.38).hex();
 
 // Foreground color for description text providing additional information,
 // for example for a label. {default: #ccccccb3}
-const descriptionForeground = chroma(tokens.onSurface).alpha(0.7).hex();
+const descriptionForeground = tokens.onSurfaceVariant;
 
 // Overall foreground color for error messages (this color is only used if
 // not overridden by a component). {default: #f48771}
@@ -26,7 +26,7 @@ const widget = {
 
   // Shadow color of widgets such as Find/Replace inside the editor.
   // {default: #0000005c}
-  shadow: chroma(tokens.shadow).alpha(0.36).hex(),
+  shadow: chroma(tokens.shadow).alpha(0.38).hex(),
 };
 
 const selection = {
