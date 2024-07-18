@@ -77,7 +77,7 @@ const tab = {
   inactiveBackground: tokens.surfaceContainerLow,
 
   // Inactive Tab foreground color in an active group. {default: #ffffff80}
-  inactiveForeground: chroma(tokens.onSurface).alpha(0.7).hex(),
+  inactiveForeground: chroma(tokens.onSurface).alpha(0.38).hex(),
 
   // Border on the top of modified (dirty) inactive tabs in an active
   // group. {default: #3399cc80}
@@ -109,7 +109,7 @@ const tab = {
 
   // Inactive tab foreground color in an inactive editor group.
   // {default: #ffffff40}
-  unfocusedInactiveForeground: chroma(tokens.onSurfaceVariant).alpha(0.7).hex(),
+  unfocusedInactiveForeground: chroma(tokens.onSurfaceVariant).alpha(0.38).hex(),
 
   // Border on the top of modified (dirty) inactive tabs in an unfocused
   // group. {default: #3399cc40}
