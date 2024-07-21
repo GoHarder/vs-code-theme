@@ -92,6 +92,8 @@
         "brightCyan": { "$ref": "#/$defs/pallets/terminal" },
         "white": { "$ref": "#/$defs/pallets/terminal" },
         "brightWhite": { "$ref": "#/$defs/pallets/terminal" },
+        "teal": { "$ref": "#/$defs/pallets/terminal" },
+        "brightTeal": { "$ref": "#/$defs/pallets/terminal" },
         "orange": { "$ref": "#/$defs/pallets/terminal" },
         "brightOrange": { "$ref": "#/$defs/pallets/terminal" }
       }

@@ -145,8 +145,9 @@ const buildInterfacePalettes = (source) => {
   const primary = getHueAndChroma(p.value, adjPri);
   const secondary = getSecondaryHueAndChroma(primary, s);
   const tertiary = getTertiaryHueAndChroma(primary, t);
-  const error = { hue: 25, chroma: 84 };
-  const warning = getHueAndChroma('#cca700', false);
+  const error = getHueAndChroma('#c42b1c', false);
+  // const error = { hue: 25, chroma: 84 };
+  const warning = getHueAndChroma('#ffc209', false); // #cca700
 
   let neutral = { hue: primary.hue, chroma: Math.min(primary.chroma / 12, 4) };
   let neutralVariant = { hue: primary.hue, chroma: Math.min(primary.chroma / 6, 8) };
