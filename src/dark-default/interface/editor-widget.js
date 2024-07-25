@@ -132,7 +132,7 @@ const editorMarkerNavigationError = {
 
 const editorMarkerNavigationWarning = {
   // Editor marker navigation widget warning color. {default: #cca700}
-  background: tokens.warningContainer,
+  background: tokens.altWarningContainer,
 
   // Editor marker navigation widget warning heading background.
   // {default: #cca7001a}
