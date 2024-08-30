@@ -5,7 +5,7 @@ const gitDecoration = {
   // NOTE: Used for file labels and the SCM viewlet.
 
   // Color for added Git resources. {default: #81b88b}
-  addedResourceForeground: tokens.good,
+  addedResourceForeground: chroma(tokens.good).alpha(0.7).hex(),
 
   // Color for renamed or copied Git resources. {default: #73c991}
   renamedResourceForeground: tokens.good,
