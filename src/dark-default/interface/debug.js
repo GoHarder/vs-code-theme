@@ -55,7 +55,7 @@ const debugTokenExpression = {
 
   // Foreground color for the token values shown in debug views.
   // {default: #cccccc99}
-  value: icons.debug.value,
+  value: tokens.onSurfaceVariant,
 
   // Foreground color for strings in debug views. {default: #ce9178}
   string: icons.debug.string,
